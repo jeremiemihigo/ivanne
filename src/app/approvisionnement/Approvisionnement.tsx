@@ -93,7 +93,6 @@ function Approvisionnement({ loading }: Props) {
       console.log(error);
     }
   };
-  console.log(produit);
   const loadingApprovisionnement = async () => {
     const result = await fetch("/api/tiers/fournisseur", {
       method: "GET",
@@ -154,8 +153,10 @@ function Approvisionnement({ loading }: Props) {
 
   const sendData = async () => {
     try {
+      setLoad(true);
       if (parseInt(values.prix_vente) < parseInt(values.prix_achat)) {
         toast("Le prix d'achat est inférieur au prix de vente");
+        setLoad(false);
         return;
       } else {
         const res = await fetch("/api/approvisionnement", {
@@ -177,8 +178,10 @@ function Approvisionnement({ loading }: Props) {
           });
           setProduit("");
           loading();
+          setLoad(false);
         } else {
           toast(JSON.stringify(response.data));
+          setLoad(false);
         }
       }
     } catch (error) {
