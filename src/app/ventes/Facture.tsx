@@ -88,14 +88,9 @@ function Factures({ data, client, setData, resetData }: Props) {
             <div className="flex justify-between items-start">
               <div>
                 <h1 className="text-1xl font-bold text-gray-800 mb-2">
-                  SAFI PHARMA PHARMACY
+                  IVANNE PHARMACIE
                 </h1>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  NIF : A2044866Q <br />
-                  RCCM/CD/GOM/RCCM/21-B-00428 <br />
-                  VILLE DE GOMA, PROVINCE DU NORD KIVU, RD CONGO <br />
-                  TEL : +243853555018
-                </p>
+                <p className="text-sm text-gray-600 leading-relaxed"></p>
               </div>
               <div className="text-right">
                 <h2 className="text-1xl font-semibold text-gray-800 mb-2">
