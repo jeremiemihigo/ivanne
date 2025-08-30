@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import React from "react";
 import { toast } from "sonner";
+import { IApprovisionnement } from "../Interfaces/IApprovisionnement";
 import { ICombo } from "../Interfaces/IOther";
 import { ITiers } from "../Interfaces/ITiers";
 import { IProduit } from "../Interfaces/Produit";
@@ -25,7 +26,8 @@ interface Initiale {
   date_peremption: string;
 }
 type Props = {
-  loading: () => void;
+  setDonner: React.Dispatch<React.SetStateAction<IApprovisionnement[]>>;
+  donner: IApprovisionnement[];
 };
 type IInput = {
   placeholder: string;
@@ -33,7 +35,7 @@ type IInput = {
   name: string;
 };
 
-function Approvisionnement({ loading }: Props) {
+function Approvisionnement({ setDonner, donner }: Props) {
   const [data, setData] = React.useState<ICombo[]>([]);
   const [allfournisseur, setAllFournisseur] = React.useState<ICombo[]>([]);
   const [fournisseur, setFournisseur] = React.useState<string>("");
@@ -168,6 +170,7 @@ function Approvisionnement({ loading }: Props) {
         });
         const response = await res.json();
         if (response.status === 200) {
+          setDonner([...donner, response.data]);
           setValues({
             quantite: "",
             num_lot: "",
@@ -177,7 +180,6 @@ function Approvisionnement({ loading }: Props) {
             prix_vente: "",
           });
           setProduit("");
-          loading();
           setLoad(false);
         } else {
           toast(JSON.stringify(response.data));
