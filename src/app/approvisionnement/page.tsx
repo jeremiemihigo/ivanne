@@ -80,7 +80,9 @@ function Stock() {
               childrenbtn={
                 <Popup
                   title="Approvisionnement"
-                  component={<Approvisionnement loading={loadingData} />}
+                  component={
+                    <Approvisionnement donner={data} setDonner={setData} />
+                  }
                   btnname="Approvisionnement"
                 />
               }
