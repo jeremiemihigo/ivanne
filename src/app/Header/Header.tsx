@@ -85,11 +85,6 @@ function Header({ children, title }: Props) {
             </Dialog>
           </>
         )}
-        <div className="flex-1 text-right">
-          <h1 className="hidden md:block text-white font-bold text-lg md:text-2xl lg:text-3xl xl:text-1xl m-0">
-            SAFI PHARMA PHARMACY
-          </h1>
-        </div>
       </div>
       <div className="p-5">{children}</div>
     </>
