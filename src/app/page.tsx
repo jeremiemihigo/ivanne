@@ -65,7 +65,7 @@ const SalesChart = ({ data }: { data: IDataGraphique[] }) => {
                   <div className="w-20 text-sm font-semibold text-gray-900">
                     {new Intl.NumberFormat("fr-FR", {
                       style: "currency",
-                      currency: "CDF",
+                      currency: "USD",
                     }).format(item.montant_vendu)}
                   </div>
                   {index > 0 && (
@@ -109,14 +109,14 @@ const SalesChart = ({ data }: { data: IDataGraphique[] }) => {
             Minimum:{" "}
             {new Intl.NumberFormat("fr-FR", {
               style: "currency",
-              currency: "CDF",
+              currency: "USD",
             }).format(minAmount)}
           </span>
           <span>
             Maximum:{" "}
             {new Intl.NumberFormat("fr-FR", {
               style: "currency",
-              currency: "CDF",
+              currency: "USD",
             }).format(maxAmount)}
           </span>
         </div>
@@ -125,14 +125,21 @@ const SalesChart = ({ data }: { data: IDataGraphique[] }) => {
   );
 };
 
+interface IJournalier {
+  payer: number;
+  creance: number;
+  depense: number;
+}
+
 export default function Page() {
   const [data, setData] = React.useState<IData>();
   const [ventes, setVentes] = React.useState<IDataGraphique[]>();
+  const [journalier, setJournalier] = React.useState<IJournalier>();
   const [load, setload] = React.useState<boolean>(true);
 
   const loadingData = async () => {
     try {
-      const res = await fetch("/api/dashboard", {
+      const res = await fetch("/api/dashboard/syntheseData", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -142,7 +149,22 @@ export default function Page() {
 
       setData(response.data.information);
       setVentes(response.data.ventes);
+    } catch (error) {
+      console.log(error);
       setload(false);
+    }
+  };
+  const loadingDataJournalier = async () => {
+    try {
+      const res = await fetch("/api/dashboard/rapportjournalier", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const response = await res.json();
+      console.log(response);
+      setJournalier(response.data);
     } catch (error) {
       console.log(error);
       setload(false);
@@ -151,14 +173,16 @@ export default function Page() {
   React.useEffect(() => {
     const initialize = async () => {
       await loadingData();
+      await loadingDataJournalier();
+      setload(false);
     };
     initialize();
   }, []);
 
-  const formatCurrency = (amount: number) => {
+  const formatCurrency = (amount: number, currency: string) => {
     return new Intl.NumberFormat("fr-FR", {
       style: "currency",
-      currency: "CDF",
+      currency,
     }).format(amount);
   };
 
@@ -227,7 +251,7 @@ export default function Page() {
                 Chiffre d&apos;Affaires
               </p>
               <p className="text-2xl font-semibold text-gray-900">
-                {formatCurrency(data?.chiffre_affaire || 0)}
+                {formatCurrency(data?.chiffre_affaire || 0, "USD")}
               </p>
             </div>
           </div>
@@ -254,7 +278,7 @@ export default function Page() {
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">Créances</p>
               <p className="text-2xl font-semibold text-gray-900">
-                {formatCurrency(data?.creance || 0)}
+                {formatCurrency(data?.creance || 0, "CDF")}
               </p>
             </div>
           </div>
@@ -281,7 +305,7 @@ export default function Page() {
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">Dépenses</p>
               <p className="text-2xl font-semibold text-gray-900">
-                {formatCurrency(data?.depense || 0)}
+                {formatCurrency(data?.depense || 0, "USD")}
               </p>
             </div>
           </div>
@@ -398,6 +422,93 @@ export default function Page() {
               </p>
               <p className="text-2xl font-semibold text-gray-900">
                 {data?.produit_pre_peremption || 0}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style={{ fontSize: "25px", textAlign: "center" }} className="text-lg">
+        Rapport journalier
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+        {/* Nombre de Produits */}
+
+        {/* Chiffre d'Affaires */}
+        <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+          <div className="flex items-center">
+            <div className="p-3 rounded-full bg-green-100">
+              <svg
+                className="w-6 h-6 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"
+                />
+              </svg>
+            </div>
+            <div className="ml-4">
+              <p className="text-sm font-medium text-gray-600">Vente</p>
+              <p className="text-2xl font-semibold text-gray-900">
+                {formatCurrency(journalier?.payer || 0, "CDF")}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Créances */}
+        <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-yellow-500">
+          <div className="flex items-center">
+            <div className="p-3 rounded-full bg-yellow-100">
+              <svg
+                className="w-6 h-6 text-yellow-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div className="ml-4">
+              <p className="text-sm font-medium text-gray-600">Créances</p>
+              <p className="text-2xl font-semibold text-gray-900">
+                {formatCurrency(journalier?.creance || 0, "CDF")}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Dépenses */}
+        <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500">
+          <div className="flex items-center">
+            <div className="p-3 rounded-full bg-red-100">
+              <svg
+                className="w-6 h-6 text-red-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"
+                />
+              </svg>
+            </div>
+            <div className="ml-4">
+              <p className="text-sm font-medium text-gray-600">Dépenses</p>
+              <p className="text-2xl font-semibold text-gray-900">
+                {formatCurrency(journalier?.depense || 0, "CDF")}
               </p>
             </div>
           </div>

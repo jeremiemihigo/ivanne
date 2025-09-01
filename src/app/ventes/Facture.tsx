@@ -71,7 +71,7 @@ function Factures({ data, client, setData, resetData }: Props) {
     setData(data.filter((x) => x.produit !== produit));
   };
   return (
-    <main className="mx-auto min-w-[60%]  sm:pl-3">
+    <main className="mx-auto min-w-[50%]  sm:pl-3">
       {load ? (
         <Loading />
       ) : (
@@ -86,12 +86,6 @@ function Factures({ data, client, setData, resetData }: Props) {
           )}
           <section className="border-b-2 border-gray-200 pb-6 mb-6">
             <div className="flex justify-between items-start">
-              <div>
-                <h1 className="text-1xl font-bold text-gray-800 mb-2">
-                  IVANNE PHARMACIE
-                </h1>
-                <p className="text-sm text-gray-600 leading-relaxed"></p>
-              </div>
               <div className="text-right">
                 <h2 className="text-1xl font-semibold text-gray-800 mb-2">
                   FACTURE

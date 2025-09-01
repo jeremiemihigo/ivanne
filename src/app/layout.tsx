@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "IVANNE PHARMACIE",
+  title: "SAFI PHARMA PHARMACY",
   description:
     "Notre pharmacie vous accompagne chaque jour avec des médicaments, des conseils et des produits pour votre santé et votre bien-être.",
 };

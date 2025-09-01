@@ -5,5 +5,6 @@ export interface IProduit {
   prix_vente: number;
   alerte: number;
   unite: string;
+  reference: string;
   _id: string;
 }

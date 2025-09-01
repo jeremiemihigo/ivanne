@@ -24,6 +24,7 @@ interface IPrix {
   prix_achat: number;
   prix_vente: string;
   quantite: number;
+  information: string;
 }
 function VentePage() {
   const [clients, setAllClients] = React.useState<ICombo[]>([]);
@@ -34,6 +35,7 @@ function VentePage() {
     prix_achat: 0,
     prix_vente: "",
     quantite: 0,
+    information: "",
   });
   const [data, setData] = React.useState<IData[]>([]);
   const [produit, setProduit] = React.useState<string>("");
@@ -139,6 +141,7 @@ function VentePage() {
       prix_achat: 0,
       prix_vente: "",
       quantite: 0,
+      information: "",
     });
     setProduit("");
     setQuantiteVendu("");
@@ -148,6 +151,7 @@ function VentePage() {
       prix_achat: 0,
       prix_vente: "",
       quantite: 0,
+      information: "",
     });
     setClient("");
     setData([]);
@@ -157,7 +161,7 @@ function VentePage() {
   return (
     <Header title="Ventes">
       <div className="flex">
-        <main className="mx-auto min-w-[40%] ">
+        <main className="mx-auto min-w-[50%] ">
           <article className="page bg-white rounded-2xl shadow-xl no-print-shadow p-10 sm:p-14 mb-10 print:rounded-none">
             <div className="mt-2">{load && <Loading />}</div>
 
@@ -165,22 +169,6 @@ function VentePage() {
               <section className="mt-10 border border-slate-200 rounded-xl p-8 bg-gradient-to-br from-slate-50 to-white shadow-sm">
                 {produit && (
                   <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-blue-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                      Informations produit
-                    </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
                         <p className="text-sm font-medium text-blue-700 mb-1 flex items-center">
@@ -251,6 +239,11 @@ function VentePage() {
                           </div>
                         )}
                     </div>
+                    {payerproduit.information !== "" && (
+                      <p className="text-lg mt-3 font-medium text-gray-700">
+                        Réf : {payerproduit.information}
+                      </p>
+                    )}
                   </div>
                 )}
                 <div className="space-y-2">

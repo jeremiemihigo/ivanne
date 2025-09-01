@@ -1,5 +1,6 @@
-import { IStockRapport } from "@/app/Interfaces/Rapport";
+import { IStockIndividuel } from "@/app/Interfaces/Rapport";
 import { lien } from "@/app/Tools/Lien";
+import moment from "moment";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
@@ -16,9 +17,15 @@ export async function POST(request: NextRequest) {
     });
     const response = await result.json();
     if (result.status === 200) {
-      const donner: IStockRapport[] = response;
+      const donner: IStockIndividuel[] = response;
+      const donner1 = donner.map((index) => {
+        return {
+          ...index,
+          date: moment(index.date).format("DD-MM-YYYY"),
+        };
+      });
       return NextResponse.json({
-        data: donner,
+        data: donner1,
         status: 200,
       });
     }

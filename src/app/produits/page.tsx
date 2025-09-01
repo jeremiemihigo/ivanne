@@ -36,6 +36,7 @@ function PageProduit() {
 
   const keyColonnes = [
     { title: "ID", accessorKey: "idProduit" },
+    { title: "Référence", accessorKey: "reference" },
     { title: "Unite", accessorKey: "unite" },
     { title: "Designation", accessorKey: "produit" },
     { title: "Prix d'achat", accessorKey: "prix_achat" },

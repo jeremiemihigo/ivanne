@@ -24,6 +24,7 @@ interface Initiale {
   prix_vente: string;
   dateFabrication: string;
   date_peremption: string;
+  reference?: string;
 }
 type Props = {
   setDonner: React.Dispatch<React.SetStateAction<IApprovisionnement[]>>;
@@ -48,6 +49,7 @@ function Approvisionnement({ setDonner, donner }: Props) {
     prix_vente: "",
     dateFabrication: "",
     date_peremption: "",
+    reference: "",
   });
 
   const loadingData = async () => {
@@ -136,11 +138,12 @@ function Approvisionnement({ setDonner, donner }: Props) {
       [name]: value,
     });
   };
-  const input: IInput[] = [
+  const input1: IInput[] = [
     { placeholder: "Quantité", name: "quantite", type: "text" },
     { placeholder: "Prix d'achat unitaire", name: "prix_achat", type: "text" },
     { placeholder: "Prix de vente unitaire", name: "prix_vente", type: "text" },
-    { placeholder: "Numero Lot", name: "num_lot", type: "text" },
+  ];
+  const input2: IInput[] = [
     {
       placeholder: "Date de fabrication",
       name: "dateFabrication",
@@ -151,6 +154,7 @@ function Approvisionnement({ setDonner, donner }: Props) {
       name: "date_peremption",
       type: "date",
     },
+    { placeholder: "Numero Lot", name: "num_lot", type: "text" },
   ];
 
   const sendData = async () => {
@@ -198,32 +202,66 @@ function Approvisionnement({ setDonner, donner }: Props) {
       ) : (
         <>
           {" "}
-          <Label className="mb-2">Selectionner le Produit</Label>
-          <Combobox value={produit} setValue={setProduit} data={data} />
-          {input.map((index, key) => {
-            return (
-              <div key={key} className="mt-3">
-                <Label htmlFor={index.name} className="mb-2">
-                  {index.placeholder}
-                </Label>
-                <Input
-                  name={index.name}
-                  placeholder={index.placeholder}
-                  value={values[index.name as keyof Initiale]}
-                  onChange={(e) => onchange(e)}
-                  type={index.type}
-                />
-              </div>
-            );
-          })}
-          <Label htmlFor="Fournisseur" className="mb-2 mt-3">
-            Fournisseur
-          </Label>
-          <Combobox
-            value={fournisseur}
-            setValue={setFournisseur}
-            data={allfournisseur}
-          />
+          <div className="flex gap-3 w-full">
+            <div>
+              <Label className="mb-3 mt-3">Selectionner le Produit</Label>
+              <Combobox value={produit} setValue={setProduit} data={data} />
+              {input1.map((index, key) => {
+                return (
+                  <div key={key}>
+                    <Label className="mb-3 mt-3" htmlFor={index.name}>
+                      {index.placeholder}
+                    </Label>
+                    <Input
+                      name={index.name}
+                      placeholder={index.placeholder}
+                      value={values[index.name as keyof Initiale]}
+                      onChange={(e) => onchange(e)}
+                      type={index.type}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+            <div>
+              {input2.map((index, key) => {
+                return (
+                  <div key={key}>
+                    <Label className="mb-3 mt-3" htmlFor={index.name}>
+                      {index.placeholder}
+                    </Label>
+                    <Input
+                      name={index.name}
+                      placeholder={index.placeholder}
+                      value={values[index.name as keyof Initiale]}
+                      onChange={(e) => onchange(e)}
+                      type={index.type}
+                    />
+                  </div>
+                );
+              })}
+              <Label className="mb-3 mt-3" htmlFor="Fournisseur">
+                Fournisseur
+              </Label>
+              <Combobox
+                value={fournisseur}
+                setValue={setFournisseur}
+                data={allfournisseur}
+              />
+            </div>
+          </div>
+          <div>
+            <Label className="mb-3 mt-3" htmlFor="reference">
+              Emplacement dans la pharmacie
+            </Label>
+            <Input
+              name="reference"
+              placeholder="Emplacement dans la pharmacie"
+              value={values.reference}
+              onChange={(e) => onchange(e)}
+              type="text"
+            />
+          </div>
           <Button onClick={() => sendData()} className="w-full mt-3">
             Valider
           </Button>

@@ -230,6 +230,7 @@ function StockGeneral() {
           <table>
             <thead>
               <tr>
+                <th>Date</th>
                 <th>Produit</th>
                 <th>Stock Initial</th>
                 <th>Entrées</th>
@@ -242,6 +243,7 @@ function StockGeneral() {
                 .map(
                   (item, index) => `
                 <tr key="${index}">
+                  <td>${item.date}</td>
                   <td>${item.produit}</td>
                   <td>${item.initiale}</td>
                   <td>${item.entrer}</td>

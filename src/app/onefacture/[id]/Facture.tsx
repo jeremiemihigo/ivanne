@@ -1,11 +1,182 @@
 import { IFacture } from "@/app/Interfaces/IFacture";
 import { IShop } from "@/app/Interfaces/Shop";
+import jsPDF from "jspdf";
+import autoTable from "jspdf-autotable";
+import { Printer } from "lucide-react";
+import Image from "next/image";
+
+// Facture optimisée pour impression sur XPrinter
 
 type Props = {
   data: IFacture[];
   shop: IShop;
 };
+
 function Facture({ data, shop }: Props) {
+  const generatePDF = () => {
+    const doc = new jsPDF();
+
+    // Configuration de la page
+    const pageWidth = doc.internal.pageSize.width;
+    const margin = 20;
+
+    let yPosition = 20;
+
+    // Header
+    doc.setFontSize(20);
+    doc.setTextColor(0, 166, 81); // #00A651
+    doc.text(shop.shop, margin, yPosition);
+    yPosition += 10;
+
+    // Ajouter le logo si disponible
+    const logoWidth = 20;
+    const logoHeight = 20;
+
+    // Positionner le logo à droite du header
+    doc.addImage(
+      "/logo.png",
+      "PNG",
+      pageWidth - margin - logoWidth,
+      10,
+      logoWidth,
+      logoHeight
+    );
+
+    // Informations de l'entreprise
+    doc.setFontSize(10);
+    doc.setTextColor(100);
+    doc.text(`NIF: ${shop?.nif}`, margin, yPosition);
+    doc.text(`RCCM: ${shop?.rccm}`, margin + 60, yPosition);
+    yPosition += 5;
+    doc.text(`Adresse: ${shop?.adresse}`, margin, yPosition);
+    doc.text(`Tél: ${shop?.contact}`, margin + 60, yPosition);
+    yPosition += 10;
+
+    // Numéro de facture et date
+    doc.setFontSize(14);
+    doc.setTextColor(0, 166, 81);
+    doc.text(
+      `FACTURE N° ${data[0].idFacture}`,
+      pageWidth - margin - 60,
+      yPosition
+    );
+    yPosition += 5;
+    doc.setFontSize(10);
+    doc.setTextColor(100);
+    doc.text(
+      `Date: ${new Date(data[0].dateSave).toLocaleDateString("fr-FR")}`,
+      pageWidth - margin - 60,
+      yPosition
+    );
+    yPosition += 5;
+    doc.text(`Client: ${data[0].client}`, pageWidth - margin - 60, yPosition);
+    yPosition += 15;
+
+    // Titre de la section produits
+    doc.setFontSize(12);
+    doc.setTextColor(0, 166, 81);
+    doc.text("Détails des Produits", margin, yPosition);
+    yPosition += 10;
+
+    // Tableau des produits
+    const tableData = data.map((item, index) => [
+      index + 1,
+      item.produit,
+      item.quantite,
+      `${item.pu.toLocaleString()} CDF`,
+      `${(item.pu * item.quantite).toLocaleString()} CDF`,
+    ]);
+
+    autoTable(doc, {
+      startY: yPosition,
+      head: [["#", "Produit", "Quantité", "P.A.U", "Prix total"]],
+      body: tableData,
+      theme: "grid",
+      headStyles: {
+        fillColor: [0, 166, 81],
+        textColor: 255,
+        fontStyle: "bold",
+      },
+      styles: {
+        fontSize: 9,
+        cellPadding: 3,
+      },
+      columnStyles: {
+        0: { halign: "center" },
+        2: { halign: "center" },
+        3: { halign: "center" },
+        4: { halign: "right" },
+      },
+    });
+
+    yPosition =
+      (doc as jsPDF & { lastAutoTable: { finalY: number } }).lastAutoTable
+        .finalY + 10;
+
+    // Résumé de la facture
+    doc.setFontSize(12);
+    doc.setTextColor(0, 166, 81);
+    doc.text("Résumé de la Facture", pageWidth - margin - 60, yPosition);
+    yPosition += 10;
+
+    doc.setFontSize(10);
+    doc.setTextColor(100);
+    doc.text("Prix de vente total:", pageWidth - margin - 80, yPosition);
+    doc.text(`${data[0].prix_vente} CDF`, pageWidth - margin, yPosition, {
+      align: "right",
+    });
+    yPosition += 5;
+
+    doc.text("Total payé:", pageWidth - margin - 80, yPosition);
+    doc.setTextColor(0, 166, 81);
+    doc.text(
+      `${data[0].payer.toLocaleString()} CDF`,
+      pageWidth - margin,
+      yPosition,
+      { align: "right" }
+    );
+    yPosition += 5;
+
+    const reste = Math.max(0, data[0].prix_vente - data[0].payer);
+    doc.setFontSize(11);
+    doc.setTextColor(0, 166, 81);
+    doc.text("Reste à payer:", pageWidth - margin - 80, yPosition);
+    doc.text(`${reste.toLocaleString()} CDF`, pageWidth - margin, yPosition, {
+      align: "right",
+    });
+    yPosition += 5;
+
+    doc.text("Statut:", pageWidth - margin - 80, yPosition);
+    const statut = reste === 0 ? "SOLDE" : "NON SOLDE";
+    doc.text(statut, pageWidth - margin, yPosition, { align: "right" });
+    yPosition += 15;
+
+    // Enregistré par
+    doc.setFontSize(10);
+    doc.setTextColor(100);
+    doc.text("Enregistré par:", pageWidth - margin - 60, yPosition);
+    yPosition += 5;
+    doc.setFontSize(11);
+    doc.setTextColor(0);
+    doc.text(data[0].doby, pageWidth - margin - 60, yPosition);
+    yPosition += 15;
+
+    // Message de remerciement
+    doc.setFontSize(12);
+    doc.setTextColor(0, 166, 81);
+    doc.text("Merci pour votre confiance !", margin, yPosition);
+
+    // Créer un blob URL au lieu d'un data URI pour une meilleure compatibilité
+    const pdfBlob = doc.output("blob");
+    const pdfUrl = URL.createObjectURL(pdfBlob);
+    window.open(pdfUrl, "_blank");
+
+    // Nettoyer l'URL après un délai pour libérer la mémoire
+    setTimeout(() => {
+      URL.revokeObjectURL(pdfUrl);
+    }, 1000);
+  };
+
   return (
     <article className="page bg-white rounded-2xl shadow-2xl no-print-shadow p-8 sm:p-12 mb-10 print:rounded-none print:shadow-none max-w-4xl mx-auto print:h-screen print:overflow-hidden ">
       {/* Header Section */}
@@ -45,6 +216,16 @@ function Facture({ data, shop }: Props) {
             </div>
           </div>
           <div className="text-right ml-6 print:ml-4">
+            <div className="mb-3 print:mb-2">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={32}
+                height={32}
+                className="h-16 w-auto max-w-32 print:h-12 print:max-w-24 object-contain"
+              />
+            </div>
+
             <div className="bg-[#00A651] text-white p-3 rounded-lg print:p-2">
               <h2 className="text-lg font-bold mb-1 print:text-base">
                 FACTURE N° {data[0].idFacture}
@@ -220,6 +401,18 @@ function Facture({ data, shop }: Props) {
       <section>
         <p>Merci pour votre confiance !</p>
       </section>
+
+      {/* PDF Download Button */}
+      <section className="mt-6 print:hidden">
+        <button
+          onClick={generatePDF}
+          className="bg-[#00A651] hover:bg-[#008f45] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center"
+        >
+          <Printer />
+          <span className="ml-3">Imprimer la facture</span>
+        </button>
+      </section>
+
       {/* Footer */}
     </article>
   );

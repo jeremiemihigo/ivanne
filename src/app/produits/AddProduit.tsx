@@ -183,7 +183,6 @@ function AddProduit({ setDonner, donner, produit }: Props) {
         <Loading />
       ) : (
         <>
-          <Combobox value={unite} data={data} setValue={setUnite} />
           {input.map((index) => {
             return (
               <div className="mt-2 mb-2" key={index.id}>
@@ -197,6 +196,10 @@ function AddProduit({ setDonner, donner, produit }: Props) {
               </div>
             );
           })}
+          <div className="mt-2 mb-2">
+            <Label className="mb-3 mt-3">Unité</Label>
+            <Combobox value={unite} data={data} setValue={setUnite} />
+          </div>
 
           <div>
             <Button

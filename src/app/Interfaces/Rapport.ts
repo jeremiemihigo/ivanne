@@ -13,6 +13,7 @@ export interface IStockIndividuel {
   initiale: number;
   produit: number;
   solde: number;
+  date: number;
 }
 export interface IRapportCommerciale {
   idFacture: string;

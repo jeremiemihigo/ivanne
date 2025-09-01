@@ -16,6 +16,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
+import { usePathname } from "next/navigation";
 
 export function NavMain({
   items,
@@ -31,6 +32,7 @@ export function NavMain({
     }[];
   }[];
 }) {
+  const router = usePathname();
   return (
     <SidebarGroup>
       <SidebarMenu>
@@ -54,7 +56,15 @@ export function NavMain({
                   {item.items?.map((subItem) => (
                     <SidebarMenuSubItem key={subItem.title}>
                       <SidebarMenuSubButton asChild>
-                        <a href={subItem.url}>
+                        <a
+                          href={subItem.url}
+                          style={{
+                            background:
+                              router === `${subItem.url}` ? "green" : "white",
+                            color:
+                              router === `${subItem.url}` ? "white" : "black",
+                          }}
+                        >
                           <span>{subItem.title}</span>
                         </a>
                       </SidebarMenuSubButton>

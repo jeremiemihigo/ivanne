@@ -6,6 +6,7 @@ import {
   Frame,
   LayoutDashboard,
   PieChart,
+  Settings,
   SquareTerminal,
 } from "lucide-react";
 import * as React from "react";
@@ -35,10 +36,7 @@ const data = {
           title: "Stock individuel",
           url: "/stock_individuel",
         },
-        {
-          title: "Stock général",
-          url: "/stock_general",
-        },
+       
         {
           title: "Rapport commercial",
           url: "/rapport_commercial",
@@ -46,6 +44,38 @@ const data = {
         {
           title: "Modification stock",
           url: "/ajustage",
+        },
+      ],
+    },
+    {
+      title: "Autres",
+      url: "#",
+      icon: Settings,
+      isActive: true,
+      items: [
+        {
+          title: "Utilisateurs",
+          url: "/utilisateurs",
+        },
+        {
+          title: "Fournisseur/clients",
+          url: "/tiers",
+        },
+        {
+          title: "Synchronisation",
+          url: "/synchronisation",
+        },
+        {
+          title: "Configuration",
+          url: "/configuration",
+        },
+        {
+          title: "Taux de change",
+          url: "/taux",
+        },
+        {
+          title: "Dépense",
+          url: "/depense",
         },
       ],
     },

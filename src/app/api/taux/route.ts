@@ -1,15 +1,13 @@
-import { IApprovisionnement } from "@/app/Interfaces/IApprovisionnement";
 import { lien } from "@/app/Tools/Lien";
-import moment from "moment";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(request: NextRequest) {
+export async function PUT(request: NextRequest) {
   try {
     const token = request.cookies.get("access")?.value;
     const data = await request.json();
 
-    const res = await fetch(`${lien}/addapprovisionnement`, {
-      method: "POST",
+    const res = await fetch(`${lien}/updateTaux`, {
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
@@ -37,28 +35,20 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const token = request.cookies.get("access")?.value;
-    const result = await fetch(`${lien}/readApprovisionnement`, {
+    const result = await fetch(`${lien}/readTaux`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
       },
     });
-    const response: IApprovisionnement[] = await result.json();
-
+    const response = await result.json();
     if (result.status === 200) {
-      const resultat = response.map((item) => {
-        return {
-          ...item,
-          date_peremption: moment(item.date_peremption).format("DD MMMM YYYY"),
-          dateFabrication: moment(item.dateFabrication).format("DD MMMM YYYY"),
-          dateSave: moment(item.dateSave).format("DD MMMM YYYY"),
-        };
-      });
-      return NextResponse.json({
-        data: resultat,
+      const data = NextResponse.json({
+        data: response,
         status: 200,
       });
+      return data;
     }
   } catch (error) {
     console.log(error);

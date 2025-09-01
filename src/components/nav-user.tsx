@@ -1,23 +1,14 @@
 "use client";
 
-import {
-  ChevronsUpDown,
-  LogOut,
-  RefreshCcw,
-  Settings,
-  Users,
-  Users2,
-} from "lucide-react";
+import { ChevronsUpDown, LogOut } from "lucide-react";
 
 import { IUser } from "@/app/Interfaces/IUser";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
@@ -26,7 +17,6 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { toast } from "sonner";
@@ -118,36 +108,7 @@ export function NavUser() {
                 </div>
               </div>
             </DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <Link href="/utilisateurs">
-                <DropdownMenuItem>
-                  <Users />
-                  Utilisateurs
-                </DropdownMenuItem>
-              </Link>
-              <Link href="/tiers">
-                <DropdownMenuItem>
-                  <Users2 />
-                  Fournisseurs et clients
-                </DropdownMenuItem>
-              </Link>
-              <Link href="/synchronisation">
-                <DropdownMenuItem>
-                  <RefreshCcw />
-                  Synchronisation
-                </DropdownMenuItem>
-              </Link>
-              <Link href="/configuration">
-                <DropdownMenuItem>
-                  <Settings />
-                  Configuration
-                </DropdownMenuItem>
-              </Link>
-            </DropdownMenuGroup>
-            <DropdownMenuSeparator />
 
-            <DropdownMenuSeparator />
             <DropdownMenuItem onClick={() => Deconnexion()}>
               <LogOut />
               Log out
