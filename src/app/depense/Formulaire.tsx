@@ -31,16 +31,16 @@ function Formulaire({ data, setData }: Props) {
       const result = await res.json();
       if (result.status === 200) {
         setData([result.data, ...data]);
-        toast("Dépense enregistrée avec succès");
+        toast("Dépense enregistrée avec succès", { duration: 10000 });
         setInitiale({
           motif: "",
           montant: "",
         });
       } else {
-        toast(JSON.stringify(result.data));
+        toast(JSON.stringify(result.message), { duration: 10000 });
       }
     } catch (error) {
-      toast(JSON.stringify(error));
+      toast(JSON.stringify(error), { duration: 10000 });
     }
   };
   return (

@@ -1,4 +1,4 @@
-import { IDepense } from "@/app/Interfaces/IOther";
+import { IPerte } from "@/app/Interfaces/IOther";
 import { lien } from "@/app/Tools/Lien";
 import moment from "moment";
 import { NextRequest, NextResponse } from "next/server";
@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
     const token = request.cookies.get("access")?.value;
     const data = await request.json();
 
-    const res = await fetch(`${lien}/addDepense`, {
+    const res = await fetch(`${lien}/addPerte`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -17,11 +17,11 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify(data),
     });
     const result = await res.json();
+
     if (res.status === 200) {
       const donner = {
-        ...result,
-        dateSave: moment(result.dateSave).format("dddd DD-MM-YYYY"),
-        montant: result.montant + " CDF",
+        ...result[0],
+        date: moment(result.date).format("dddd DD-MM-YYYY"),
       };
       const reponse = NextResponse.json({
         data: donner,
@@ -44,7 +44,7 @@ export async function DELETE(request: NextRequest) {
     const token = request.cookies.get("access")?.value;
     const data = await request.json();
 
-    const res = await fetch(`${lien}/deleteDepense`, {
+    const res = await fetch(`${lien}/deletePerte`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -55,9 +55,8 @@ export async function DELETE(request: NextRequest) {
     const result = await res.json();
     if (res.status === 200) {
       const donner = {
-        ...result,
-        dateSave: moment(result.dateSave).format("dddd DD-MM-YYYY"),
-        montant: result.montant + " CDF",
+        ...result[0],
+        date: moment(result.date).format("dddd DD-MM-YYYY"),
       };
       const reponse = NextResponse.json({
         data: donner,
@@ -78,7 +77,7 @@ export async function DELETE(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const token = request.cookies.get("access")?.value;
-    const result = await fetch(`${lien}/readDepense`, {
+    const result = await fetch(`${lien}/readPerte`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -86,12 +85,12 @@ export async function GET(request: NextRequest) {
       },
     });
     const response = await result.json();
+    console.log(response);
     if (result.status === 200) {
-      const donner = response.map((index: IDepense) => {
+      const donner = response.map((index: IPerte) => {
         return {
           ...index,
-          dateSave: moment(index.dateSave).format("dddd DD-MM-YYYY"),
-          montant: index.montant + " CDF",
+          date: moment(index.date).format("dddd DD-MM-YYYY"),
         };
       });
 

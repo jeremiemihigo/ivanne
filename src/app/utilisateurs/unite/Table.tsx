@@ -55,19 +55,19 @@ function TableUnite() {
 
   return (
     <div>
-      <div className="mb-3">
-        <Popup
-          title="Ajoutez une nouvelle unité"
-          component={<AddUnite />}
-          btnname="Ajoutez une nouvelle unité"
-        />
-      </div>
       <div>
         <Tableau_set_Header
           data={data}
           columns={columns1}
           customer_id="unite"
           search_placeholder="Filter by unite"
+          childrenbtn={
+            <Popup
+              title="Ajoutez une nouvelle unité"
+              component={<AddUnite />}
+              btnname="Ajoutez une nouvelle unité"
+            />
+          }
         />
       </div>
     </div>

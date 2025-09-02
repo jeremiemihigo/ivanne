@@ -1,5 +1,6 @@
 "use client";
 import { IUser } from "@/app/Interfaces/IUser";
+import Loading from "@/app/Tools/Loading";
 import Popup from "@/app/Tools/Popup";
 import Tableau_set_Header from "@/app/Tools/Tab_set_Header";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,7 @@ import Formulaire from "./Formulaire";
 
 function Utilisateurs() {
   const [data, setData] = React.useState<IUser[]>([]);
+  const [load, setLoad] = React.useState<boolean>(true);
   const loadingData = async () => {
     const result = await fetch("/api/utilisateur", {
       method: "GET",
@@ -25,7 +27,8 @@ function Utilisateurs() {
   };
   React.useEffect(() => {
     const initialize = async () => {
-      loadingData();
+      await loadingData();
+      setLoad(false);
     };
     initialize();
   }, []);
@@ -47,6 +50,7 @@ function Utilisateurs() {
   const keyColonnes = [
     { title: "username", accessorKey: "username" },
     { title: "Name", accessorKey: "name" },
+    { title: "Fonction", accessorKey: "fonction" },
     { title: "Actif", accessorKey: "actif" },
   ];
 
@@ -81,26 +85,36 @@ function Utilisateurs() {
           </Button>
         );
       },
-      cell: () => <Button>Unbloquer</Button>,
+      cell: ({ row }) => (
+        <Button>
+          {row.original.actif === "Actif" ? "Bloquer" : "Débloquer"}
+        </Button>
+      ),
     },
   ];
   return (
     <div>
-      <div className="mb-3">
-        <Popup
-          title="Ajoutez un nouveau utilisateur"
-          component={<Formulaire />}
-          btnname="Ajoutez un nouveau utilisateur"
-        />
-      </div>
-      <div>
-        <Tableau_set_Header
-          data={data}
-          columns={[...columns1, ...columns2]}
-          customer_id="username"
-          search_placeholder="Filter by username"
-        />
-      </div>
+      {load ? (
+        <Loading />
+      ) : (
+        <>
+          <div>
+            <Tableau_set_Header
+              data={data}
+              columns={[...columns1, ...columns2]}
+              customer_id="username"
+              search_placeholder="Filter by username"
+              childrenbtn={
+                <Popup
+                  title="Ajoutez un nouveau utilisateur"
+                  component={<Formulaire data={data} setData={setData} />}
+                  btnname="Ajoutez un nouveau utilisateur"
+                />
+              }
+            />
+          </div>
+        </>
+      )}
     </div>
   );
 }

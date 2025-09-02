@@ -5,7 +5,9 @@ import {
   Factory,
   Frame,
   LayoutDashboard,
+  LucideGhost,
   PieChart,
+  Send,
   Settings,
   SquareTerminal,
 } from "lucide-react";
@@ -36,10 +38,18 @@ const data = {
           title: "Stock individuel",
           url: "/stock_individuel",
         },
-       
+
         {
           title: "Rapport commercial",
           url: "/rapport_commercial",
+        },
+        {
+          title: "Inventaire actuel",
+          url: "/inventaire_actuel",
+        },
+        {
+          title: "Produits en rupture de stock ou en seuil critique",
+          url: "/produit_rupture_stock",
         },
         {
           title: "Modification stock",
@@ -106,11 +116,25 @@ const data = {
       url: "/ventes",
       icon: PieChart,
     },
-
     {
-      name: "Factures",
+      name: "Factures de vente",
       url: "/facture",
       icon: Factory,
+    },
+    {
+      name: "Factures proforma",
+      url: "/proforma_liste",
+      icon: Factory,
+    },
+    {
+      name: "Pertes",
+      url: "/pertes",
+      icon: LucideGhost,
+    },
+    {
+      name: "Transferts",
+      url: "/transferts",
+      icon: Send,
     },
   ],
 };

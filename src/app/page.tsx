@@ -23,7 +23,7 @@ const SalesChart = ({ data }: { data: IDataGraphique[] }) => {
     return (
       <div className="bg-white rounded-lg shadow-md p-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">
-          Évolution des Ventes par Mois
+          Chiffre d&apos;affaire
         </h3>
         <div className="flex items-center justify-center h-64 text-gray-500">
           Aucune donnée de vente disponible
@@ -248,7 +248,7 @@ export default function Page() {
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">
-                Chiffre d&apos;Affaires
+                Valeur d’inventaire
               </p>
               <p className="text-2xl font-semibold text-gray-900">
                 {formatCurrency(data?.chiffre_affaire || 0, "USD")}
@@ -276,7 +276,9 @@ export default function Page() {
               </svg>
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-600">Créances</p>
+              <p className="text-sm font-medium text-gray-600">
+                Créances clients
+              </p>
               <p className="text-2xl font-semibold text-gray-900">
                 {formatCurrency(data?.creance || 0, "CDF")}
               </p>
@@ -509,7 +511,9 @@ export default function Page() {
               </svg>
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-600">Créances</p>
+              <p className="text-sm font-medium text-gray-600">
+                Créances clients
+              </p>
               <p className="text-2xl font-semibold text-gray-900">
                 {formatCurrency(journalier?.creance || 0, "CDF")}
               </p>

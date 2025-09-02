@@ -1,8 +1,7 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import React from "react";
-import Loading from "../Tools/Loading";
+import Loading from "../../Tools/Loading";
 
 interface IData {
   produit: string;
@@ -24,7 +23,6 @@ type TMessage = {
 };
 
 function Factures({ data, client, setData, resetData }: Props) {
-  const [payer, setPayer] = React.useState<number>(0);
   const [load, setLoad] = React.useState<boolean>(false);
   const [message, setMessage] = React.useState<TMessage>({
     type: "",
@@ -34,16 +32,14 @@ function Factures({ data, client, setData, resetData }: Props) {
     e.preventDefault();
     try {
       setLoad(true);
-      const res = await fetch("/api/vente", {
+      const res = await fetch("/api/proforma", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
           products: data,
-          payer,
           client,
-          facture: "",
           prix_vente: data.reduce(
             (sum, item) => sum + (item.prix_vente_total || 0),
             0
@@ -57,7 +53,6 @@ function Factures({ data, client, setData, resetData }: Props) {
           message: "Opération de vente effectuée",
         });
         setLoad(false);
-        setPayer(0);
         resetData();
       } else {
         setMessage({ type: "destructive", message: response.data });
@@ -169,27 +164,10 @@ function Factures({ data, client, setData, resetData }: Props) {
                         CDF
                       </td>
                     </tr>
-                    <tr className="border-b border-gray-200">
-                      <td className="py-2 text-gray-700 font-medium">
-                        Total payé:
-                      </td>
-                      <td className="py-2 text-right text-gray-700 font-semibold">
-                        {payer.toLocaleString()} CDF
-                      </td>
-                    </tr>
+
                     <tr className="bg-gray-100">
                       <td className="py-3 text-gray-800 font-bold">
                         Reste à payer:
-                      </td>
-                      <td className="py-3 text-right text-gray-800 font-bold">
-                        {Math.max(
-                          0,
-                          data.reduce(
-                            (sum, item) => sum + (item.prix_vente_total || 0),
-                            0
-                          ) - payer
-                        ).toLocaleString()}{" "}
-                        CDF
                       </td>
                     </tr>
                   </tbody>
@@ -201,29 +179,9 @@ function Factures({ data, client, setData, resetData }: Props) {
           {/* Payment Section */}
           <section className="border-t-2 border-gray-200 pt-6">
             <div className="max-w-md mx-auto">
-              <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Montant payé (CDF)
-                </label>
-                <Input
-                  type="number"
-                  placeholder="Entrez le montant payé"
-                  value={payer || ""}
-                  onChange={(e) => setPayer(parseFloat(e.target.value) || 0)}
-                  className="w-full"
-                />
-              </div>
               <Button
                 onClick={(e) => sendData(e)}
                 className="w-full  text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-                disabled={
-                  client === "anonyme" &&
-                  payer <
-                    data.reduce(
-                      (sum, item) => sum + (parseInt(item.prix_vente) || 0),
-                      0
-                    )
-                }
               >
                 Valider la facture
               </Button>

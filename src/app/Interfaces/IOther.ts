@@ -18,3 +18,14 @@ export interface IDepense {
   deleted_by?: string;
   motif_delete?: string;
 }
+export interface IPerte {
+  motif: string;
+  date: number;
+  doby: string;
+  quantite: number;
+  actif: boolean;
+  _id: string;
+  produit: string;
+  deleteby?: string;
+  motif_deleted?: string;
+}

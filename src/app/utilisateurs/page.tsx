@@ -8,10 +8,10 @@ function Utilisateur() {
   return (
     <Header title="Parametrage">
       <div className="flex gap-3">
-        <div>
+        <div style={{ width: "50%" }}>
           <Utilisateurs />
         </div>
-        <div>
+        <div style={{ width: "50%" }}>
           <TableUnite />
         </div>
       </div>

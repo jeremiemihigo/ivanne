@@ -1,3 +1,4 @@
+import { IUser } from "@/app/Interfaces/IUser";
 import { lien } from "@/app/Tools/Lien";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -15,19 +16,11 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({ data }),
     });
     const result = await res.json();
-    if (result.status === 200) {
-      const reponse = NextResponse.json({
-        message: "Done",
-        status: 200,
-      });
-      return reponse;
-    } else {
-      const reponse = NextResponse.json({
-        message: result.data,
-        status: 201,
-      });
-      return reponse;
-    }
+    const reponse = NextResponse.json({
+      data: result,
+      status: res.status,
+    });
+    return reponse;
   } catch (error) {
     console.log(error);
   }
@@ -44,8 +37,14 @@ export async function GET(request: NextRequest) {
     });
     const response = await result.json();
     if (result.status === 200) {
+      const formating = response.map((index: IUser) => {
+        return {
+          ...index,
+          actif: index.actif ? "Actif" : "Bloquer",
+        };
+      });
       const data = NextResponse.json({
-        data: response,
+        data: formating,
         status: 200,
       });
       return data;
