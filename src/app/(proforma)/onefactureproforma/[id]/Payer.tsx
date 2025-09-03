@@ -58,6 +58,7 @@ function Payer({ montant, client, data }: Props) {
       // Reset form after successful payment
       setSomme(0);
     } catch (error) {
+      console.log(error);
       toast.error("Erreur lors de l'enregistrement du paiement");
     } finally {
       setIsLoading(false);

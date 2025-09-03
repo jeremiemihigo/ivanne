@@ -25,3 +25,20 @@ export interface IRapportCommerciale {
   benefice: number;
   client: string;
 }
+export interface IventaireActuel {
+  idProduit: string;
+  designation: string;
+  unite: string;
+  quantite: number;
+  prix_achat_unitaire: number;
+  valeur_achat_total: number;
+  prix_vente_unitaire: number;
+  valeur_vente_total: number;
+}
+export interface IProduitRupture {
+  idProduit: string;
+  designation: string;
+  unite: string;
+  quantite: number;
+  mininum: number;
+}
