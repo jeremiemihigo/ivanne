@@ -6,10 +6,12 @@ import Tableau_set_Header from "@/app/Tools/Tab_set_Header";
 import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
+import { useRouter } from "next/navigation";
 import React from "react";
 import Formulaire from "./Formulaire";
 
 function Utilisateurs() {
+  const router = useRouter();
   const [data, setData] = React.useState<IUser[]>([]);
   const [load, setLoad] = React.useState<boolean>(true);
   const loadingData = async () => {
@@ -32,21 +34,7 @@ function Utilisateurs() {
     };
     initialize();
   }, []);
-  // const bloquerorunbloquer = async (id: string, valeur: boolean) => {
-  //   try {
-  //     const res = await fetch("/api/utilisateur", {
-  //       method: "PUT",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({ id, valeur: !valeur }),
-  //     });
-  //     const result = await res.json();
-  //     console.log(result);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+
   const keyColonnes = [
     { title: "username", accessorKey: "username" },
     { title: "Name", accessorKey: "name" },
@@ -86,8 +74,8 @@ function Utilisateurs() {
         );
       },
       cell: ({ row }) => (
-        <Button>
-          {row.original.actif === "Actif" ? "Bloquer" : "Débloquer"}
+        <Button onClick={() => router.push(`/permissions/${row.original.id}`)}>
+          Permissions
         </Button>
       ),
     },

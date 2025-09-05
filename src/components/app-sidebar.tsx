@@ -2,12 +2,12 @@
 
 import {
   DatabaseBackup,
+  DollarSign,
   Factory,
   Frame,
   LayoutDashboard,
   LucideGhost,
   PieChart,
-  Send,
   Settings,
   SquareTerminal,
 } from "lucide-react";
@@ -89,6 +89,38 @@ const data = {
         },
       ],
     },
+    {
+      title: "Caisse",
+      url: "#",
+      icon: Settings,
+      isActive: true,
+      items: [
+        {
+          title: "Utilisateurs",
+          url: "/utilisateurs",
+        },
+        {
+          title: "Fournisseur/clients",
+          url: "/tiers",
+        },
+        {
+          title: "Synchronisation",
+          url: "/synchronisation",
+        },
+        {
+          title: "Configuration",
+          url: "/configuration",
+        },
+        {
+          title: "Taux de change",
+          url: "/taux",
+        },
+        {
+          title: "Dépense",
+          url: "/depense",
+        },
+      ],
+    },
   ],
   projects: [
     {
@@ -132,9 +164,9 @@ const data = {
       icon: LucideGhost,
     },
     {
-      name: "Transferts",
-      url: "/transferts",
-      icon: Send,
+      name: "Caisse",
+      url: "/caisse",
+      icon: DollarSign,
     },
   ],
 };

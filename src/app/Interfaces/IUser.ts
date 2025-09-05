@@ -5,4 +5,5 @@ export interface IUser {
   actif: boolean | "Actif" | "Bloquer";
   id: string;
   connect: boolean;
+  permission?: string[];
 }

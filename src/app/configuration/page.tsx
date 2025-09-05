@@ -42,7 +42,6 @@ function Configuration() {
       });
     }
   };
-
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
@@ -57,7 +56,6 @@ function Configuration() {
       reader.readAsDataURL(file);
     }
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
@@ -78,7 +76,6 @@ function Configuration() {
       toast.error("Erreur lors de la mise à jour");
     }
   };
-
   const submitFormWithLogo = async (logoString: string) => {
     try {
       const submitData = {
@@ -106,7 +103,6 @@ function Configuration() {
       toast.error("Erreur lors de la mise à jour");
     }
   };
-
   const handleCancel = () => {
     setFormData(data);
     setIsEditing(false);
@@ -117,7 +113,6 @@ function Configuration() {
       setPreviewUrl(null);
     }
   };
-
   React.useEffect(() => {
     const initialize = async () => {
       await loadingData();

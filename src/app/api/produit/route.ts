@@ -18,6 +18,7 @@ export async function POST(request: NextRequest) {
     if (res.status === 200) {
       const reponse = NextResponse.json({
         data: result,
+
         status: 200,
       });
       return reponse;

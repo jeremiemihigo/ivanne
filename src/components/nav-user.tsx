@@ -39,7 +39,7 @@ export function NavUser() {
         if (response.status === 200) {
           setUser(response.data);
         }
-        if (response.data === "token expired") {
+        if (response.data === "logout") {
           router.push(`/login`);
         }
       } catch (error) {

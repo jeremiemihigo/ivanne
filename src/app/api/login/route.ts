@@ -43,9 +43,10 @@ export async function POST(request: Request) {
 //Lecture de l'agent
 export async function GET(request: NextRequest) {
   const token = request.cookies.get("access")?.value;
+
   if (!token) {
     const response = NextResponse.json({
-      data: "token expired",
+      data: "logout",
       status: 201,
     });
     return response;
