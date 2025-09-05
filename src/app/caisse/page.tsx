@@ -36,6 +36,7 @@ function Caisse() {
     };
     initialize();
   }, []);
+  console.log(data);
   return (
     <Header title="Caisse">
       {load ? (

@@ -128,7 +128,7 @@ function Permissions({ params }: OneFactureProps) {
             <div className="mb-6 p-4 border rounded-lg bg-card">
               <div className="flex justify-between items-start mb-3">
                 <h2 className="text-lg font-semibold">
-                  Informations de l'utilisateur
+                  Informations de l&apos;utilisateur
                 </h2>
                 <Button
                   onClick={toggleUserStatus}
@@ -160,7 +160,7 @@ function Permissions({ params }: OneFactureProps) {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">
-                    Nom d'utilisateur
+                    Nom d&apos;utilisateur
                   </p>
                   <p className="font-medium">{user.username}</p>
                 </div>
@@ -236,7 +236,7 @@ function Permissions({ params }: OneFactureProps) {
           {/* No results message */}
           {searchTerm && filteredPermissions.length === 0 && (
             <div className="text-center py-8 text-muted-foreground">
-              <p>Aucune permission trouvée pour "{searchTerm}"</p>
+              <p>Aucune permission trouvée pour {searchTerm}</p>
             </div>
           )}
         </>
