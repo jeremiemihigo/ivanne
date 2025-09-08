@@ -25,9 +25,10 @@ type Props = {
   value: string;
   setValue: (isOpen: string) => void;
   data: ICombo[];
+  title?: string;
 };
 
-export function Combobox({ value, data, setValue }: Props) {
+export function Combobox({ value, data, setValue, title }: Props) {
   const [open, setOpen] = React.useState<boolean>(false);
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -40,6 +41,8 @@ export function Combobox({ value, data, setValue }: Props) {
         >
           {value
             ? data.find((framework) => framework.value === value)?.label
+            : title
+            ? title
             : "Select one..."}
           <ChevronsUpDown className="opacity-50" />
         </Button>

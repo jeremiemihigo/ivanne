@@ -1,6 +1,4 @@
-import { ICaisse } from "@/app/Interfaces/ICaisse";
 import { lien } from "@/app/Tools/Lien";
-import moment from "moment";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
@@ -8,7 +6,7 @@ export async function POST(request: NextRequest) {
     const token = request.cookies.get("access")?.value;
     const data = await request.json();
 
-    const res = await fetch(`${lien}/addCaisse`, {
+    const res = await fetch(`${lien}/fermetureCaisse`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +23,7 @@ export async function POST(request: NextRequest) {
       return reponse;
     } else {
       const reponse = NextResponse.json({
-        message: result.data,
+        message: result,
         status: 201,
       });
       return reponse;
@@ -37,7 +35,7 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const token = request.cookies.get("access")?.value;
-    const result = await fetch(`${lien}/readCaisses`, {
+    const result = await fetch(`${lien}/rapportAjourdhui_Vente`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -45,16 +43,9 @@ export async function GET(request: NextRequest) {
       },
     });
     const response = await result.json();
-
     if (result.status === 200) {
-      const resultat = response.map((item: ICaisse) => {
-        return {
-          ...item,
-          updatedAt: moment(item.updatedAt).format("DD MMMM YYYY à HH:MM"),
-        };
-      });
       return NextResponse.json({
-        data: resultat,
+        data: response,
         status: 200,
       });
     } else {

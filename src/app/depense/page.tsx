@@ -144,7 +144,7 @@ function PageStock() {
   ];
 
   return (
-    <Header title="Stock">
+    <Header title="Sortie financière">
       {load && <Loading />}
 
       {!load && (
@@ -156,8 +156,8 @@ function PageStock() {
             search_placeholder="Filter by Motif"
             childrenbtn={
               <Popup
-                btnname="Ajoutez une dépense"
-                title="Ajoutez une dépense"
+                btnname="Ajoutez une sortie"
+                title="Ajoutez une sortie"
                 component={<Formulaire setData={setData} data={data} />}
               />
             }

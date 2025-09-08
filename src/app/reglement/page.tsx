@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
-import { ArrowUpDown, Printer, Trash2 } from "lucide-react";
+import { ArrowUpDown, Plus, Printer, Trash2 } from "lucide-react";
 import moment from "moment";
 
 import {
@@ -14,38 +14,30 @@ import {
 import { useRouter } from "next/navigation";
 import React from "react";
 import Header from "../Header/Header";
-import { IFacture } from "../Interfaces/IFacture";
+import { IReglement } from "../Interfaces/ICaisse";
 import Loading from "../Tools/Loading";
 import Popup from "../Tools/Popup";
 import Tableau_set_Header from "../Tools/Tab_set_Header";
+import AddReglement from "./AddReglement";
 import Delete from "./Delete";
 
-function Factures() {
-  const [data, setData] = React.useState<IFacture[]>([]);
+function Reglement() {
+  const [data, setData] = React.useState<IReglement[]>([]);
   const [load, setLoad] = React.useState<boolean>(true);
   const router = useRouter();
-  const loadingFactures = async () => {
+  const loadingReglement = async () => {
     try {
-      const res = await fetch("/api/facture", {
-        method: "POST",
+      const res = await fetch("/api/caisse/reglement", {
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
       });
       const response = await res.json();
+      console.log(response);
       if (response.status === 200) {
-        const donner: IFacture[] = response.data;
-        const returnData = donner.map((index) => {
-          return {
-            ...index,
-            dateSave: moment(index.dateSave).format("dddd DD-MM-YYYY"),
-            status:
-              index.prix_vente > index.payer ? "Non soldé" : "Facture soldé",
-            prix_vente: index.prix_vente,
-            payer: index.payer,
-          };
-        });
-        setData(returnData);
+        const donner: IReglement[] = response.data;
+        setData(donner);
       }
     } catch (error) {
       console.log(error);
@@ -53,7 +45,7 @@ function Factures() {
   };
   React.useEffect(() => {
     const initialize = async () => {
-      await loadingFactures();
+      await loadingReglement();
       setLoad(false);
     };
     initialize();
@@ -62,13 +54,16 @@ function Factures() {
   const keyColonnes = [
     { title: "Num fact", accessorKey: "idFacture" },
     { title: "Client", accessorKey: "client" },
-    { title: "Prix de vente", accessorKey: "prix_vente" },
-    { title: "Payer", accessorKey: "payer" },
+    { title: "montant", accessorKey: "montant" },
     { title: "Date d'enregistrement", accessorKey: "dateSave" },
-    { title: "Effectué par", accessorKey: "doby" },
+    { title: "Effectué par", accessorKey: "saved_by" },
   ];
 
-  const columns1: ColumnDef<IFacture>[] = keyColonnes.map((cle) => {
+  const readFacture = (row: IReglement) => {
+    router.push(`/onefacture/${row.idFacture}`);
+  };
+
+  const columns1: ColumnDef<IReglement>[] = keyColonnes.map((cle) => {
     return {
       accessorKey: cle.accessorKey,
       header: ({ column }) => {
@@ -85,40 +80,36 @@ function Factures() {
       cell: ({ row }) => <div>{row.getValue(cle.accessorKey)}</div>,
     };
   });
-  const columns2: ColumnDef<IFacture>[] = [
+  const columns2: ColumnDef<IReglement>[] = [
     {
-      accessorKey: "status_facture",
+      accessorKey: "status_reglement",
       header: ({ column }) => {
         return (
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
           >
-            Status_facture
+            Status_reglement
             <ArrowUpDown />
           </Button>
         );
       },
       cell: ({ row }) => (
         <>
-          {row.original.status_facture ? (
-            <p className={row.original.status_facture ? "encours" : "bloquer"}>
-              {row.original.status_facture ? "Actif" : "Facture Supprimée"}
+          {row.original.actif ? (
+            <p className={row.original.actif ? "encours" : "bloquer"}>
+              {row.original.actif ? "Actif" : "Règlement Supprimé"}
             </p>
           ) : (
             <Dialog>
               <DialogTrigger asChild>
-                <p
-                  className={
-                    row.original.status_facture ? "encours" : "bloquer"
-                  }
-                >
-                  {row.original.status_facture ? "Actif" : "Facture Supprimée"}
+                <p className={row.original.actif ? "encours" : "bloquer"}>
+                  {row.original.actif ? "Actif" : "Reglement Supprimé"}
                 </p>
               </DialogTrigger>
               <DialogContent>
                 <DialogTitle>Motif de suppression</DialogTitle>
-                <p>{row.original?.motif_suppression}</p>
+                <p>{row.original?.motif_deleted}</p>
 
                 <p className="deleteby">
                   Supprimer par : {row.original.deletedby}
@@ -136,29 +127,7 @@ function Factures() {
         </>
       ),
     },
-    {
-      accessorKey: "statut_payement",
-      header: ({ column }) => {
-        return (
-          <Button
-            variant="ghost"
-            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          >
-            Statut payement
-            <ArrowUpDown />
-          </Button>
-        );
-      },
-      cell: ({ row }) => (
-        <p
-          className={
-            row.original.status === "Non soldé" ? "nonsolder" : "solder"
-          }
-        >
-          {row.original.status}
-        </p>
-      ),
-    },
+
     {
       accessorKey: "Option",
       header: ({ column }) => {
@@ -175,15 +144,15 @@ function Factures() {
       cell: ({ row }) => (
         <div className="flex gap-2">
           <Printer onClick={() => readFacture(row.original)} />
-          {row.original.status_facture && (
+          {row.original.actif && (
             <Popup
               btnname={<Trash2 />}
-              title="Suppression de la facture du client"
+              title="Suppression du règlement"
               component={
                 <Delete
-                  facture={row.original.idFacture}
-                  setDonner={setData}
                   donner={data}
+                  setDonner={setData}
+                  reglement={row.original.id}
                 />
               }
             />
@@ -193,12 +162,8 @@ function Factures() {
     },
   ];
 
-  const readFacture = (row: IFacture) => {
-    router.push(`/onefacture/${row.idFacture}`);
-  };
-
   return (
-    <Header title="Factures">
+    <Header title="Règlement client">
       <main className="mx-auto max-w-[400mm] p-6 sm:p-10">
         {load ? (
           <Loading />
@@ -206,8 +171,19 @@ function Factures() {
           <Tableau_set_Header
             data={data}
             columns={[...columns1, ...columns2]}
-            customer_id="idFacture"
-            search_placeholder="Filter by ID facture"
+            customer_id="client"
+            search_placeholder="Filter by Client"
+            childrenbtn={
+              <Popup
+                btnname={
+                  <>
+                    <Plus /> Ajoutez un règlement
+                  </>
+                }
+                title="Ajoutez un règlement"
+                component={<AddReglement data={data} setData={setData} />}
+              />
+            }
           />
         )}
       </main>
@@ -215,4 +191,4 @@ function Factures() {
   );
 }
 
-export default Factures;
+export default Reglement;

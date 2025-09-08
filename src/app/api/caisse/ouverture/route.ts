@@ -7,8 +7,7 @@ export async function POST(request: NextRequest) {
   try {
     const token = request.cookies.get("access")?.value;
     const data = await request.json();
-
-    const res = await fetch(`${lien}/addCaisse`, {
+    const res = await fetch(`${lien}/ouvertureCaisse`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +24,7 @@ export async function POST(request: NextRequest) {
       return reponse;
     } else {
       const reponse = NextResponse.json({
-        message: result.data,
+        message: result,
         status: 201,
       });
       return reponse;
@@ -50,7 +49,7 @@ export async function GET(request: NextRequest) {
       const resultat = response.map((item: ICaisse) => {
         return {
           ...item,
-          updatedAt: moment(item.updatedAt).format("DD MMMM YYYY à HH:MM"),
+          updatedAt: moment(item.updatedAt).format("DD MMMM YYYY"),
         };
       });
       return NextResponse.json({

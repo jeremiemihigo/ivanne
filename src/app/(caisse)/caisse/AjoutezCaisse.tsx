@@ -3,9 +3,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import React from "react";
 import { toast } from "sonner";
-import { IUser } from "../Interfaces/IUser";
-import { Combobox } from "../Tools/Combobox";
-import Loading from "../Tools/Loading";
+import { IUser } from "../../Interfaces/IUser";
+import { Combobox } from "../../Tools/Combobox";
+import Loading from "../../Tools/Loading";
 
 function AjoutezCaisse() {
   //designation, agent
@@ -76,7 +76,7 @@ function AjoutezCaisse() {
               data={data.map((x) => {
                 return {
                   label: x.name,
-                  value: x.id,
+                  value: x.username,
                 };
               })}
             />

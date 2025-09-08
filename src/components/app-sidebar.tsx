@@ -29,6 +29,27 @@ import { TeamSwitcher } from "./team-switcher";
 const data = {
   navMain: [
     {
+      title: "Caisse",
+      url: "#",
+      icon: DollarSign,
+      isActive: true,
+      items: [
+        {
+          title: "Caisse",
+          url: "/caisse",
+        },
+
+        {
+          title: "Règlement client",
+          url: "/reglement",
+        },
+        {
+          title: "Sortie",
+          url: "/depense",
+        },
+      ],
+    },
+    {
       title: "Rapport",
       url: "#",
       icon: SquareTerminal,
@@ -83,42 +104,6 @@ const data = {
           title: "Taux de change",
           url: "/taux",
         },
-        {
-          title: "Dépense",
-          url: "/depense",
-        },
-      ],
-    },
-    {
-      title: "Caisse",
-      url: "#",
-      icon: Settings,
-      isActive: true,
-      items: [
-        {
-          title: "Utilisateurs",
-          url: "/utilisateurs",
-        },
-        {
-          title: "Fournisseur/clients",
-          url: "/tiers",
-        },
-        {
-          title: "Synchronisation",
-          url: "/synchronisation",
-        },
-        {
-          title: "Configuration",
-          url: "/configuration",
-        },
-        {
-          title: "Taux de change",
-          url: "/taux",
-        },
-        {
-          title: "Dépense",
-          url: "/depense",
-        },
       ],
     },
   ],
@@ -162,11 +147,6 @@ const data = {
       name: "Pertes",
       url: "/pertes",
       icon: LucideGhost,
-    },
-    {
-      name: "Caisse",
-      url: "/caisse",
-      icon: DollarSign,
     },
   ],
 };
