@@ -6,6 +6,7 @@ type TDonner = {
   prix_achat: number;
   prix_vente: number;
   information: string;
+  fonction: string;
 };
 
 export async function GET(

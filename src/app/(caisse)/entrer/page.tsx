@@ -4,24 +4,26 @@ import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
 import React from "react";
-import Header from "../Header/Header";
-import { IAjustage } from "../Interfaces/IStock";
-import Loading from "../Tools/Loading";
+import Header from "../../Header/Header";
+import { IEntrer } from "../../Interfaces/IOther";
+import Loading from "../../Tools/Loading";
+import Popup from "../../Tools/Popup";
+import Formulaire from "./Formulaire";
 
 const dataFilter = [
-  { label: "Produit", value: "Produit" },
-  { label: "Ancienne_Qte", value: "Ancienne_Qte" },
-  { label: "Nouvelle_Qte", value: "Nouvelle_Qte" },
-  { label: "Date", value: "Date" },
-  { label: "Motif", value: "Motif" },
-  { label: "Par", value: "Par" },
+  { label: "Motif", value: "motif" },
+  { label: "Provenance", value: "provenance" },
+  { label: "Montant", value: "montant" },
+  { label: "Caisse", value: "caisse" },
+  { label: "Enregistré par", value: "saved_by" },
+  { label: "Date d'enregistrement", value: "dateSave" },
 ];
 
-function PageAjustage() {
-  const [data, setData] = React.useState<IAjustage[]>([]);
+function PageStock() {
+  const [data, setData] = React.useState<IEntrer[]>([]);
   const [load, setLoad] = React.useState<boolean>(true);
   const loadingData = async () => {
-    const result = await fetch("/api/ajustage", {
+    const result = await fetch("/api/entrer", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -42,15 +44,15 @@ function PageAjustage() {
   }, []);
 
   const keyColonnes = [
-    { title: "Produit", accessorKey: "Produit" },
-    { title: "Ancienne_Qte", accessorKey: "Ancienne_Qte" },
-    { title: "Nouvelle_Qte", accessorKey: "Nouvelle_Qte" },
-    { title: "Date", accessorKey: "Date" },
-    { title: "Motif", accessorKey: "Motif" },
-    { title: "Par", accessorKey: "Par" },
+    { title: "Motif", accessorKey: "motif" },
+    { title: "Provenance", accessorKey: "provenance" },
+    { title: "Montant", accessorKey: "montant" },
+    { title: "Caisse", accessorKey: "caisse" },
+    { title: "Enregistré par", accessorKey: "saved_by" },
+    { title: "Date d'enregistrement", accessorKey: "dateSave" },
   ];
 
-  const columns1: ColumnDef<IAjustage>[] = keyColonnes.map((cle) => {
+  const columns1: ColumnDef<IEntrer>[] = keyColonnes.map((cle) => {
     return {
       accessorKey: cle.accessorKey,
       header: ({ column }) => {
@@ -69,15 +71,23 @@ function PageAjustage() {
   });
 
   return (
-    <Header title="Modification stock">
+    <Header title="Autres Encaissements">
       {load && <Loading />}
+
       {!load && (
-        <div>
+        <div className="overflow-auto">
           <Tableau_set_Header
             data={data}
             columns={columns1}
-            customer_id="Produit"
+            customer_id="motif"
             datafilter={dataFilter}
+            childrenbtn={
+              <Popup
+                btnname="Ajoutez un encaissement"
+                title="Ajoutez un encaissement"
+                component={<Formulaire setData={setData} data={data} />}
+              />
+            }
           />
         </div>
       )}
@@ -85,4 +95,4 @@ function PageAjustage() {
   );
 }
 
-export default PageAjustage;
+export default PageStock;

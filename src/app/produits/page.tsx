@@ -3,12 +3,19 @@ import Popup from "@/app/Tools/Popup";
 import Tableau_set_Header from "@/app/Tools/Tab_set_Header";
 import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
-import { ArrowUpDown, Edit2 } from "lucide-react";
+import { ArrowUpDown, Edit2, Trash } from "lucide-react";
 import React from "react";
+import { toast } from "sonner";
 import Header from "../Header/Header";
 import { IProduit } from "../Interfaces/Produit";
 import Loading from "../Tools/Loading";
 import AddProduit from "./AddProduit";
+
+const dataFilter = [
+  { label: "Designation", value: "produit" },
+  { label: "Référence", value: "reference" },
+  { label: "Unite", value: "unite" },
+];
 
 function PageProduit() {
   const [data, setData] = React.useState<IProduit[]>([]);
@@ -44,6 +51,29 @@ function PageProduit() {
     { title: "Quantite d'alerte", accessorKey: "alerte" },
   ];
 
+  const deleteProduit = async (id: string) => {
+    try {
+      setLoad(true);
+      const res = await fetch("/api/produit", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ idProduit: id }),
+      });
+      const response = await res.json();
+      if (response.status === 200) {
+        setData(data.filter((x) => x.idProduit !== id));
+        toast("Suppression effectuée");
+      } else {
+        toast(response.data, { duration: 10000 });
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoad(false);
+    }
+  };
   const columns1: ColumnDef<IProduit>[] = keyColonnes.map((cle) => {
     return {
       accessorKey: cle.accessorKey,
@@ -64,30 +94,38 @@ function PageProduit() {
 
   const options: ColumnDef<IProduit>[] = [
     {
-      id: "Option",
+      id: "Modifier",
       header: ({ column }) => {
         return (
           <Button
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
           >
-            Edit
+            Modifier
             <ArrowUpDown />
           </Button>
         );
       },
       cell: ({ row }) => (
-        <Popup
-          btnname={<Edit2 />}
-          title="Modification"
-          component={
-            <AddProduit
-              produit={row.original}
-              setDonner={setData}
-              donner={data}
-            />
-          }
-        />
+        <div className="flex gap-3">
+          <Popup
+            btnname={<Edit2 />}
+            title="Modification"
+            component={
+              <AddProduit
+                produit={row.original}
+                setDonner={setData}
+                donner={data}
+              />
+            }
+          />
+          <Button
+            onClick={() => deleteProduit(row.original.idProduit)}
+            variant="destructive"
+          >
+            <Trash />
+          </Button>
+        </div>
       ),
       enableSorting: false,
       enableHiding: false,
@@ -103,7 +141,7 @@ function PageProduit() {
             data={data}
             columns={[...columns1, ...options]}
             customer_id="produit"
-            search_placeholder="Filter by produit"
+            datafilter={dataFilter}
             childrenbtn={
               <Popup
                 title="Ajoutez un nouveau produit"

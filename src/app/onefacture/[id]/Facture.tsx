@@ -1,3 +1,5 @@
+"use client";
+
 import { IFacture } from "@/app/Interfaces/IFacture";
 import { IShop } from "@/app/Interfaces/Shop";
 import jsPDF from "jspdf";
@@ -5,181 +7,131 @@ import autoTable from "jspdf-autotable";
 import { Printer } from "lucide-react";
 import Image from "next/image";
 
-// Facture optimisée pour impression sur XPrinter
-
 type Props = {
   data: IFacture[];
   shop: IShop;
 };
 
 function Facture({ data, shop }: Props) {
+  const taille = 2.47 * data.length + 130;
+
   const generatePDF = () => {
-    const doc = new jsPDF();
+    const doc = new jsPDF({
+      orientation: "p",
+      unit: "mm",
+      format: [58, taille], // largeur fixe (58mm), hauteur ajustée
+    });
+    const margin = 3;
+    let yPosition = 5;
 
-    // Configuration de la page
-    const pageWidth = doc.internal.pageSize.width;
-    const margin = 20;
+    doc.setFontSize(8);
+    doc.setTextColor(0); // noir
+    doc.setFont("helvetica", "normal");
 
-    let yPosition = 20;
-
-    // Header
-    doc.setFontSize(20);
-    doc.setTextColor(0, 166, 81); // #00A651
+    const sizeHeader = 8;
+    const sizeTab = 8;
+    const sizeFooter = 8;
+    // --- HEADER ---
     doc.text(shop.shop, margin, yPosition);
-    yPosition += 10;
+    yPosition += 4;
+    doc.setFontSize(sizeHeader);
+    doc.text(`NIF: ${shop.nif}`, margin, yPosition);
+    yPosition += 4;
+    doc.text(`RCCM: ${shop.rccm}`, margin, yPosition);
+    yPosition += 4;
 
-    // Ajouter le logo si disponible
-    const logoWidth = 20;
-    const logoHeight = 20;
-
-    // Positionner le logo à droite du header
-    doc.addImage(
-      "/logo.png",
-      "PNG",
-      pageWidth - margin - logoWidth,
-      10,
-      logoWidth,
-      logoHeight
-    );
-
-    // Informations de l'entreprise
-    doc.setFontSize(10);
-    doc.setTextColor(100);
-    doc.text(`NIF: ${shop?.nif}`, margin, yPosition);
-    doc.text(`RCCM: ${shop?.rccm}`, margin + 60, yPosition);
+    doc.text(`Tél: ${shop.contact}`, margin, yPosition);
     yPosition += 5;
-    doc.text(`Adresse: ${shop?.adresse}`, margin, yPosition);
-    doc.text(`Tél: ${shop?.contact}`, margin + 60, yPosition);
-    yPosition += 10;
-
-    // Numéro de facture et date
-    doc.setFontSize(14);
-    doc.setTextColor(0, 166, 81);
-    doc.text(
-      `FACTURE N° ${data[0].idFacture}`,
-      pageWidth - margin - 60,
-      yPosition
-    );
-    yPosition += 5;
-    doc.setFontSize(10);
-    doc.setTextColor(100);
     doc.text(
       `Date: ${new Date(data[0].dateSave).toLocaleDateString("fr-FR")}`,
-      pageWidth - margin - 60,
+      margin,
       yPosition
     );
     yPosition += 5;
-    doc.text(`Client: ${data[0].client}`, pageWidth - margin - 60, yPosition);
-    yPosition += 15;
+    doc.text(`Client: ${data[0].client}`, margin, yPosition);
+    yPosition += 7;
 
-    // Titre de la section produits
+    // --- FACTURE ---
     doc.setFontSize(12);
-    doc.setTextColor(0, 166, 81);
-    doc.text("Détails des Produits", margin, yPosition);
-    yPosition += 10;
+    doc.text(`FACTURE N° ${data[0].idFacture}`, margin, yPosition);
 
-    // Tableau des produits
+    yPosition += 4;
+
+    // --- PRODUITS ---
     const tableData = data.map((item, index) => [
       index + 1,
       item.produit,
       item.quantite,
-      `${item.pu.toLocaleString()} CDF`,
-      `${(item.pu * item.quantite).toLocaleString()} CDF`,
+      item.pu.toLocaleString(),
+      (item.pu * item.quantite).toLocaleString(),
     ]);
 
     autoTable(doc, {
       startY: yPosition,
-      head: [["#", "Produit", "Quantité", "P.A.U", "Prix total"]],
+      head: [["#", "Produit", "Qté", "P.U", "Total"]],
       body: tableData,
       theme: "grid",
-      headStyles: {
-        fillColor: [0, 166, 81],
-        textColor: 255,
-        fontStyle: "bold",
-      },
       styles: {
-        fontSize: 9,
-        cellPadding: 3,
+        fontSize: sizeTab,
+        cellPadding: 0.5,
+        textColor: 0,
+        fillColor: 255,
       },
+      headStyles: { textColor: 0, fillColor: 230 },
       columnStyles: {
-        0: { halign: "center" },
-        2: { halign: "center" },
-        3: { halign: "center" },
-        4: { halign: "right" },
+        0: { cellWidth: 4 },
+        1: { cellWidth: 25 },
+        2: { cellWidth: 6, halign: "left" },
+        3: { cellWidth: 8, halign: "left" },
+        4: { cellWidth: 11, halign: "left" },
       },
+      margin: { left: margin, right: margin },
+      tableWidth: "auto",
     });
 
     yPosition =
       (doc as jsPDF & { lastAutoTable: { finalY: number } }).lastAutoTable
-        .finalY + 10;
+        .finalY + 5;
 
-    // Résumé de la facture
-    doc.setFontSize(12);
-    doc.setTextColor(0, 166, 81);
-    doc.text("Résumé de la Facture", pageWidth - margin - 60, yPosition);
-    yPosition += 10;
-
-    doc.setFontSize(10);
-    doc.setTextColor(100);
-    doc.text("Prix de vente total:", pageWidth - margin - 80, yPosition);
-    doc.text(`${data[0].prix_vente} CDF`, pageWidth - margin, yPosition, {
-      align: "right",
-    });
-    yPosition += 5;
-
-    doc.text("Total payé:", pageWidth - margin - 80, yPosition);
-    doc.setTextColor(0, 166, 81);
+    // --- RESUME ---
+    const reste = Math.max(0, data[0].prix_vente - data[0].payer);
+    doc.setFontSize(sizeFooter);
     doc.text(
-      `${data[0].payer.toLocaleString()} CDF`,
-      pageWidth - margin,
-      yPosition,
-      { align: "right" }
+      `Prix total: ${data[0].prix_vente.toLocaleString()} CDF`,
+      margin,
+      yPosition
+    );
+    yPosition += 5;
+    doc.text(`Payé: ${data[0].payer.toLocaleString()} CDF`, margin, yPosition);
+    yPosition += 5;
+    doc.text(`Reste: ${reste.toLocaleString()} CDF`, margin, yPosition);
+    yPosition += 5;
+    doc.text(
+      `${reste === 0 ? "Facture soldée" : "Facture non soldée"}`,
+      margin,
+      yPosition
     );
     yPosition += 5;
 
-    const reste = Math.max(0, data[0].prix_vente - data[0].payer);
-    doc.setFontSize(11);
-    doc.setTextColor(0, 166, 81);
-    doc.text("Reste à payer:", pageWidth - margin - 80, yPosition);
-    doc.text(`${reste.toLocaleString()} CDF`, pageWidth - margin, yPosition, {
-      align: "right",
-    });
+    // --- Enregistré par ---
+    doc.text(`Enregistré par: ${data[0].doby}`, margin, yPosition);
     yPosition += 5;
 
-    doc.text("Statut:", pageWidth - margin - 80, yPosition);
-    const statut = reste === 0 ? "SOLDE" : "NON SOLDE";
-    doc.text(statut, pageWidth - margin, yPosition, { align: "right" });
-    yPosition += 15;
-
-    // Enregistré par
-    doc.setFontSize(10);
-    doc.setTextColor(100);
-    doc.text("Enregistré par:", pageWidth - margin - 60, yPosition);
-    yPosition += 5;
-    doc.setFontSize(11);
-    doc.setTextColor(0);
-    doc.text(data[0].doby, pageWidth - margin - 60, yPosition);
-    yPosition += 15;
-
-    // Message de remerciement
-    doc.setFontSize(12);
-    doc.setTextColor(0, 166, 81);
+    // --- Message ---
     doc.text("Merci pour votre confiance !", margin, yPosition);
+    yPosition += 2;
+    doc.setFontSize(4);
+    doc.text(`Adresse: ${shop.adresse}`, margin, yPosition);
 
-    // Créer un blob URL au lieu d'un data URI pour une meilleure compatibilité
+    // --- Génération PDF ---
     const pdfBlob = doc.output("blob");
     const pdfUrl = URL.createObjectURL(pdfBlob);
     window.open(pdfUrl, "_blank");
-
-    // Nettoyer l'URL après un délai pour libérer la mémoire
-    setTimeout(() => {
-      URL.revokeObjectURL(pdfUrl);
-    }, 1000);
+    setTimeout(() => URL.revokeObjectURL(pdfUrl), 1000);
   };
 
   return (
     <article className="page bg-white rounded-2xl shadow-2xl no-print-shadow p-8 sm:p-12 mb-10 print:rounded-none print:shadow-none max-w-4xl mx-auto print:h-screen print:overflow-hidden ">
-      {/* Header Section */}
       <section className="border-b-4 border-[#00A651] pb-6 mb-6 print:pb-4 print:mb-4 print:flex-shrink-0">
         <div className="flex justify-between items-start">
           <div className="flex-1">
@@ -218,7 +170,7 @@ function Facture({ data, shop }: Props) {
           <div className="text-right ml-6 print:ml-4">
             <div className="mb-3 print:mb-2">
               <Image
-                src="/logo.png"
+                src={shop.filename ? shop.filename : "/logo.png"}
                 alt="Logo"
                 width={32}
                 height={32}

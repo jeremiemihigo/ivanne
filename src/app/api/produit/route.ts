@@ -90,22 +90,19 @@ export async function DELETE(request: NextRequest) {
   try {
     const token = request.cookies.get("access")?.value;
     const data = await request.json();
-    const result = await fetch(`${lien}/unite`, {
+    const result = await fetch(`${lien}/deleteProduit`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
       },
-      body: JSON.stringify({ data }),
+      body: JSON.stringify(data),
     });
     const response = await result.json();
-    if (result.status === 200) {
-      const data = NextResponse.json({
-        data: response.data,
-        status: 200,
-      });
-      return data;
-    }
+    return NextResponse.json({
+      data: response,
+      status: result.status,
+    });
   } catch (error) {
     console.log(error);
   }

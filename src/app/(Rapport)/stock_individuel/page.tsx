@@ -20,9 +20,10 @@ interface Initiale {
 
 function StockGeneral() {
   const [data, setData] = React.useState<IStockIndividuel[]>([]);
-  const [load, setLoad] = React.useState<boolean>(false);
+  const [load, setLoad] = React.useState<boolean>(true);
   const [produits, setProduits] = React.useState<ICombo[]>([]);
   const [produit, setProduit] = React.useState<string>("");
+  const [stock, setSetStock] = React.useState<number>(0);
   const [initiale, setInitiale] = React.useState<Initiale>({
     date1: "",
     date2: "",
@@ -40,6 +41,7 @@ function StockGeneral() {
       const result = await res.json();
       if (result.status === 200) {
         setData(result.data);
+        setSetStock(result.stock);
         toast(JSON.stringify(`${result.data.length}  resultats trouvés`));
         setLoad(false);
       } else {
@@ -69,7 +71,6 @@ function StockGeneral() {
           };
         });
         setProduits(donner);
-        setLoad(false);
       }
     } catch (error) {
       console.log(error);
@@ -78,6 +79,7 @@ function StockGeneral() {
   React.useEffect(() => {
     const initialize = async () => {
       await loadingProduit();
+      setLoad(false);
     };
     initialize();
   }, []);
@@ -111,7 +113,10 @@ function StockGeneral() {
   const generatePrintContent = () => {
     const selectedProduit =
       produits.filter((x) => x.value === produit)[0]?.label || "";
-    const totalSolde = data.reduce((sum, item) => sum + item.solde, 0);
+    const totalSolde = data.reduce(
+      (sum, item) => sum + (item.solde ? item.solde : 0),
+      0
+    );
 
     return `
       <!DOCTYPE html>
@@ -195,6 +200,12 @@ function StockGeneral() {
             color: #666;
             line-height: 1.2;
           }
+            .text-center{
+            text-align:center;
+            }
+            .text-red{
+            color:red;
+            }
         </style>
       </head>
       <body>
@@ -221,7 +232,9 @@ function StockGeneral() {
         </div>
         
         <div class="date-range">
-          <strong>Période:</strong> Du ${initiale.date1} au ${initiale.date2}
+          <p class="text-center"><strong>Période:</strong> Du ${
+            initiale.date1
+          } au ${initiale.date2}</p>
         </div>
         
         ${
@@ -231,7 +244,6 @@ function StockGeneral() {
             <thead>
               <tr>
                 <th>Date</th>
-                <th>Produit</th>
                 <th>Stock Initial</th>
                 <th>Entrées</th>
                 <th>Sorties</th>
@@ -242,20 +254,35 @@ function StockGeneral() {
               ${data
                 .map(
                   (item, index) => `
-                <tr key="${index}">
+                  ${
+                    item.type === "situation"
+                      ? `
+                  <tr key="${index}">
                   <td>${item.date}</td>
-                  <td>${item.produit}</td>
+                 
                   <td>${item.initiale}</td>
                   <td>${item.entrer}</td>
                   <td>${item.sortie}</td>
                   <td>${item.solde}</td>
                 </tr>
+                  `
+                      : `
+                  
+                  <tr key="${index}">
+                  <td>${item.date}</td>
+                  <td colSpan="5">${item.message}</td>
+                  
+                </tr>
+                  
+                  `
+                  }
+                
               `
                 )
                 .join("")}
               <tr class="total-row">
-                <td colspan="4"><strong>TOTAL</strong></td>
-                <td><strong>${totalSolde}</strong></td>
+                <td colspan="4"><strong>Stock actuel</strong></td>
+                <td><strong>${stock}</strong></td>
               </tr>
             </tbody>
           </table>
@@ -266,7 +293,6 @@ function StockGeneral() {
       </html>
     `;
   };
-
   const handlePrint = () => {
     const printWindow = window.open("", "_blank");
     if (printWindow) {

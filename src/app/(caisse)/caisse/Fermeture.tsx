@@ -149,7 +149,6 @@ function Fermeture() {
           <div>
             <Label className="mb-3">Commentaire (facultatif)</Label>
             <Input
-              type="number"
               placeholder="Commentaire (facultatif)"
               name="commentaire_fermeture"
               value={commentaire_fermeture}

@@ -25,6 +25,7 @@ interface IPrix {
   prix_vente: string;
   quantite: number;
   information: string;
+  fonction: "admin" | "user" | "";
 }
 function VentePage() {
   const [clients, setAllClients] = React.useState<ICombo[]>([]);
@@ -36,6 +37,7 @@ function VentePage() {
     prix_vente: "",
     quantite: 0,
     information: "",
+    fonction: "",
   });
   const [data, setData] = React.useState<IData[]>([]);
   const [produit, setProduit] = React.useState<string>("");
@@ -142,6 +144,7 @@ function VentePage() {
       prix_vente: "",
       quantite: 0,
       information: "",
+      fonction: "",
     });
     setProduit("");
     setQuantiteVendu("");
@@ -152,6 +155,7 @@ function VentePage() {
       prix_vente: "",
       quantite: 0,
       information: "",
+      fonction: "",
     });
     setClient("");
     setData([]);
@@ -170,14 +174,16 @@ function VentePage() {
                 {produit && (
                   <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                        <p className="text-sm font-medium text-blue-700 mb-1 flex items-center">
-                          Prix d&apos;achat unitaire
-                        </p>
-                        <p className="text-xl font-bold text-blue-900">
-                          {payerproduit.prix_achat.toLocaleString()} FC
-                        </p>
-                      </div>
+                      {payerproduit.fonction === "admin" && (
+                        <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                          <p className="text-sm font-medium text-blue-700 mb-1 flex items-center">
+                            Prix d&apos;achat unitaire
+                          </p>
+                          <p className="text-xl font-bold text-blue-900">
+                            {payerproduit.prix_achat.toLocaleString()} FC
+                          </p>
+                        </div>
+                      )}
                       <div className="bg-green-50 rounded-lg p-4 border border-green-200">
                         <p className="text-sm font-medium text-green-700 mb-1 flex items-center">
                           Quantité en stock

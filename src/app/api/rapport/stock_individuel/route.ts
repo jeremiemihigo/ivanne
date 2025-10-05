@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
     });
     const response = await result.json();
     if (result.status === 200) {
-      const donner: IStockIndividuel[] = response;
+      const donner: IStockIndividuel[] = response.result;
       const donner1 = donner.map((index) => {
         return {
           ...index,
@@ -26,6 +26,7 @@ export async function POST(request: NextRequest) {
       });
       return NextResponse.json({
         data: donner1,
+        stock: response.stock,
         status: 200,
       });
     }

@@ -10,6 +10,15 @@ import Popup from "../Tools/Popup";
 import Tableau_set_Header from "../Tools/Tab_set_Header";
 import Approvisionnement from "./Approvisionnement";
 
+const dataFilter = [
+  { label: "Produit", value: "produit" },
+  { label: "Num_lot", value: "num_lot" },
+  { label: "unite", value: "unite" },
+  { label: "Réf", value: "reference" },
+  { label: "Fournisseur", value: "fournisseur" },
+  { label: "Enregistré par", value: "doby" },
+];
+
 function Stock() {
   const [load, setLoad] = React.useState<boolean>(true);
   const [data, setData] = React.useState<IApprovisionnement[]>([]);
@@ -75,7 +84,7 @@ function Stock() {
               data={data}
               columns={columns1}
               customer_id="produit"
-              search_placeholder="Filter by produit"
+              datafilter={dataFilter}
               childrenbtn={
                 <Popup
                   title="Approvisionnement"

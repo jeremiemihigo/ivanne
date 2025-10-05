@@ -186,7 +186,7 @@ function Approvisionnement({ setDonner, donner }: Props) {
           setProduit("");
           setLoad(false);
         } else {
-          toast(JSON.stringify(response.data));
+          toast(JSON.stringify(response.message));
           setLoad(false);
         }
       }
@@ -202,7 +202,7 @@ function Approvisionnement({ setDonner, donner }: Props) {
       ) : (
         <>
           {" "}
-          <div className="flex gap-3 w-full">
+          <div className="flex gap-3 w-full p-1">
             <div>
               <Label className="mb-3 mt-3">Selectionner le Produit</Label>
               <Combobox value={produit} setValue={setProduit} data={data} />

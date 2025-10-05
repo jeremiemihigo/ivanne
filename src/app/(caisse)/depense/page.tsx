@@ -10,31 +10,32 @@ import {
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, Delete } from "lucide-react";
 import React from "react";
-import Header from "../Header/Header";
-import { IPerte } from "../Interfaces/IOther";
-import Loading from "../Tools/Loading";
-import Popup from "../Tools/Popup";
-import DeleteDepense from "./DeletePerte";
+import Header from "../../Header/Header";
+import { IDepense } from "../../Interfaces/IOther";
+import Loading from "../../Tools/Loading";
+import Popup from "../../Tools/Popup";
+import DeleteDepense from "./DeleteDepense";
 import Formulaire from "./Formulaire";
 
 const dataFilter = [
-  { label: "Produit", value: "produit" },
   { label: "Motif", value: "motif" },
+  { label: "Coût", value: "montant" },
   { label: "Enregistré par", value: "doby" },
+  { label: "Date d'enregistrement", value: "dateSave" },
 ];
 
-function Perte() {
-  const [data, setData] = React.useState<IPerte[]>([]);
+function PageStock() {
+  const [data, setData] = React.useState<IDepense[]>([]);
   const [load, setLoad] = React.useState<boolean>(true);
   const loadingData = async () => {
-    const result = await fetch("/api/perte", {
+    const result = await fetch("/api/depense", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
     });
     const response = await result.json();
-    console.log(response);
+
     if (result.status === 200) {
       setData(response.data);
       setLoad(false);
@@ -48,14 +49,13 @@ function Perte() {
   }, []);
 
   const keyColonnes = [
-    { title: "Produit", accessorKey: "produit" },
     { title: "Motif", accessorKey: "motif" },
-    { title: "Quantite", accessorKey: "quantite" },
+    { title: "Coût", accessorKey: "montant" },
     { title: "Enregistré par", accessorKey: "doby" },
-    { title: "Date d'enregistrement", accessorKey: "date" },
+    { title: "Date d'enregistrement", accessorKey: "dateSave" },
   ];
 
-  const columns1: ColumnDef<IPerte>[] = keyColonnes.map((cle) => {
+  const columns1: ColumnDef<IDepense>[] = keyColonnes.map((cle) => {
     return {
       accessorKey: cle.accessorKey,
       header: ({ column }) => {
@@ -72,7 +72,7 @@ function Perte() {
       cell: ({ row }) => <div>{row.getValue(cle.accessorKey)}</div>,
     };
   });
-  const options: ColumnDef<IPerte>[] = [
+  const options: ColumnDef<IDepense>[] = [
     {
       id: "Status",
       header: ({ column }) => {
@@ -90,16 +90,16 @@ function Perte() {
         <Dialog>
           <DialogTrigger asChild>
             <p className={row.original.actif ? "encours" : "bloquer"}>
-              {row.original.actif ? "Validée" : "Perte Supprimée"}
+              {row.original.actif ? "Actif" : "Dépense Supprimée"}
             </p>
           </DialogTrigger>
           <DialogContent>
             <DialogTitle>Motif de suppression</DialogTitle>
-            {!row.original?.actif ? (
+            {row.original?.deleted_by ? (
               <div>
-                <p>{row.original?.motif_deleted}</p>
+                <p>{row.original?.motif_delete}</p>
                 <p style={{ textAlign: "right", fontSize: "11px" }}>
-                  Supprimée par : {row.original?.deleteby}
+                  Supprimée par : {row.original?.deleted_by}
                 </p>
               </div>
             ) : (
@@ -151,7 +151,7 @@ function Perte() {
   ];
 
   return (
-    <Header title="Perte">
+    <Header title="Décaissements">
       {load && <Loading />}
 
       {!load && (
@@ -159,12 +159,12 @@ function Perte() {
           <Tableau_set_Header
             data={data}
             columns={[...columns1, ...options]}
-            customer_id="produit"
+            customer_id="motif"
             datafilter={dataFilter}
             childrenbtn={
               <Popup
-                btnname="Ajoutez une perte"
-                title="Ajoutez une perte"
+                btnname="Ajoutez une sortie"
+                title="Ajoutez une sortie"
                 component={<Formulaire setData={setData} data={data} />}
               />
             }
@@ -175,4 +175,4 @@ function Perte() {
   );
 }
 
-export default Perte;
+export default PageStock;

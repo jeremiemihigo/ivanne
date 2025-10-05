@@ -73,7 +73,6 @@ function Tiers() {
               data={data}
               columns={columns1}
               customer_id="name"
-              search_placeholder="Filter by name"
             />
           </div>
         </>

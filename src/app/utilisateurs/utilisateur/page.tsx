@@ -91,7 +91,6 @@ function Utilisateurs() {
               data={data}
               columns={[...columns1, ...columns2]}
               customer_id="username"
-              search_placeholder="Filter by username"
               childrenbtn={
                 <Popup
                   title="Ajoutez un nouveau utilisateur"

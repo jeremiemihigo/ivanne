@@ -1,4 +1,4 @@
-import { IApprovisionnement } from "@/app/Interfaces/IApprovisionnement";
+import { IEntrer } from "@/app/Interfaces/IOther";
 import { lien } from "@/app/Tools/Lien";
 import moment from "moment";
 import { NextRequest, NextResponse } from "next/server";
@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
     const token = request.cookies.get("access")?.value;
     const data = await request.json();
 
-    const res = await fetch(`${lien}/addapprovisionnement`, {
+    const res = await fetch(`${lien}/ajouterEntrer`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -18,8 +18,13 @@ export async function POST(request: NextRequest) {
     });
     const result = await res.json();
     if (res.status === 200) {
+      const donner = {
+        ...result,
+        dateSave: moment(result.dateSave).format("dddd DD-MM-YYYY"),
+        montant: result.montant + " CDF",
+      };
       const reponse = NextResponse.json({
-        data: result,
+        data: donner,
         status: 200,
       });
       return reponse;
@@ -34,31 +39,32 @@ export async function POST(request: NextRequest) {
     console.log(error);
   }
 }
+
 export async function GET(request: NextRequest) {
   try {
     const token = request.cookies.get("access")?.value;
-    const result = await fetch(`${lien}/readApprovisionnement`, {
+    const result = await fetch(`${lien}/readEntrer`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
       },
     });
-    const response: IApprovisionnement[] = await result.json();
-
+    const response = await result.json();
     if (result.status === 200) {
-      const resultat = response.map((item) => {
+      const donner = response.map((index: IEntrer) => {
         return {
-          ...item,
-          date_peremption: moment(item.date_peremption).format("DD MMMM YYYY"),
-          dateFabrication: moment(item.dateFabrication).format("DD MMMM YYYY"),
-          dateSave: moment(item.dateSave).format("DD MMMM YYYY"),
+          ...index,
+          dateSave: moment(index.dateSave).format("dddd DD-MM-YYYY"),
+          montant: index.montant + " " + index.devise,
         };
       });
-      return NextResponse.json({
-        data: resultat,
+
+      const data = NextResponse.json({
+        data: donner,
         status: 200,
       });
+      return data;
     }
   } catch (error) {
     console.log(error);

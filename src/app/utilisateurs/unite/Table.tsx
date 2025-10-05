@@ -60,7 +60,6 @@ function TableUnite() {
           data={data}
           columns={columns1}
           customer_id="unite"
-          search_placeholder="Filter by unite"
           childrenbtn={
             <Popup
               title="Ajoutez une nouvelle unité"

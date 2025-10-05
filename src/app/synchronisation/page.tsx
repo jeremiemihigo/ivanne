@@ -127,7 +127,23 @@ function Push() {
                   <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
                 )}
                 <Backpack />
-                <span>{sending ? "Sauvegarde en cours..." : "Backup"}</span>
+                <span>
+                  {sending ? "Sauvegarde en cours..." : "Local vers en ligne"}
+                </span>
+              </Button>
+              <Button
+                onClick={() => PushData("enlignelocal")}
+                disabled={sending || !isOnline}
+                className="flex items-center space-x-3 px-12 py-4 text-xl font-semibold"
+                size="lg"
+              >
+                {sending && (
+                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
+                )}
+                <Backpack />
+                <span>
+                  {sending ? "Sauvegarde en cours..." : "En ligne vers local"}
+                </span>
               </Button>
             </div>
           </div>

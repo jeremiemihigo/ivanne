@@ -37,7 +37,7 @@ function Caisse() {
     router.push(`/detail_caisse/${row.idCaisse}`);
   };
   return (
-    <Header title="Caisse">
+    <Header title="Vue d'ensemble">
       {load ? (
         <Loading />
       ) : (
@@ -55,11 +55,13 @@ function Caisse() {
               data.map((caisse) => (
                 <div
                   key={caisse.idCaisse}
-                  onClick={() => readIdCaisse(caisse)}
                   className="flex cursor-pointer items-center justify-between gap-4 p-4 border rounded-lg shadow-sm bg-white"
                 >
                   <div>
-                    <h2 className="font-semibold text-lg">
+                    <h2
+                      onClick={() => readIdCaisse(caisse)}
+                      className="font-semibold text-lg"
+                    >
                       {caisse.designation}
                     </h2>
                     <p>👤 Responsable : {caisse.agent}</p>

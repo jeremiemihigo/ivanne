@@ -28,14 +28,14 @@ export default function Popup({
         <DialogTrigger asChild>
           <Button variant="default">{btnname}</Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:min-w-[425px]">
           <DialogHeader>
             <DialogTitle>{title}</DialogTitle>
             {description && (
               <DialogDescription>{description}</DialogDescription>
             )}
           </DialogHeader>
-          <div className="grid gap-4">{component}</div>
+          <div>{component}</div>
         </DialogContent>
       </form>
     </Dialog>

@@ -29,3 +29,13 @@ export interface IPerte {
   deleteby?: string;
   motif_deleted?: string;
 }
+
+export interface IEntrer {
+  montant: string;
+  devise: "USD" | "CDF";
+  motif: string;
+  provenance: string;
+  saved_by: string;
+  dateSave: number;
+  caisse: string;
+}

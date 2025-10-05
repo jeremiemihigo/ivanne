@@ -94,7 +94,6 @@ function Perte() {
             data={data}
             columns={[...columns1, columns2]}
             customer_id="client"
-            search_placeholder="Filter by client"
             childrenbtn={
               <Button onClick={() => router.push("/addproforma")}>
                 Ajoutez une facture preforma

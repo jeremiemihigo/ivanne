@@ -100,7 +100,6 @@ function PageStock() {
             data={data}
             columns={[...columns1, ...options]}
             customer_id="produit"
-            search_placeholder="Filter by produit"
           />
         </div>
       )}

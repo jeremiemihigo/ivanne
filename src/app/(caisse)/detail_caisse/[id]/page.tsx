@@ -1,5 +1,6 @@
 "use client";
 import Header from "@/app/Header/Header";
+import Loading from "@/app/Tools/Loading";
 import Tableau_set_Header from "@/app/Tools/Tab_set_Header";
 import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
@@ -24,11 +25,24 @@ interface IDetailCaisse {
   cash_virtuelle: number;
 }
 
+const dataFilter = [
+  { label: "dateSave", value: "dateSave" },
+  { label: "ouvert_par", value: "ouvert_par" },
+  { label: "Initiale USD", value: "initiale_usd" },
+  { label: "Initiale CDF", value: "initiale_cdf" },
+  { label: "cash_usd", value: "cash_usd" },
+  { label: "cash_cdf", value: "cash_cdf" },
+  { label: "cash_virtuelle", value: "cash_virtuelle" },
+  { label: "Manquant", value: "manquant" },
+];
+
 function Detail_Caisse({ params }: OneFactureProps) {
   const { id } = React.use(params);
+  const [load, setLoad] = React.useState<boolean>(true);
   const [data, setData] = React.useState<IDetailCaisse[]>([]);
   const loadingDetails = async () => {
     try {
+      setLoad(true);
       const res = await fetch(`/api/caisse/detailcaisse/${id}`, {
         method: "GET",
         headers: {
@@ -46,18 +60,19 @@ function Detail_Caisse({ params }: OneFactureProps) {
   React.useEffect(() => {
     const initialize = async () => {
       await loadingDetails();
+      setLoad(false);
     };
     initialize();
   }, [id]);
   const keyColonnes = [
-    { title: "ID", accessorKey: "idCaisse" },
-    { title: "Initiale USD", accessorKey: "initiale_usd" },
-    { title: "Initiale CDF", accessorKey: "initiale_cdf" },
     { title: "dateSave", accessorKey: "dateSave" },
     { title: "ouvert_par", accessorKey: "ouvert_par" },
+    { title: "Initiale USD", accessorKey: "initiale_usd" },
+    { title: "Initiale CDF", accessorKey: "initiale_cdf" },
     { title: "cash_usd", accessorKey: "cash_usd" },
     { title: "cash_cdf", accessorKey: "cash_cdf" },
     { title: "cash_virtuelle", accessorKey: "cash_virtuelle" },
+    { title: "Manquant", accessorKey: "manquant" },
   ];
 
   const columns1: ColumnDef<IDetailCaisse>[] = keyColonnes.map((cle) => {
@@ -80,12 +95,16 @@ function Detail_Caisse({ params }: OneFactureProps) {
 
   return (
     <Header title="Détails de la caisse">
-      <Tableau_set_Header
-        data={data}
-        columns={columns1}
-        customer_id="dateSave"
-        search_placeholder="Filtrer par date"
-      />
+      {load ? (
+        <Loading />
+      ) : (
+        <Tableau_set_Header
+          data={data}
+          columns={columns1}
+          customer_id="dateSave"
+          datafilter={dataFilter}
+        />
+      )}
     </Header>
   );
 }

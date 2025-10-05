@@ -31,20 +31,22 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { ICombo } from "../Interfaces/IOther";
+import { Combobox } from "./Combobox";
 
 type Props<TData extends object> = {
   data: TData[];
   columns: ColumnDef<TData>[];
   customer_id: string;
-  search_placeholder: string;
+  datafilter?: ICombo[];
   childrenbtn?: React.ReactNode;
 };
 export default function Tableau_set_Header<TData extends object>({
   data,
   columns,
-  search_placeholder,
-  childrenbtn,
   customer_id,
+  datafilter,
+  childrenbtn,
 }: Props<TData>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
@@ -79,27 +81,37 @@ export default function Tableau_set_Header<TData extends object>({
       },
     },
   });
+  const [colonnefilter, setColonneFilter] = React.useState<string>(customer_id);
 
   return (
     <div className="w-full h-screen">
-      <div className="flex items-center py-4">
+      <div className="flex items-center py-4 gap-2">
+        <div>
+          {datafilter && (
+            <Combobox
+              data={datafilter}
+              value={colonnefilter}
+              setValue={setColonneFilter}
+            />
+          )}
+        </div>
         <Input
-          placeholder={search_placeholder}
+          placeholder={`Search by ${colonnefilter}`}
           value={
-            (table.getColumn(customer_id)?.getFilterValue() as string) ?? ""
+            (table.getColumn(colonnefilter)?.getFilterValue() as string) ?? ""
           }
           onChange={(event) =>
-            table.getColumn(customer_id)?.setFilterValue(event.target.value)
+            table.getColumn(colonnefilter)?.setFilterValue(event.target.value)
           }
           className="max-w-sm mr-2"
         />
+
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">
               Show columns <ChevronDown />
             </Button>
           </DropdownMenuTrigger>
-          <div className="ml-4">{childrenbtn}</div>
           <DropdownMenuContent align="end">
             {table
               .getAllColumns()
@@ -120,58 +132,53 @@ export default function Tableau_set_Header<TData extends object>({
               })}
           </DropdownMenuContent>
         </DropdownMenu>
+        {childrenbtn}
       </div>
-      <div className="overflow-hidden rounded-md border h-screen">
-        <Table>
-          <TableHeader>
-            {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id}>
-                {headerGroup.headers.map((header) => {
-                  return (
-                    <TableHead key={header.id}>
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
-                    </TableHead>
-                  );
-                })}
+
+      <Table>
+        <TableHeader>
+          {table.getHeaderGroups().map((headerGroup) => (
+            <TableRow key={headerGroup.id}>
+              {headerGroup.headers.map((header) => {
+                return (
+                  <TableHead key={header.id}>
+                    {header.isPlaceholder
+                      ? null
+                      : flexRender(
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
+                  </TableHead>
+                );
+              })}
+            </TableRow>
+          ))}
+        </TableHeader>
+        <TableBody>
+          {table.getRowModel().rows?.length ? (
+            table.getRowModel().rows.map((row) => (
+              <TableRow
+                key={row.id}
+                style={{ width: "50%" }}
+                data-state={row.getIsSelected() && "selected"}
+              >
+                {row.getVisibleCells().map((cell) => (
+                  <TableCell key={cell.id}>
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </TableCell>
+                ))}
               </TableRow>
-            ))}
-          </TableHeader>
-          <TableBody>
-            {table.getRowModel().rows?.length ? (
-              table.getRowModel().rows.map((row) => (
-                <TableRow
-                  key={row.id}
-                  style={{ width: "50%" }}
-                  data-state={row.getIsSelected() && "selected"}
-                >
-                  {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
-                      {flexRender(
-                        cell.column.columnDef.cell,
-                        cell.getContext()
-                      )}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))
-            ) : (
-              <TableRow>
-                <TableCell
-                  colSpan={columns.length}
-                  className="h-24 text-center"
-                >
-                  No results.
-                </TableCell>
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      </div>
+            ))
+          ) : (
+            <TableRow>
+              <TableCell colSpan={columns.length} className="h-24 text-center">
+                No results.
+              </TableCell>
+            </TableRow>
+          )}
+        </TableBody>
+      </Table>
+
       <div className="flex items-center justify-end space-x-2 py-4">
         <div className="text-muted-foreground flex-1 text-sm">
           {table.getFilteredSelectedRowModel().rows.length} of{" "}

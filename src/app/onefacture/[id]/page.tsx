@@ -18,6 +18,7 @@ function OneFacture({ params }: OneFactureProps) {
   const [data, setData] = React.useState<IFacture[]>([]);
   const [load, setLoad] = React.useState<boolean>(true);
   const [shop, setShop] = React.useState<IShop>();
+  console.log(shop);
 
   React.useEffect(() => {
     const loadingData = async () => {

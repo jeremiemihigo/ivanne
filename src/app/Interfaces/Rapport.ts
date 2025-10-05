@@ -8,11 +8,13 @@ export interface IStockRapport {
   total: number;
 }
 export interface IStockIndividuel {
-  entrer: number;
-  sortie: number;
-  initiale: number;
-  produit: number;
-  solde: number;
+  entrer?: number;
+  sortie?: number;
+  initiale?: number;
+  produit?: number;
+  solde?: number;
+  type: "ajustage" | "situation";
+  message?: string;
   date: number;
 }
 export interface IRapportCommerciale {
