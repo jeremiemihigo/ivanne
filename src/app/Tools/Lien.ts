@@ -1,5 +1,5 @@
 //const localhost = "http://localhost:4000";
-const localhost = "https://ivannebackend.onrender.com";
+const localhost = "https://iv.bboxxvm.com";
 export const lien = `${localhost}/pharmacie`;
 export const permissions = [
   {
