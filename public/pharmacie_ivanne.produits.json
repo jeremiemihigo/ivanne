@@ -1,0 +1,7519 @@
+[{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1424"
+  },
+  "idProduit": "26",
+  "produit": "AMIDOL FEMME CES",
+  "idUnite": "PL",
+  "prix_achat": 2938,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1437"
+  },
+  "idProduit": "45",
+  "produit": "ANSET CES B/4CES",
+  "idUnite": "BTE",
+  "prix_achat": 3000,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1459"
+  },
+  "idProduit": "79",
+  "produit": "ARODERME GEL DOUCHE MANGUE + COCO 1L",
+  "idUnite": "FL",
+  "prix_achat": 11400,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c0"
+  },
+  "idProduit": "182",
+  "produit": "COMBISUNATE CES PED",
+  "idUnite": "BTE",
+  "prix_achat": 1800,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 3
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c1"
+  },
+  "idProduit": "183",
+  "produit": "COMBO PAIN CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 450,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c5"
+  },
+  "idProduit": "187",
+  "produit": "COTRI 480MG",
+  "idUnite": "PL",
+  "prix_achat": 378,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c8"
+  },
+  "idProduit": "190",
+  "produit": "CYCLOMAX B/6 0VULES ",
+  "idUnite": "BTE",
+  "prix_achat": 7500,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e6"
+  },
+  "idProduit": "220",
+  "produit": "DOLIPRANE CES 1G EFF 8CES",
+  "idUnite": "BTE",
+  "prix_achat": 4320,
+  "prix_vente": 10000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14fc"
+  },
+  "idProduit": "242",
+  "produit": "EPIDERM LOTION",
+  "idUnite": "FL",
+  "prix_achat": 1641,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1501"
+  },
+  "idProduit": "247",
+  "produit": "ESTOCOOL 200ML SUSP",
+  "idUnite": "FL",
+  "prix_achat": 6000,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1526"
+  },
+  "idProduit": "284",
+  "produit": "GERMOL SAVON 125G",
+  "idUnite": "PCE",
+  "prix_achat": 1800,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1531"
+  },
+  "idProduit": "295",
+  "produit": "HAEMO FORTE SP ",
+  "idUnite": "FL",
+  "prix_achat": 2300,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1532"
+  },
+  "idProduit": "296",
+  "produit": "HEMOFORCE PLUS ZINC SP 200ML",
+  "idUnite": "FL",
+  "prix_achat": 5172,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1541"
+  },
+  "idProduit": "311",
+  "produit": "KAPTOL SP",
+  "idUnite": "FL",
+  "prix_achat": 3000,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1563"
+  },
+  "idProduit": "345",
+  "produit": "MASSIMO 10ML GEL",
+  "idUnite": "FL",
+  "prix_achat": 8400,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1566"
+  },
+  "idProduit": "348",
+  "produit": "MEDIVEN TUBE 15GR",
+  "idUnite": "TUB",
+  "prix_achat": 1240,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1580"
+  },
+  "idProduit": "374",
+  "produit": "MUSCLE PLUS CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 1350,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1588"
+  },
+  "idProduit": "382",
+  "produit": "NAOMIE GEL POMMADE 30GR",
+  "idUnite": "TUB",
+  "prix_achat": 1800,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b158c"
+  },
+  "idProduit": "386",
+  "produit": "NIFEDIPINE LP 30MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 4900,
+  "prix_vente": 11000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b159c"
+  },
+  "idProduit": "402",
+  "produit": "OPTION -2",
+  "idUnite": "PL",
+  "prix_achat": 1050,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a2"
+  },
+  "idProduit": "408",
+  "produit": "OUAT 500GM",
+  "idUnite": "PCE",
+  "prix_achat": 7199,
+  "prix_vente": 12800,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b9"
+  },
+  "idProduit": "431",
+  "produit": "PARAMOL SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 1175,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ce"
+  },
+  "idProduit": "452",
+  "produit": "POIRE N°6",
+  "idUnite": "PCE",
+  "prix_achat": 4050,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e8"
+  },
+  "idProduit": "478",
+  "produit": "PROFENID SUPPO BTE 12",
+  "idUnite": "BTE",
+  "prix_achat": 10000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ee"
+  },
+  "idProduit": "484",
+  "produit": "QUININE 300MG BTE 100CES",
+  "idUnite": "BTE",
+  "prix_achat": 18000,
+  "prix_vente": 24000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15fd"
+  },
+  "idProduit": "499",
+  "produit": "SALBUTAMOL SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 1350,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b140d"
+  },
+  "idProduit": "3",
+  "produit": "22° POUDRE",
+  "idUnite": "FL",
+  "prix_achat": 2016,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1416"
+  },
+  "idProduit": "12",
+  "produit": "A-DEM SAVON 75G",
+  "idUnite": "PCE",
+  "prix_achat": 1945,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1443"
+  },
+  "idProduit": "57",
+  "produit": "ARAUCLAV 562.5MG SP ENF",
+  "idUnite": "FL",
+  "prix_achat": 10500,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1458"
+  },
+  "idProduit": "78",
+  "produit": "ARODERME GEL DOUCHE COCONUT 1L",
+  "idUnite": "FL",
+  "prix_achat": 11970,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1470"
+  },
+  "idProduit": "102",
+  "produit": "BAUME DE NERFS 120GM",
+  "idUnite": "PCE",
+  "prix_achat": 3542,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1481"
+  },
+  "idProduit": "119",
+  "produit": "CARDIO ASPIRINE B/56CES",
+  "idUnite": "BTE",
+  "prix_achat": 27500,
+  "prix_vente": 30000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1483"
+  },
+  "idProduit": "121",
+  "produit": "CASH NEZ PCE",
+  "idUnite": "PCE",
+  "prix_achat": 200,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1486"
+  },
+  "idProduit": "124",
+  "produit": "CEFAM 2X10CAPS",
+  "idUnite": "BTE",
+  "prix_achat": 8640,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14d5"
+  },
+  "idProduit": "203",
+  "produit": "DEXA INJ 1 AMP",
+  "idUnite": "AMP",
+  "prix_achat": 123,
+  "prix_vente": 300,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14d9"
+  },
+  "idProduit": "207",
+  "produit": "DEXOL SUSP FL/100ML",
+  "idUnite": "FL",
+  "prix_achat": 4349,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14da"
+  },
+  "idProduit": "208",
+  "produit": "DIAZEX-10MG",
+  "idUnite": "PL",
+  "prix_achat": 172,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14de"
+  },
+  "idProduit": "212",
+  "produit": "DICLOGEN PLUS PLQ",
+  "idUnite": "PL",
+  "prix_achat": 390,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e7"
+  },
+  "idProduit": "221",
+  "produit": "DOXI CAPS 100MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 465,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f8"
+  },
+  "idProduit": "238",
+  "produit": "EFISHAL 200MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 2133,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14fa"
+  },
+  "idProduit": "240",
+  "produit": "EPIDERM CREM 15GR",
+  "idUnite": "TUB",
+  "prix_achat": 960,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b150c"
+  },
+  "idProduit": "258",
+  "produit": "FLUCONAZOLE 150MG B/1CES",
+  "idUnite": "PL",
+  "prix_achat": 720,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b150f"
+  },
+  "idProduit": "261",
+  "produit": "FORLAX SACHET B/20",
+  "idUnite": "SACHET",
+  "prix_achat": 926,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1514"
+  },
+  "idProduit": "266",
+  "produit": "FRANCE LAIT N°1 CONFORT",
+  "idUnite": "FL",
+  "prix_achat": 24600,
+  "prix_vente": 33000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b151f"
+  },
+  "idProduit": "277",
+  "produit": "GANTS PROPRE",
+  "idUnite": "BTE",
+  "prix_achat": 8000,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1521"
+  },
+  "idProduit": "279",
+  "produit": "GAVISCON SUSP BUV FL/250ML",
+  "idUnite": "SP",
+  "prix_achat": 16416,
+  "prix_vente": 24000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1524"
+  },
+  "idProduit": "282",
+  "produit": "GENTA INJ 1 AMP",
+  "idUnite": "AMP",
+  "prix_achat": 234,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1528"
+  },
+  "idProduit": "286",
+  "produit": "GLIBEN M CES",
+  "idUnite": "PL",
+  "prix_achat": 4564,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b152b"
+  },
+  "idProduit": "289",
+  "produit": "GOGYNAX OV",
+  "idUnite": "PL",
+  "prix_achat": 1920,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1547"
+  },
+  "idProduit": "317",
+  "produit": "KIPTAR KIT",
+  "idUnite": "BTE",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1562"
+  },
+  "idProduit": "344",
+  "produit": "MASQUE",
+  "idUnite": "PCE",
+  "prix_achat": 234,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b156e"
+  },
+  "idProduit": "356",
+  "produit": "METRO SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 1670,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1586"
+  },
+  "idProduit": "380",
+  "produit": "NAOMI TRIPLE ACTION CREME 30GM",
+  "idUnite": "TUB",
+  "prix_achat": 2550,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1595"
+  },
+  "idProduit": "395",
+  "produit": "NYSTATIN SP 30ML",
+  "idUnite": "FL",
+  "prix_achat": 1740,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1596"
+  },
+  "idProduit": "396",
+  "produit": "NYSTATIN VAGINAL",
+  "idUnite": "PL",
+  "prix_achat": 1424,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15af"
+  },
+  "idProduit": "421",
+  "produit": "PANOTAC D CES BTE 10",
+  "idUnite": "BTE",
+  "prix_achat": 7500,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b0"
+  },
+  "idProduit": "422",
+  "produit": "PAPIERS MUCHOIRS",
+  "idUnite": "PCE",
+  "prix_achat": 300,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c6"
+  },
+  "idProduit": "444",
+  "produit": "PHENEREX CES ",
+  "idUnite": "PL",
+  "prix_achat": 115,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d7"
+  },
+  "idProduit": "461",
+  "produit": "POMMADE CHRYSOPHANIQUE",
+  "idUnite": "FL",
+  "prix_achat": 13500,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e2"
+  },
+  "idProduit": "472",
+  "produit": "PRAZOLE INJ 40MG",
+  "idUnite": "PL",
+  "prix_achat": 3104,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1414"
+  },
+  "idProduit": "10",
+  "produit": "A-DEM CREME 30G",
+  "idUnite": "PCE",
+  "prix_achat": 3600,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1415"
+  },
+  "idProduit": "11",
+  "produit": "ADEM FEMINA SOLUTION",
+  "idUnite": "FL",
+  "prix_achat": 5100,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b141f"
+  },
+  "idProduit": "21",
+  "produit": "ALIVIO CES",
+  "idUnite": "BTE",
+  "prix_achat": 604,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1429"
+  },
+  "idProduit": "31",
+  "produit": "AMLOP 5M PLQ",
+  "idUnite": "PL",
+  "prix_achat": 2030,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1431"
+  },
+  "idProduit": "39",
+  "produit": "AMPI-CLOXA CAPS",
+  "idUnite": "PL",
+  "prix_achat": 1290,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 2
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1436"
+  },
+  "idProduit": "44",
+  "produit": "ANSET B/5 SUPPO",
+  "idUnite": "BTE",
+  "prix_achat": 7199,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1438"
+  },
+  "idProduit": "46",
+  "produit": "ANSET SP 30ML",
+  "idUnite": "FL",
+  "prix_achat": 2880,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1441"
+  },
+  "idProduit": "55",
+  "produit": "ARAUCIP COLLYRE",
+  "idUnite": "FL",
+  "prix_achat": 3000,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1466"
+  },
+  "idProduit": "92",
+  "produit": "AUGMENTIN 562.5MG BTE 16",
+  "idUnite": "BTE",
+  "prix_achat": 21000,
+  "prix_vente": 27000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1468"
+  },
+  "idProduit": "94",
+  "produit": "AUGMENTIN SP NOURR",
+  "idUnite": "FL",
+  "prix_achat": 16000,
+  "prix_vente": 22500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b147a"
+  },
+  "idProduit": "112",
+  "produit": "C-4 CES",
+  "idUnite": "PL",
+  "prix_achat": 570,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1493"
+  },
+  "idProduit": "137",
+  "produit": "CETHER-L  SP 60ML",
+  "idUnite": "FL",
+  "prix_achat": 7500,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a3"
+  },
+  "idProduit": "153",
+  "produit": "CIPRONAT 500MG",
+  "idUnite": "BTE",
+  "prix_achat": 7199,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a9"
+  },
+  "idProduit": "159",
+  "produit": "CLAMOXYL PDRE SUSP BUVABLE 500MG",
+  "idUnite": "FL",
+  "prix_achat": 6971,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14af"
+  },
+  "idProduit": "165",
+  "produit": "CLOXA SP 125MG",
+  "idUnite": "FL",
+  "prix_achat": 1700,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14cc"
+  },
+  "idProduit": "194",
+  "produit": "DAVIGRA 50MG CES B/2",
+  "idUnite": "PL",
+  "prix_achat": 604,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1508"
+  },
+  "idProduit": "254",
+  "produit": "FEZORA CAPSULES 2X30",
+  "idUnite": "PL",
+  "prix_achat": 21600,
+  "prix_vente": 30000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1522"
+  },
+  "idProduit": "280",
+  "produit": "GAZOLEX SACHET PCE",
+  "idUnite": "SACHET",
+  "prix_achat": 340,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b152f"
+  },
+  "idProduit": "293",
+  "produit": "GRISEOFLUVINE CES",
+  "idUnite": "PL",
+  "prix_achat": 1834,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1544"
+  },
+  "idProduit": "314",
+  "produit": "KIFARU CES 50MG",
+  "idUnite": "PL",
+  "prix_achat": 696,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1546"
+  },
+  "idProduit": "316",
+  "produit": "KIFARU-100",
+  "idUnite": "PL",
+  "prix_achat": 1645,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b154b"
+  },
+  "idProduit": "321",
+  "produit": "LEOPARD TUBE",
+  "idUnite": "TUB",
+  "prix_achat": 2162,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1551"
+  },
+  "idProduit": "327",
+  "produit": "LINGETTE LOA 150PCES",
+  "idUnite": "BTE",
+  "prix_achat": 6000,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1552"
+  },
+  "idProduit": "328",
+  "produit": "LINGETTE LOA 200PCS BTE",
+  "idUnite": "BTE",
+  "prix_achat": 7000,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b157a"
+  },
+  "idProduit": "368",
+  "produit": "MUCOPRIN SP AD",
+  "idUnite": "FL",
+  "prix_achat": 2978,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b157e"
+  },
+  "idProduit": "372",
+  "produit": "MULTIVIT SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 1296,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1581"
+  },
+  "idProduit": "375",
+  "produit": "MYCOZEMA CREME",
+  "idUnite": "TUB",
+  "prix_achat": 5400,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b158b"
+  },
+  "idProduit": "385",
+  "produit": "NIFEDIPINE CES 20MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 800,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ad"
+  },
+  "idProduit": "419",
+  "produit": "PAMPERS 8 A 18KG BTE",
+  "idUnite": "BTE",
+  "prix_achat": 27200,
+  "prix_vente": 30000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15de"
+  },
+  "idProduit": "468",
+  "produit": "POVIDONE SOL 200ML",
+  "idUnite": "FL",
+  "prix_achat": 3599,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e4"
+  },
+  "idProduit": "474",
+  "produit": "PREDNIZOLONE COLLYRE",
+  "idUnite": "FL",
+  "prix_achat": 4500,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15fa"
+  },
+  "idProduit": "496",
+  "produit": "RUFENAC GEL",
+  "idUnite": "TUB",
+  "prix_achat": 1,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1411"
+  },
+  "idProduit": "7",
+  "produit": "ACTION PLQ 2 CES",
+  "idUnite": "PL",
+  "prix_achat": 105,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1419"
+  },
+  "idProduit": "15",
+  "produit": "ALBAMEX 400MG",
+  "idUnite": "PL",
+  "prix_achat": 225,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1422"
+  },
+  "idProduit": "24",
+  "produit": "AMIDOL C SP",
+  "idUnite": "FL",
+  "prix_achat": 2500,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1451"
+  },
+  "idProduit": "71",
+  "produit": "ARAUZINC+ SRO SACHET BTE",
+  "idUnite": "BTE",
+  "prix_achat": 1200,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1453"
+  },
+  "idProduit": "73",
+  "produit": "AROBEBE  40G",
+  "idUnite": "PCE",
+  "prix_achat": 1200,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1463"
+  },
+  "idProduit": "89",
+  "produit": "ASPIRINE CES 500MG",
+  "idUnite": "PL",
+  "prix_achat": 172,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1472"
+  },
+  "idProduit": "104",
+  "produit": "BENZYL DE BENZOATE FL",
+  "idUnite": "FL",
+  "prix_achat": 1800,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a6"
+  },
+  "idProduit": "156",
+  "produit": "CITRIMEX DT B/10CES",
+  "idUnite": "BTE",
+  "prix_achat": 3000,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14bd"
+  },
+  "idProduit": "179",
+  "produit": "COLGATE  PEDIA",
+  "idUnite": "PCE",
+  "prix_achat": 1690,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14ce"
+  },
+  "idProduit": "196",
+  "produit": "DECONTRACTYL CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 4700,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14ea"
+  },
+  "idProduit": "224",
+  "produit": "DR MAISON CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 560,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1517"
+  },
+  "idProduit": "269",
+  "produit": "FUMBACT CREME 15G",
+  "idUnite": "TUB",
+  "prix_achat": 2400,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b153c"
+  },
+  "idProduit": "306",
+  "produit": "IBUPROFEN 400MG",
+  "idUnite": "PL",
+  "prix_achat": 252,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b154d"
+  },
+  "idProduit": "323",
+  "produit": "LEVO 72 BTE 1",
+  "idUnite": "PL",
+  "prix_achat": 2100,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b154f"
+  },
+  "idProduit": "325",
+  "produit": "LINGETTE BEST STAR BTE 60PCES",
+  "idUnite": "BTE",
+  "prix_achat": 3400,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b155c"
+  },
+  "idProduit": "338",
+  "produit": "M-ARRET 120MG",
+  "idUnite": "FL",
+  "prix_achat": 3990,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b157d"
+  },
+  "idProduit": "371",
+  "produit": "MULTIVIT GOUTTE FLC",
+  "idUnite": "FL",
+  "prix_achat": 1230,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1589"
+  },
+  "idProduit": "383",
+  "produit": "NAVROX POMMADE",
+  "idUnite": "TUB",
+  "prix_achat": 9600,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c3"
+  },
+  "idProduit": "441",
+  "produit": "PENI-V CES 10X10",
+  "idUnite": "PL",
+  "prix_achat": 769,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d2"
+  },
+  "idProduit": "456",
+  "produit": "POLYGEL SACHET",
+  "idUnite": "SACHET",
+  "prix_achat": 518,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d4"
+  },
+  "idProduit": "458",
+  "produit": "POLYGYNAX OVULE B/6",
+  "idUnite": "BTE",
+  "prix_achat": 11100,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d6"
+  },
+  "idProduit": "460",
+  "produit": "POMMADE CAMPHREE",
+  "idUnite": "FL",
+  "prix_achat": 1400,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e1"
+  },
+  "idProduit": "471",
+  "produit": "PRAZOLE D B/10 CAPS",
+  "idUnite": "PL",
+  "prix_achat": 1583,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ec"
+  },
+  "idProduit": "482",
+  "produit": "PROMETHAZINE CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 234,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f2"
+  },
+  "idProduit": "488",
+  "produit": "QUININE SP",
+  "idUnite": "FL",
+  "prix_achat": 5500,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15fb"
+  },
+  "idProduit": "497",
+  "produit": "RUFENAC SPRAY 70ML",
+  "idUnite": "FL",
+  "prix_achat": 6306,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1410"
+  },
+  "idProduit": "6",
+  "produit": "ACID FOLIC + FER PLQ 10",
+  "idUnite": "PL",
+  "prix_achat": 281,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b141a"
+  },
+  "idProduit": "16",
+  "produit": "ALBAMEX SUSP 10ML",
+  "idUnite": "FL",
+  "prix_achat": 480,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b141b"
+  },
+  "idProduit": "17",
+  "produit": "ALCOOL 250ML",
+  "idUnite": "FL",
+  "prix_achat": 2100,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b142f"
+  },
+  "idProduit": "37",
+  "produit": "AMOXY SP 250MG",
+  "idUnite": "FL",
+  "prix_achat": 1139,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1433"
+  },
+  "idProduit": "41",
+  "produit": "ANAFLAM SP",
+  "idUnite": "FL",
+  "prix_achat": 1740,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b146a"
+  },
+  "idProduit": "96",
+  "produit": "AZITHRO 500MG B/3",
+  "idUnite": "BTE",
+  "prix_achat": 1353,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1480"
+  },
+  "idProduit": "118",
+  "produit": "CARBOKINA",
+  "idUnite": "BTE",
+  "prix_achat": 10500,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b2"
+  },
+  "idProduit": "168",
+  "produit": "CLOXACILLINE 500MG",
+  "idUnite": "PL",
+  "prix_achat": 1150,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14cb"
+  },
+  "idProduit": "193",
+  "produit": "DAKIKA TATU PLQ 2CES",
+  "idUnite": "PL",
+  "prix_achat": 240,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e4"
+  },
+  "idProduit": "218",
+  "produit": "DOLAREN  PLUS B/10 CES",
+  "idUnite": "PL",
+  "prix_achat": 1750,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e9"
+  },
+  "idProduit": "223",
+  "produit": "DR COLD SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 3500,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f7"
+  },
+  "idProduit": "237",
+  "produit": "EFFERALGAN PED SOL BUV FL/90ML",
+  "idUnite": "FL",
+  "prix_achat": 4693,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b150a"
+  },
+  "idProduit": "256",
+  "produit": "FLUCODEX E SP",
+  "idUnite": "FL",
+  "prix_achat": 3600,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1516"
+  },
+  "idProduit": "268",
+  "produit": "FUMBACT 30G CREME",
+  "idUnite": "CREME",
+  "prix_achat": 2490,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1520"
+  },
+  "idProduit": "278",
+  "produit": "GASTROMEX COMP PLQ",
+  "idUnite": "PL",
+  "prix_achat": 240,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1523"
+  },
+  "idProduit": "281",
+  "produit": "GENTA COLLYRE",
+  "idUnite": "FL",
+  "prix_achat": 640,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1534"
+  },
+  "idProduit": "298",
+  "produit": "HEMORROIDAL B/10SUPPO",
+  "idUnite": "BTE",
+  "prix_achat": 4607,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1565"
+  },
+  "idProduit": "347",
+  "produit": "MED DERM GREM",
+  "idUnite": "TUB",
+  "prix_achat": 2100,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1568"
+  },
+  "idProduit": "350",
+  "produit": "MELOMINE CREME 30G",
+  "idUnite": "TUB",
+  "prix_achat": 12000,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1578"
+  },
+  "idProduit": "366",
+  "produit": "MUCOFEEX ADULTE",
+  "idUnite": "FL",
+  "prix_achat": 1900,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1593"
+  },
+  "idProduit": "393",
+  "produit": "NORMEGYL SP 60ML",
+  "idUnite": "FL",
+  "prix_achat": 4500,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b4"
+  },
+  "idProduit": "426",
+  "produit": "PARACET SUPPO 250MG 1SUPPO",
+  "idUnite": "BTE",
+  "prix_achat": 530,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b7"
+  },
+  "idProduit": "429",
+  "produit": "PARACETAMOL INJ 750MG/1AMP",
+  "idUnite": "AMP",
+  "prix_achat": 123,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d9"
+  },
+  "idProduit": "463",
+  "produit": "POMMADE MIXTE PCE",
+  "idUnite": "FL",
+  "prix_achat": 3300,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ed"
+  },
+  "idProduit": "483",
+  "produit": "PYLORIMEX KIT",
+  "idUnite": "BTE",
+  "prix_achat": 30000,
+  "prix_vente": 36000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b140c"
+  },
+  "idProduit": "2",
+  "produit": "120H 1CES",
+  "idUnite": "PL",
+  "prix_achat": 1250,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1418"
+  },
+  "idProduit": "14",
+  "produit": "ALAIZE 15ML SACHETS",
+  "idUnite": "PCE",
+  "prix_achat": 700,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1425"
+  },
+  "idProduit": "27",
+  "produit": "AMINOPHILLINE CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 140,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1428"
+  },
+  "idProduit": "30",
+  "produit": "AMLODIPINE CES 5MG BTE 30",
+  "idUnite": "BTE",
+  "prix_achat": 5000,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1444"
+  },
+  "idProduit": "58",
+  "produit": "ARAUCLAV CO DUO 1125MG BTE 16CES",
+  "idUnite": "BTE",
+  "prix_achat": 15000,
+  "prix_vente": 21000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b145f"
+  },
+  "idProduit": "85",
+  "produit": "AROTRON INJ FL",
+  "idUnite": "FL",
+  "prix_achat": 4500,
+  "prix_vente": 6500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1467"
+  },
+  "idProduit": "93",
+  "produit": "AUGMENTIN SP ENF",
+  "idUnite": "FL",
+  "prix_achat": 18600,
+  "prix_vente": 25500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b146c"
+  },
+  "idProduit": "98",
+  "produit": "BAND-AID PCS",
+  "idUnite": "PCE",
+  "prix_achat": 22,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1473"
+  },
+  "idProduit": "105",
+  "produit": "BIBERON",
+  "idUnite": "PCE",
+  "prix_achat": 3901,
+  "prix_vente": 9001,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1476"
+  },
+  "idProduit": "108",
+  "produit": "BONTRIL SOLUTION",
+  "idUnite": "FL",
+  "prix_achat": 4300,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1477"
+  },
+  "idProduit": "109",
+  "produit": "BUSCOPAN CES",
+  "idUnite": "PL",
+  "prix_achat": 1065,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b148a"
+  },
+  "idProduit": "128",
+  "produit": "CEFTRIAXONE 1G",
+  "idUnite": "FL",
+  "prix_achat": 609,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b148c"
+  },
+  "idProduit": "130",
+  "produit": "CEMYCINE CES 500MG",
+  "idUnite": "BTE",
+  "prix_achat": 12000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b148d"
+  },
+  "idProduit": "131",
+  "produit": "CEMYCINE SUSP BUV 30ML",
+  "idUnite": "FL",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1491"
+  },
+  "idProduit": "135",
+  "produit": "CESAKROL PEDIATRIQUE",
+  "idUnite": "FL",
+  "prix_achat": 9600,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a2"
+  },
+  "idProduit": "152",
+  "produit": "CIPROFLOXACIN INF",
+  "idUnite": "FL",
+  "prix_achat": 935,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a8"
+  },
+  "idProduit": "158",
+  "produit": "CLAMOXYL CAPS BTE 10",
+  "idUnite": "BTE",
+  "prix_achat": 4500,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14aa"
+  },
+  "idProduit": "160",
+  "produit": "CLARINEZ 0.05",
+  "idUnite": "PCE",
+  "prix_achat": 1381,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14d6"
+  },
+  "idProduit": "204",
+  "produit": "DEXAMETH CES BTE 10",
+  "idUnite": "PL",
+  "prix_achat": 57,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14d8"
+  },
+  "idProduit": "206",
+  "produit": "DEXOL B/10 CES",
+  "idUnite": "BTE",
+  "prix_achat": 3599,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14dc"
+  },
+  "idProduit": "210",
+  "produit": "DICLO-50MG",
+  "idUnite": "PL",
+  "prix_achat": 57,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e3"
+  },
+  "idProduit": "217",
+  "produit": "DIVA COTEX",
+  "idUnite": "PCE",
+  "prix_achat": 2875,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e5"
+  },
+  "idProduit": "219",
+  "produit": "DOLAREN RAPIDE CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 1050,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14ee"
+  },
+  "idProduit": "228",
+  "produit": "EAU DIGESTIVE SP",
+  "idUnite": "FL",
+  "prix_achat": 1238,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14fd"
+  },
+  "idProduit": "243",
+  "produit": "ERYTHRO 250 MG CES",
+  "idUnite": "PL",
+  "prix_achat": 1050,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1535"
+  },
+  "idProduit": "299",
+  "produit": "HEMORROIDAL-HC B/10 SUPPO",
+  "idUnite": "BTE",
+  "prix_achat": 5179,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b153e"
+  },
+  "idProduit": "308",
+  "produit": "INDO SUPPO",
+  "idUnite": "BTE",
+  "prix_achat": 1871,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1557"
+  },
+  "idProduit": "333",
+  "produit": "LUTHER DP CES",
+  "idUnite": "PL",
+  "prix_achat": 9404,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1558"
+  },
+  "idProduit": "334",
+  "produit": "LUTHER-FORTE CES",
+  "idUnite": "PL",
+  "prix_achat": 8550,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1559"
+  },
+  "idProduit": "335",
+  "produit": "MAGNAVIT CAPS PLQ",
+  "idUnite": "PL",
+  "prix_achat": 1450,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 2
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b155b"
+  },
+  "idProduit": "337",
+  "produit": "MALADOX 3CES",
+  "idUnite": "PL",
+  "prix_achat": 630,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1561"
+  },
+  "idProduit": "343",
+  "produit": "M-ARRET INJ 30MG",
+  "idUnite": "FL",
+  "prix_achat": 2016,
+  "prix_vente": 4500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1567"
+  },
+  "idProduit": "349",
+  "produit": "MELOMINE 50ML OIL",
+  "idUnite": "FL",
+  "prix_achat": 12000,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b158a"
+  },
+  "idProduit": "384",
+  "produit": "NECLAZ 40MG BTE",
+  "idUnite": "PL",
+  "prix_achat": 12000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1592"
+  },
+  "idProduit": "392",
+  "produit": "NORMEGYL SP 30ML",
+  "idUnite": "PL",
+  "prix_achat": 3000,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b159e"
+  },
+  "idProduit": "404",
+  "produit": "ORTHOGLIC CES",
+  "idUnite": "PL",
+  "prix_achat": 12000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b3"
+  },
+  "idProduit": "425",
+  "produit": "PARACET SUPPO 125MG PCE",
+  "idUnite": "BTE",
+  "prix_achat": 450,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f0"
+  },
+  "idProduit": "486",
+  "produit": "QUININE 500MG B/10 CES",
+  "idUnite": "PL",
+  "prix_achat": 2880,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f6"
+  },
+  "idProduit": "492",
+  "produit": "RINOMICINE SACHET",
+  "idUnite": "SACHET",
+  "prix_achat": 1152,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1417"
+  },
+  "idProduit": "13",
+  "produit": "ADRENALINE INJ AMP",
+  "idUnite": "AMP",
+  "prix_achat": 100,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b143a"
+  },
+  "idProduit": "48",
+  "produit": "ANTALGEX GELULES B/10",
+  "idUnite": "PL",
+  "prix_achat": 3150,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b143c"
+  },
+  "idProduit": "50",
+  "produit": "APPETIVIT SP 200ML",
+  "idUnite": "FL",
+  "prix_achat": 8640,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1447"
+  },
+  "idProduit": "61",
+  "produit": "ARAUCOF-E SP",
+  "idUnite": "FL",
+  "prix_achat": 4100,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b144b"
+  },
+  "idProduit": "65",
+  "produit": "ARAUFIX 200MG CES",
+  "idUnite": "BTE",
+  "prix_achat": 5760,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1452"
+  },
+  "idProduit": "72",
+  "produit": "ARGYROL GOUTTE",
+  "idUnite": "FL",
+  "prix_achat": 1450,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1454"
+  },
+  "idProduit": "74",
+  "produit": "AROBEBE 100GR",
+  "idUnite": "PCE",
+  "prix_achat": 3000,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1462"
+  },
+  "idProduit": "88",
+  "produit": "ASPIRINE CARDIO B/30",
+  "idUnite": "BTE",
+  "prix_achat": 8400,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1465"
+  },
+  "idProduit": "91",
+  "produit": "ASPIRINE JUNIOR 75MG PLQ 10CES",
+  "idUnite": "PL",
+  "prix_achat": 128,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b147d"
+  },
+  "idProduit": "115",
+  "produit": "CALCIUM INJ AMP",
+  "idUnite": "AMP",
+  "prix_achat": 200,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b148b"
+  },
+  "idProduit": "129",
+  "produit": "CELESTENE GOUTTE",
+  "idUnite": "FL",
+  "prix_achat": 11064,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1495"
+  },
+  "idProduit": "139",
+  "produit": "CETIRIZINE CES PL",
+  "idUnite": "PL",
+  "prix_achat": 300,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1498"
+  },
+  "idProduit": "142",
+  "produit": "CHLORAMPHENICOL GOUTTE OTIQUE",
+  "idUnite": "FL",
+  "prix_achat": 855,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b149e"
+  },
+  "idProduit": "148",
+  "produit": "CIFIN SUSP 250MG/5ML",
+  "idUnite": "FL",
+  "prix_achat": 8064,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a1"
+  },
+  "idProduit": "151",
+  "produit": "CIPRO-DENK 500MG CES",
+  "idUnite": "BTE",
+  "prix_achat": 14819,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e8"
+  },
+  "idProduit": "222",
+  "produit": "DR COLD 4CES",
+  "idUnite": "PL",
+  "prix_achat": 430,
+  "prix_vente": 800,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f1"
+  },
+  "idProduit": "231",
+  "produit": "EAU MINERALE 1L",
+  "idUnite": "FL",
+  "prix_achat": 1000,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1509"
+  },
+  "idProduit": "255",
+  "produit": "FLUCAZOL SP 50MG",
+  "idUnite": "FL",
+  "prix_achat": 8000,
+  "prix_vente": 11000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b152d"
+  },
+  "idProduit": "291",
+  "produit": "GRIPAL NOURRISSON SP 100ML",
+  "idUnite": "SP",
+  "prix_achat": 2736,
+  "prix_vente": 5500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b153b"
+  },
+  "idProduit": "305",
+  "produit": "IBUCAP CAPS PLQ",
+  "idUnite": "PL",
+  "prix_achat": 103,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b154a"
+  },
+  "idProduit": "320",
+  "produit": "LEOPARD BALM 6G PCE",
+  "idUnite": "PCE",
+  "prix_achat": 582,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b154e"
+  },
+  "idProduit": "324",
+  "produit": "LIGNOBAC 10GM GEL",
+  "idUnite": "FL",
+  "prix_achat": 6400,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b156b"
+  },
+  "idProduit": "353",
+  "produit": "METRO CES 250MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 221,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b156c"
+  },
+  "idProduit": "354",
+  "produit": "METRO CES 500MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 435,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1577"
+  },
+  "idProduit": "365",
+  "produit": "MOXONE COLLYRE",
+  "idUnite": "FL",
+  "prix_achat": 6000,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1587"
+  },
+  "idProduit": "381",
+  "produit": "NAOMI TRIPLE ACTION CREME 50G",
+  "idUnite": "TUB",
+  "prix_achat": 3000,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1591"
+  },
+  "idProduit": "391",
+  "produit": "NORMEGYL DP CES",
+  "idUnite": "PL",
+  "prix_achat": 5100,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b159a"
+  },
+  "idProduit": "400",
+  "produit": "OK LUBRIFIANT GEL FRAISE",
+  "idUnite": "PCE",
+  "prix_achat": 8064,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15bb"
+  },
+  "idProduit": "433",
+  "produit": "PAROL CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 2000,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c8"
+  },
+  "idProduit": "446",
+  "produit": "PINAX DT 1X9CES",
+  "idUnite": "BTE",
+  "prix_achat": 8640,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d8"
+  },
+  "idProduit": "462",
+  "produit": "POMMADE ITCHYOLEE 35G",
+  "idUnite": "FL",
+  "prix_achat": 1151,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e3"
+  },
+  "idProduit": "473",
+  "produit": "PREDNI CES",
+  "idUnite": "PL",
+  "prix_achat": 180,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15fc"
+  },
+  "idProduit": "498",
+  "produit": "SALBUTAMOL CES",
+  "idUnite": "PL",
+  "prix_achat": 130,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b142a"
+  },
+  "idProduit": "32",
+  "produit": "AMLOZAAR H B/30 CES",
+  "idUnite": "BTE",
+  "prix_achat": 37439,
+  "prix_vente": 42000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b143b"
+  },
+  "idProduit": "49",
+  "produit": "APPETITBON SP",
+  "idUnite": "FL",
+  "prix_achat": 255,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b143d"
+  },
+  "idProduit": "51",
+  "produit": "AQUATAPS PLQ 10CES",
+  "idUnite": "PL",
+  "prix_achat": 560,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1448"
+  },
+  "idProduit": "62",
+  "produit": "ARAUCOF-N",
+  "idUnite": "FL",
+  "prix_achat": 4100,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b144e"
+  },
+  "idProduit": "68",
+  "produit": "ARAUFLUC INF",
+  "idUnite": "FL",
+  "prix_achat": 3900,
+  "prix_vente": 5500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1457"
+  },
+  "idProduit": "77",
+  "produit": "ARODERME GEL DOUCHE COCO+MANGUE 500ML",
+  "idUnite": "FL",
+  "prix_achat": 5400,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b146b"
+  },
+  "idProduit": "97",
+  "produit": "AZITHRO SP",
+  "idUnite": "FL",
+  "prix_achat": 1800,
+  "prix_vente": 4500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1471"
+  },
+  "idProduit": "103",
+  "produit": "BAUME DE NERFS 38GM",
+  "idUnite": "PCE",
+  "prix_achat": 1440,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1479"
+  },
+  "idProduit": "111",
+  "produit": "BUTHOL SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 4320,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1484"
+  },
+  "idProduit": "122",
+  "produit": "CATHETER G22 PCE",
+  "idUnite": "PCE",
+  "prix_achat": 330,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b148e"
+  },
+  "idProduit": "132",
+  "produit": "CENFEMY PAMPERS AD PCE",
+  "idUnite": "PCE",
+  "prix_achat": 1800,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1492"
+  },
+  "idProduit": "136",
+  "produit": "CESAKROL SP ADULTE",
+  "idUnite": "FL",
+  "prix_achat": 11200,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1494"
+  },
+  "idProduit": "138",
+  "produit": "CETHER-L ADULTE BTE 6CES",
+  "idUnite": "BTE",
+  "prix_achat": 8500,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a7"
+  },
+  "idProduit": "157",
+  "produit": "CITRIMEX SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 3000,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14ba"
+  },
+  "idProduit": "176",
+  "produit": "COFTA CES",
+  "idUnite": "PL",
+  "prix_achat": 864,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14bf"
+  },
+  "idProduit": "181",
+  "produit": "COMBISUNATE AD BTE 6",
+  "idUnite": "BTE",
+  "prix_achat": 1800,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14cd"
+  },
+  "idProduit": "195",
+  "produit": "D-CLAIR PLUS CREME",
+  "idUnite": "PCE",
+  "prix_achat": 7500,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14d0"
+  },
+  "idProduit": "198",
+  "produit": "DERMOBACTER SOL FL/300ML",
+  "idUnite": "FL",
+  "prix_achat": 12095,
+  "prix_vente": 20000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14d1"
+  },
+  "idProduit": "199",
+  "produit": "DESINFECTANT GF",
+  "idUnite": "FL",
+  "prix_achat": 6400,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e1"
+  },
+  "idProduit": "215",
+  "produit": "DIGEST SUSP 200ML",
+  "idUnite": "FL",
+  "prix_achat": 7500,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14ed"
+  },
+  "idProduit": "227",
+  "produit": "DUPHASTON 10CES",
+  "idUnite": "BTE",
+  "prix_achat": 10173,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14ef"
+  },
+  "idProduit": "229",
+  "produit": "EAU DISTILLE FLACON",
+  "idUnite": "FL",
+  "prix_achat": 112,
+  "prix_vente": 250,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1505"
+  },
+  "idProduit": "251",
+  "produit": "FEBRILEX CES PL/4",
+  "idUnite": "PL",
+  "prix_achat": 892,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1510"
+  },
+  "idProduit": "262",
+  "produit": "FORTALINE OMEGA-3 CAPS B/20",
+  "idUnite": "PL",
+  "prix_achat": 6000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1518"
+  },
+  "idProduit": "270",
+  "produit": "FUMBACT SAVON JAUNE 75G",
+  "idUnite": "PCE",
+  "prix_achat": 2247,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b151b"
+  },
+  "idProduit": "273",
+  "produit": "FUROSEMIDE 10X10CES",
+  "idUnite": "PL",
+  "prix_achat": 201,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1530"
+  },
+  "idProduit": "294",
+  "produit": "GYNOKLEEN SOL 100ML",
+  "idUnite": "FL",
+  "prix_achat": 4895,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1537"
+  },
+  "idProduit": "301",
+  "produit": "HYPARTIL PLUS B/30 CES",
+  "idUnite": "BTE",
+  "prix_achat": 13500,
+  "prix_vente": 16000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b158e"
+  },
+  "idProduit": "388",
+  "produit": "NOCIGEL SUSP 200ML",
+  "idUnite": "SP",
+  "prix_achat": 7199,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1599"
+  },
+  "idProduit": "399",
+  "produit": "OK CONDOM",
+  "idUnite": "PCE",
+  "prix_achat": 665,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a1"
+  },
+  "idProduit": "407",
+  "produit": "OTRIVINE 0.5% GTTES FL/10ML",
+  "idUnite": "FL",
+  "prix_achat": 5400,
+  "prix_vente": 10000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b1"
+  },
+  "idProduit": "423",
+  "produit": "PARA-C SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 3456,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c1"
+  },
+  "idProduit": "439",
+  "produit": "PENIKAL PL 10 CAPS",
+  "idUnite": "PL",
+  "prix_achat": 864,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c2"
+  },
+  "idProduit": "440",
+  "produit": "PENI-PROCAINE",
+  "idUnite": "FL",
+  "prix_achat": 720,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15eb"
+  },
+  "idProduit": "481",
+  "produit": "PROMETHAZINE ANTIH SP",
+  "idUnite": "SP",
+  "prix_achat": 1800,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b140f"
+  },
+  "idProduit": "5",
+  "produit": "ACENOIC CES",
+  "idUnite": "FL",
+  "prix_achat": 6000,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b141d"
+  },
+  "idProduit": "19",
+  "produit": "ALEZE B/28CES",
+  "idUnite": "BTE",
+  "prix_achat": 1281,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1426"
+  },
+  "idProduit": "28",
+  "produit": "AMITRIPTILINE CES",
+  "idUnite": "PL",
+  "prix_achat": 384,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b145b"
+  },
+  "idProduit": "81",
+  "produit": "ARODERME POUDRE BEBE 100GR",
+  "idUnite": "PCE",
+  "prix_achat": 2614,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b145d"
+  },
+  "idProduit": "83",
+  "produit": "ARODERME SAVON BEBE 75GM",
+  "idUnite": "PCE",
+  "prix_achat": 1851,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1460"
+  },
+  "idProduit": "86",
+  "produit": "ARTEQUICK CES",
+  "idUnite": "BTE",
+  "prix_achat": 8064,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1478"
+  },
+  "idProduit": "110",
+  "produit": "BUTAGON SP",
+  "idUnite": "FL",
+  "prix_achat": 6400,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1490"
+  },
+  "idProduit": "134",
+  "produit": "CESAFLAM SP",
+  "idUnite": "FL",
+  "prix_achat": 1890,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b149d"
+  },
+  "idProduit": "147",
+  "produit": "CIFIN COLLYRE",
+  "idUnite": "FL",
+  "prix_achat": 2016,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a5"
+  },
+  "idProduit": "155",
+  "produit": "CIPRONAT CES 250MG BTE",
+  "idUnite": "BTE",
+  "prix_achat": 6300,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14cf"
+  },
+  "idProduit": "197",
+  "produit": "DERMOBACTER SOL FL 125ML",
+  "idUnite": "FL",
+  "prix_achat": 8640,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14fb"
+  },
+  "idProduit": "241",
+  "produit": "EPIDERM CREME 30G",
+  "idUnite": "TUB",
+  "prix_achat": 1534,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1502"
+  },
+  "idProduit": "248",
+  "produit": "ESTOWASH SOLUTION",
+  "idUnite": "FL",
+  "prix_achat": 6400,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1504"
+  },
+  "idProduit": "250",
+  "produit": "FALOR SOL VAGINAL",
+  "idUnite": "FL",
+  "prix_achat": 5760,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1506"
+  },
+  "idProduit": "252",
+  "produit": "FEET AID CREME",
+  "idUnite": "TUB",
+  "prix_achat": 900,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1512"
+  },
+  "idProduit": "264",
+  "produit": "FRANCE LAIT 3",
+  "idUnite": "FL",
+  "prix_achat": 22400,
+  "prix_vente": 25000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b151d"
+  },
+  "idProduit": "275",
+  "produit": "GAMALATE B6 SP",
+  "idUnite": "BTE",
+  "prix_achat": 12960,
+  "prix_vente": 21000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1538"
+  },
+  "idProduit": "302",
+  "produit": "HYPARTIL PLUS CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 3111,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1539"
+  },
+  "idProduit": "303",
+  "produit": "IBUCAP FORTE CAPS",
+  "idUnite": "PL",
+  "prix_achat": 780,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1542"
+  },
+  "idProduit": "312",
+  "produit": "KETAZOL CREME 15G",
+  "idUnite": "TUB",
+  "prix_achat": 921,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1548"
+  },
+  "idProduit": "318",
+  "produit": "KOZIC 75G SAVON",
+  "idUnite": "PCE",
+  "prix_achat": 5760,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b154c"
+  },
+  "idProduit": "322",
+  "produit": "LEVASOL 150MG BTE 2CES",
+  "idUnite": "PCE",
+  "prix_achat": 64,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1560"
+  },
+  "idProduit": "342",
+  "produit": "M-ARRET INJ 180MG",
+  "idUnite": "FL",
+  "prix_achat": 5039,
+  "prix_vente": 10000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1569"
+  },
+  "idProduit": "351",
+  "produit": "MELTON SUPPO BTE 5SUPPO",
+  "idUnite": "BTE",
+  "prix_achat": 5760,
+  "prix_vente": 10000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1571"
+  },
+  "idProduit": "359",
+  "produit": "MICROLUT PLQ 35",
+  "idUnite": "PL",
+  "prix_achat": 1240,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1573"
+  },
+  "idProduit": "361",
+  "produit": "MISTROVIX CES",
+  "idUnite": "PL",
+  "prix_achat": 3550,
+  "prix_vente": 8000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b158f"
+  },
+  "idProduit": "389",
+  "produit": "NOOTROPYL 800MG CES",
+  "idUnite": "PL",
+  "prix_achat": 25200,
+  "prix_vente": 30000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1598"
+  },
+  "idProduit": "398",
+  "produit": "OCTEZOL 100ML SOL",
+  "idUnite": "FL",
+  "prix_achat": 7199,
+  "prix_vente": 11200,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ae"
+  },
+  "idProduit": "420",
+  "produit": "PAMPERS AD BONJOUR PCE",
+  "idUnite": "PCE",
+  "prix_achat": 1800,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15bc"
+  },
+  "idProduit": "434",
+  "produit": "PAROL SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 7199,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c5"
+  },
+  "idProduit": "443",
+  "produit": "PERMANGANATE  1CES ",
+  "idUnite": "PCE",
+  "prix_achat": 129,
+  "prix_vente": 250,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e5"
+  },
+  "idProduit": "475",
+  "produit": "PREGNERVE 75",
+  "idUnite": "BTE",
+  "prix_achat": 30000,
+  "prix_vente": 36000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1432"
+  },
+  "idProduit": "40",
+  "produit": "ANAFLAM CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 660,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b144a"
+  },
+  "idProduit": "64",
+  "produit": "ARAUDIC COLLYR",
+  "idUnite": "FL",
+  "prix_achat": 3000,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b144f"
+  },
+  "idProduit": "69",
+  "produit": "ARAUMOL 500MG INF",
+  "idUnite": "FL",
+  "prix_achat": 3600,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b7"
+  },
+  "idProduit": "173",
+  "produit": "COARTEM 6CES",
+  "idUnite": "BTE",
+  "prix_achat": 1500,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14bc"
+  },
+  "idProduit": "178",
+  "produit": "COLD GRIPE 4CES",
+  "idUnite": "PL",
+  "prix_achat": 73,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c4"
+  },
+  "idProduit": "186",
+  "produit": "COTEX FREESTYLE ",
+  "idUnite": "PCE",
+  "prix_achat": 2700,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c7"
+  },
+  "idProduit": "189",
+  "produit": "COUGH LINCTUS SIROP",
+  "idUnite": "FL",
+  "prix_achat": 2100,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14ca"
+  },
+  "idProduit": "192",
+  "produit": "DAFLON 500MG B/30CES",
+  "idUnite": "BTE",
+  "prix_achat": 19200,
+  "prix_vente": 24000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14d7"
+  },
+  "idProduit": "205",
+  "produit": "DEXAMETH COLLYRE",
+  "idUnite": "FL",
+  "prix_achat": 940,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14df"
+  },
+  "idProduit": "213",
+  "produit": "DICLOMEX-100",
+  "idUnite": "PL",
+  "prix_achat": 285,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f5"
+  },
+  "idProduit": "235",
+  "produit": "EFFERALGAN +VIT C  CES B/8",
+  "idUnite": "BTE",
+  "prix_achat": 2550,
+  "prix_vente": 4500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1500"
+  },
+  "idProduit": "246",
+  "produit": "ERYTRO SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 2100,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b151e"
+  },
+  "idProduit": "276",
+  "produit": "GANT PROPRE /PAIRE",
+  "idUnite": "PCE",
+  "prix_achat": 249,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1525"
+  },
+  "idProduit": "283",
+  "produit": "GERMOL LIQUID 100ML",
+  "idUnite": "FL",
+  "prix_achat": 2702,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1543"
+  },
+  "idProduit": "313",
+  "produit": "KETAZOL CREME 30G",
+  "idUnite": "TUB",
+  "prix_achat": 1139,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1564"
+  },
+  "idProduit": "346",
+  "produit": "MAXPRIN JUNIOR 3X10CES",
+  "idUnite": "PL",
+  "prix_achat": 5699,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1590"
+  },
+  "idProduit": "390",
+  "produit": "NORMEGYL CO BTE 10CES",
+  "idUnite": "PL",
+  "prix_achat": 3000,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a3"
+  },
+  "idProduit": "409",
+  "produit": "OVOGYL 500MG OVULE",
+  "idUnite": "BTE",
+  "prix_achat": 7125,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a6"
+  },
+  "idProduit": "412",
+  "produit": "P-72H",
+  "idUnite": "PL",
+  "prix_achat": 2100,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a9"
+  },
+  "idProduit": "415",
+  "produit": "PAMPERS 3 A 6KG BTE",
+  "idUnite": "PCE",
+  "prix_achat": 22500,
+  "prix_vente": 30000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ab"
+  },
+  "idProduit": "417",
+  "produit": "PAMPERS 4 A 9KG PCE",
+  "idUnite": "PCE",
+  "prix_achat": 246,
+  "prix_vente": 333,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c0"
+  },
+  "idProduit": "438",
+  "produit": "PEDIFEN SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 8732,
+  "prix_vente": 13500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c9"
+  },
+  "idProduit": "447",
+  "produit": "PINKOO",
+  "idUnite": "FL",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15cb"
+  },
+  "idProduit": "449",
+  "produit": "POCHE URINAIRE 2000ML",
+  "idUnite": "PCE",
+  "prix_achat": 1450,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15dc"
+  },
+  "idProduit": "466",
+  "produit": "POSTINOR",
+  "idUnite": "BTE",
+  "prix_achat": 5120,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f7"
+  },
+  "idProduit": "493",
+  "produit": "ROSEMARY COTEX B/10",
+  "idUnite": "BTE",
+  "prix_achat": 1200,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b140b"
+  },
+  "idProduit": "1",
+  "produit": " ARODERME PM 50GM",
+  "idUnite": "PCE",
+  "prix_achat": 2799,
+  "prix_vente": 4500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b141c"
+  },
+  "idProduit": "18",
+  "produit": "ALCOOL DENATURE 1L",
+  "idUnite": "FL",
+  "prix_achat": 7500,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1423"
+  },
+  "idProduit": "25",
+  "produit": "AMIDOL CES 500MG",
+  "idUnite": "PL",
+  "prix_achat": 172,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b142b"
+  },
+  "idProduit": "33",
+  "produit": "AMOXICILLINE CAPS 500MG",
+  "idUnite": "PL",
+  "prix_achat": 896,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1430"
+  },
+  "idProduit": "38",
+  "produit": "AMOXYCLAV CES 625MG BTE",
+  "idUnite": "BTE",
+  "prix_achat": 7300,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1434"
+  },
+  "idProduit": "42",
+  "produit": "ANGINOVAG SPRAY FL/10ML",
+  "idUnite": "FL",
+  "prix_achat": 11550,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1446"
+  },
+  "idProduit": "60",
+  "produit": "ARAUCLAV SP NOUR",
+  "idUnite": "FL",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1497"
+  },
+  "idProduit": "141",
+  "produit": "CHLORAMINE-T ",
+  "idUnite": "CES",
+  "prix_achat": 57,
+  "prix_vente": 100,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1499"
+  },
+  "idProduit": "143",
+  "produit": "CHLORAPHENICOL INJ",
+  "idUnite": "FL",
+  "prix_achat": 690,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14ae"
+  },
+  "idProduit": "164",
+  "produit": "CLOMID 50MG BTE",
+  "idUnite": "BTE",
+  "prix_achat": 13824,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b4"
+  },
+  "idProduit": "170",
+  "produit": "CO RIMETAR AD",
+  "idUnite": "BTE",
+  "prix_achat": 7199,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14db"
+  },
+  "idProduit": "209",
+  "produit": "DICLO SUPPO BTE 5",
+  "idUnite": "BTE",
+  "prix_achat": 950,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e0"
+  },
+  "idProduit": "214",
+  "produit": "DIGEST SACHET",
+  "idUnite": "PCE",
+  "prix_achat": 600,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f6"
+  },
+  "idProduit": "236",
+  "produit": "EFFERALGAN CODEINE B/16CES EFF",
+  "idUnite": "BTE",
+  "prix_achat": 6912,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f9"
+  },
+  "idProduit": "239",
+  "produit": "ENALAPRIL 5MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 750,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b150d"
+  },
+  "idProduit": "259",
+  "produit": "FLUCONZOL CP 200MG PLQ 1CES",
+  "idUnite": "PL",
+  "prix_achat": 230,
+  "prix_vente": 800,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1519"
+  },
+  "idProduit": "271",
+  "produit": "FUMBACT SAVON VERT 75G",
+  "idUnite": "PCE",
+  "prix_achat": 2220,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b151c"
+  },
+  "idProduit": "274",
+  "produit": "GAMALATE B6 0075G B/20 CES",
+  "idUnite": "BTE",
+  "prix_achat": 15840,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b152e"
+  },
+  "idProduit": "292",
+  "produit": "GRISEO 1% TUBE",
+  "idUnite": "TUB",
+  "prix_achat": 1600,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b153f"
+  },
+  "idProduit": "309",
+  "produit": "INDOCID CAPS",
+  "idUnite": "BTE",
+  "prix_achat": 180,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1572"
+  },
+  "idProduit": "360",
+  "produit": "MIPROMEX CES BTE 4",
+  "idUnite": "BTE",
+  "prix_achat": 2250,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1574"
+  },
+  "idProduit": "362",
+  "produit": "MIXAGRIP",
+  "idUnite": "PL",
+  "prix_achat": 368,
+  "prix_vente": 750,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1597"
+  },
+  "idProduit": "397",
+  "produit": "NYSTATINE COMP PLQ",
+  "idUnite": "PL",
+  "prix_achat": 1350,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b159b"
+  },
+  "idProduit": "401",
+  "produit": "OMEPRAZOL CAP PLQ",
+  "idUnite": "PL",
+  "prix_achat": 412,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 3
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15aa"
+  },
+  "idProduit": "416",
+  "produit": "PAMPERS 3 A 6KG PCE",
+  "idUnite": "PCE",
+  "prix_achat": 246,
+  "prix_vente": 333,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15cd"
+  },
+  "idProduit": "451",
+  "produit": "POIRE N°4",
+  "idUnite": "PCE",
+  "prix_achat": 2500,
+  "prix_vente": 4500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e6"
+  },
+  "idProduit": "476",
+  "produit": "PRENATAL DHA BTE",
+  "idUnite": "BTE",
+  "prix_achat": 25500,
+  "prix_vente": 33000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1420"
+  },
+  "idProduit": "22",
+  "produit": "ALLURIC CES 200MG",
+  "idUnite": "BTE",
+  "prix_achat": 9600,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b142c"
+  },
+  "idProduit": "34",
+  "produit": "AMOXY CAPS 250MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 300,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1440"
+  },
+  "idProduit": "54",
+  "produit": "ARAUCID 0M",
+  "idUnite": "FL",
+  "prix_achat": 6000,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1449"
+  },
+  "idProduit": "63",
+  "produit": "ARAUCOLD 4CES",
+  "idUnite": "BTE",
+  "prix_achat": 500,
+  "prix_vente": 800,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b145e"
+  },
+  "idProduit": "84",
+  "produit": "AROGYL OVULE",
+  "idUnite": "BTE",
+  "prix_achat": 12000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1461"
+  },
+  "idProduit": "87",
+  "produit": "ARTHEFAN-20 CES DISP",
+  "idUnite": "BTE",
+  "prix_achat": 5940,
+  "prix_vente": 10000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1474"
+  },
+  "idProduit": "106",
+  "produit": "BISACODYL CES 5MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 143,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1475"
+  },
+  "idProduit": "107",
+  "produit": "BISOPROLOL CES 5MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 1020,
+  "prix_vente": 4500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1487"
+  },
+  "idProduit": "125",
+  "produit": "CEFIXIME 200MG BTE 10CES",
+  "idUnite": "BTE",
+  "prix_achat": 2016,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b149b"
+  },
+  "idProduit": "145",
+  "produit": "CHLORPHENIRAMINE CES",
+  "idUnite": "PL",
+  "prix_achat": 57,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14ac"
+  },
+  "idProduit": "162",
+  "produit": "BOTOMYCINE  (CLARITHROMYCIN) 500MG",
+  "idUnite": "BTE",
+  "prix_achat": 20500,
+  "prix_vente": 24000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14ad"
+  },
+  "idProduit": "163",
+  "produit": "CLOMAC CREME",
+  "idUnite": "PCE",
+  "prix_achat": 7500,
+  "prix_vente": 11000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b0"
+  },
+  "idProduit": "166",
+  "produit": "CLOXACILLINE 250MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 650,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 2
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14be"
+  },
+  "idProduit": "180",
+  "produit": "COLGATE TRIPLE ACTION PCE",
+  "idUnite": "PCE",
+  "prix_achat": 2100,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14ec"
+  },
+  "idProduit": "226",
+  "produit": "DUPHALAC SACHETS ",
+  "idUnite": "SACHET",
+  "prix_achat": 570,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f4"
+  },
+  "idProduit": "234",
+  "produit": "EFFERALGAN +VIT C  B/16CES",
+  "idUnite": "BTE",
+  "prix_achat": 4531,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b150b"
+  },
+  "idProduit": "257",
+  "produit": "FLUCOLDEX COLD +FLU B12 CES",
+  "idUnite": "PL",
+  "prix_achat": 1650,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b150e"
+  },
+  "idProduit": "260",
+  "produit": "FLUDITEC ADULTE SP 5%",
+  "idUnite": "FL",
+  "prix_achat": 7545,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b153d"
+  },
+  "idProduit": "307",
+  "produit": "IBUPROFEN SP 100MG",
+  "idUnite": "FL",
+  "prix_achat": 1200,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b156f"
+  },
+  "idProduit": "357",
+  "produit": "MEYAMYCIN SP",
+  "idUnite": "FL",
+  "prix_achat": 5760,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b6"
+  },
+  "idProduit": "428",
+  "produit": "PARACETAMOL INF",
+  "idUnite": "FL",
+  "prix_achat": 2763,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15be"
+  },
+  "idProduit": "436",
+  "produit": "PATOUX LOZENGES 2PASTILLE",
+  "idUnite": "PCE",
+  "prix_achat": 50,
+  "prix_vente": 100,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ca"
+  },
+  "idProduit": "448",
+  "produit": "PIROXICAM CAPS 10CES",
+  "idUnite": "PL",
+  "prix_achat": 633,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15cc"
+  },
+  "idProduit": "450",
+  "produit": "POIRE N°2",
+  "idUnite": "PCE",
+  "prix_achat": 3000,
+  "prix_vente": 4500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15dd"
+  },
+  "idProduit": "467",
+  "produit": "POUDRE CANDISTEN 50GR",
+  "idUnite": "FL",
+  "prix_achat": 4500,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e0"
+  },
+  "idProduit": "470",
+  "produit": "PRAZOLE  CAPS 20MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 450,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 3
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f1"
+  },
+  "idProduit": "487",
+  "produit": "QUININE PK GOUTTES",
+  "idUnite": "FL",
+  "prix_achat": 3094,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f4"
+  },
+  "idProduit": "490",
+  "produit": "RELIEF CES 10X10",
+  "idUnite": "PL",
+  "prix_achat": 450,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1421"
+  },
+  "idProduit": "23",
+  "produit": "ALLURIC CES 300MG",
+  "idUnite": "BTE",
+  "prix_achat": 12800,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b143f"
+  },
+  "idProduit": "53",
+  "produit": "ARAUBACT IV 100ML",
+  "idUnite": "FL",
+  "prix_achat": 5184,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1442"
+  },
+  "idProduit": "56",
+  "produit": "ARAUCLAV 562.5MG CES",
+  "idUnite": "BTE",
+  "prix_achat": 10500,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b144c"
+  },
+  "idProduit": "66",
+  "produit": "ARAUFIX-400MG",
+  "idUnite": "BTE",
+  "prix_achat": 8550,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b146e"
+  },
+  "idProduit": "100",
+  "produit": "BANDE ELASTIQUE 15CM",
+  "idUnite": "PCE",
+  "prix_achat": 979,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b147e"
+  },
+  "idProduit": "116",
+  "produit": "CANDERM POUDRE 100G",
+  "idUnite": "FL",
+  "prix_achat": 2940,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1488"
+  },
+  "idProduit": "126",
+  "produit": "CEFIXIME 400MG",
+  "idUnite": "BTE",
+  "prix_achat": 5328,
+  "prix_vente": 10000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b149c"
+  },
+  "idProduit": "146",
+  "produit": "CHLORPHENIRAMINE SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 600,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b149f"
+  },
+  "idProduit": "149",
+  "produit": "CIPRO 500MG",
+  "idUnite": "PL",
+  "prix_achat": 930,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b3"
+  },
+  "idProduit": "169",
+  "produit": "CO ARINATE AD 500MG",
+  "idUnite": "BTE",
+  "prix_achat": 10079,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b5"
+  },
+  "idProduit": "171",
+  "produit": "COARINATE CES",
+  "idUnite": "BTE",
+  "prix_achat": 8500,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14bb"
+  },
+  "idProduit": "177",
+  "produit": "COLCHICINE B/15CES",
+  "idUnite": "BTE",
+  "prix_achat": 12300,
+  "prix_vente": 16000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c2"
+  },
+  "idProduit": "184",
+  "produit": "CONDOM PLQ 3PCES",
+  "idUnite": "BTE",
+  "prix_achat": 249,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f2"
+  },
+  "idProduit": "232",
+  "produit": "EAU MINERALE 5L",
+  "idUnite": "FL",
+  "prix_achat": 1500,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1507"
+  },
+  "idProduit": "253",
+  "produit": "FERVEX AD SACHET",
+  "idUnite": "SACHET",
+  "prix_achat": 9600,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1515"
+  },
+  "idProduit": "267",
+  "produit": "FUCIDINE CREME",
+  "idUnite": "TUB",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b151a"
+  },
+  "idProduit": "272",
+  "produit": "FURADENTINE CES 100MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 370,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b152a"
+  },
+  "idProduit": "288",
+  "produit": "GOGYNAX CREME 30G",
+  "idUnite": "CREME",
+  "prix_achat": 1950,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1545"
+  },
+  "idProduit": "315",
+  "produit": "KIFARU FORTE 50MG/30MGCES",
+  "idUnite": "PL",
+  "prix_achat": 2422,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b155f"
+  },
+  "idProduit": "341",
+  "produit": "M-ARRET INJ 150MG",
+  "idUnite": "FL",
+  "prix_achat": 4320,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1584"
+  },
+  "idProduit": "378",
+  "produit": "NALIDIXIC ACID CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 760,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1594"
+  },
+  "idProduit": "394",
+  "produit": "NUCLEO C.M.P FORTE CAPS",
+  "idUnite": "BTE",
+  "prix_achat": 22500,
+  "prix_vente": 27000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a8"
+  },
+  "idProduit": "414",
+  "produit": "PAIDOTERIN LIQ 100ML",
+  "idUnite": "FL",
+  "prix_achat": 10368,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ba"
+  },
+  "idProduit": "432",
+  "produit": "PAROL 500MG CES B/30",
+  "idUnite": "BTE",
+  "prix_achat": 5400,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c4"
+  },
+  "idProduit": "442",
+  "produit": "PERFAC 100MG B/10 SUPPO",
+  "idUnite": "PCE",
+  "prix_achat": 2900,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15c7"
+  },
+  "idProduit": "445",
+  "produit": "PHENOBARBITAL 100MG CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 1230,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d0"
+  },
+  "idProduit": "454",
+  "produit": "POLYDEXA NAZAL GTT FL/15ML",
+  "idUnite": "FL",
+  "prix_achat": 7776,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d5"
+  },
+  "idProduit": "459",
+  "produit": "POMMADE ANTIGALE",
+  "idUnite": "FL",
+  "prix_achat": 1200,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ef"
+  },
+  "idProduit": "485",
+  "produit": "QUININE 3OOMG",
+  "idUnite": "PL",
+  "prix_achat": 1920,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b142d"
+  },
+  "idProduit": "35",
+  "produit": "AMOXY COMP 250MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 300,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b143e"
+  },
+  "idProduit": "52",
+  "produit": "ARAUBACT 500MG CES",
+  "idUnite": "BTE",
+  "prix_achat": 7500,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1445"
+  },
+  "idProduit": "59",
+  "produit": "ARAUCLAV INJ 1.2",
+  "idUnite": "FL",
+  "prix_achat": 7500,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1469"
+  },
+  "idProduit": "95",
+  "produit": "AUVAX CES BTE 20",
+  "idUnite": "BTE",
+  "prix_achat": 7500,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b146f"
+  },
+  "idProduit": "101",
+  "produit": "BAUME DE NERF 80GRS PCE",
+  "idUnite": "PCE",
+  "prix_achat": 2500,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b147f"
+  },
+  "idProduit": "117",
+  "produit": "CANDERM POUDRE 50G",
+  "idUnite": "FL",
+  "prix_achat": 1501,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b149a"
+  },
+  "idProduit": "144",
+  "produit": "CHLORHEXIDINE CREME PCE",
+  "idUnite": "PCE",
+  "prix_achat": 1300,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a4"
+  },
+  "idProduit": "154",
+  "produit": "CIPRONAT 750MG",
+  "idUnite": "BTE",
+  "prix_achat": 9900,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b1"
+  },
+  "idProduit": "167",
+  "produit": "CLOXACILLINE 250MG SP",
+  "idUnite": "FL",
+  "prix_achat": 2100,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b9"
+  },
+  "idProduit": "175",
+  "produit": "CODE-FREE BANDELETTE BTE",
+  "idUnite": "BTE",
+  "prix_achat": 27000,
+  "prix_vente": 36000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c6"
+  },
+  "idProduit": "188",
+  "produit": "COTRIMEX SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 1450,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14e2"
+  },
+  "idProduit": "216",
+  "produit": "DIPROSON LOTION 30ML",
+  "idUnite": "FL",
+  "prix_achat": 1726,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1511"
+  },
+  "idProduit": "263",
+  "produit": "FRANCE LAIT 2",
+  "idUnite": "FL",
+  "prix_achat": 22400,
+  "prix_vente": 25000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1513"
+  },
+  "idProduit": "265",
+  "produit": "FRANCE LAIT N° 1",
+  "idUnite": "FL",
+  "prix_achat": 21750,
+  "prix_vente": 24000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b153a"
+  },
+  "idProduit": "304",
+  "produit": "IBUCAP GEL 30G",
+  "idUnite": "TUB",
+  "prix_achat": 3134,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1549"
+  },
+  "idProduit": "319",
+  "produit": "LAWASH HYGIENE INTIME",
+  "idUnite": "FL",
+  "prix_achat": 6912,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1553"
+  },
+  "idProduit": "329",
+  "produit": "LINGETTE LOA 80 PCES",
+  "idUnite": "BTE",
+  "prix_achat": 2500,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1555"
+  },
+  "idProduit": "331",
+  "produit": "LUAGRA 50MG",
+  "idUnite": "PL",
+  "prix_achat": 5100,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1556"
+  },
+  "idProduit": "332",
+  "produit": "LUAGRA ORAL JELLY PCE",
+  "idUnite": "PCE",
+  "prix_achat": 890,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b155a"
+  },
+  "idProduit": "336",
+  "produit": "MAIGRIX BTE 10CES",
+  "idUnite": "BTE",
+  "prix_achat": 8400,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b155d"
+  },
+  "idProduit": "339",
+  "produit": "M-ARRET 240MF FLC",
+  "idUnite": "FL",
+  "prix_achat": 6900,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b156a"
+  },
+  "idProduit": "352",
+  "produit": "METAZOL CES 250MG",
+  "idUnite": "PL",
+  "prix_achat": 178,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1575"
+  },
+  "idProduit": "363",
+  "produit": "MIXTROVIX",
+  "idUnite": "PL",
+  "prix_achat": 3500,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b157f"
+  },
+  "idProduit": "373",
+  "produit": "MULTIVITAMINE CES ",
+  "idUnite": "PL",
+  "prix_achat": 198,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1582"
+  },
+  "idProduit": "376",
+  "produit": "NAFCLOR COLLYRE",
+  "idUnite": "FL",
+  "prix_achat": 6000,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1583"
+  },
+  "idProduit": "377",
+  "produit": "NAFEZOL CREME",
+  "idUnite": "TUB",
+  "prix_achat": 5600,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1585"
+  },
+  "idProduit": "379",
+  "produit": "NAN 1",
+  "idUnite": "FL",
+  "prix_achat": 22400,
+  "prix_vente": 25000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b159d"
+  },
+  "idProduit": "403",
+  "produit": "ORNID OX CES",
+  "idUnite": "PL",
+  "prix_achat": 7500,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b159f"
+  },
+  "idProduit": "405",
+  "produit": "OTRHOGLIC CES",
+  "idUnite": "PL",
+  "prix_achat": 11399,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a4"
+  },
+  "idProduit": "410",
+  "produit": "OVUMIX OVULES",
+  "idUnite": "BTE",
+  "prix_achat": 12909,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a5"
+  },
+  "idProduit": "411",
+  "produit": "P0LYGYNAX B/6 OVULES",
+  "idUnite": "BTE",
+  "prix_achat": 10350,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15bf"
+  },
+  "idProduit": "437",
+  "produit": "PEDIFEN CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 2200,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d1"
+  },
+  "idProduit": "455",
+  "produit": "POLYGEL CES",
+  "idUnite": "PL",
+  "prix_achat": 350,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15da"
+  },
+  "idProduit": "464",
+  "produit": "POMMADE OXYDE DE ZINC",
+  "idUnite": "FL",
+  "prix_achat": 1871,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15db"
+  },
+  "idProduit": "465",
+  "produit": "POSITON CREME",
+  "idUnite": "TUB",
+  "prix_achat": 11000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15df"
+  },
+  "idProduit": "469",
+  "produit": "PRAZOL KIT",
+  "idUnite": "BTE",
+  "prix_achat": 21375,
+  "prix_vente": 30000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e9"
+  },
+  "idProduit": "479",
+  "produit": "PROMETH ANTIHIST",
+  "idUnite": "SP",
+  "prix_achat": 1139,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ea"
+  },
+  "idProduit": "480",
+  "produit": "PROMETH SP EXP 100ML",
+  "idUnite": "SP",
+  "prix_achat": 950,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15fe"
+  },
+  "idProduit": "500",
+  "produit": "SALBUTAMOL SPRAY (ventolique)",
+  "idUnite": "FL",
+  "prix_achat": 3200,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b140e"
+  },
+  "idProduit": "4",
+  "produit": "72 H CES",
+  "idUnite": "PCE",
+  "prix_achat": 990,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1413"
+  },
+  "idProduit": "9",
+  "produit": "A-DEM CREME 15G",
+  "idUnite": "PCE",
+  "prix_achat": 2400,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b141e"
+  },
+  "idProduit": "20",
+  "produit": "ALEZE/72H CES 1CE",
+  "idUnite": "BTE",
+  "prix_achat": 1980,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1427"
+  },
+  "idProduit": "29",
+  "produit": "AMLO-DENK 10MG PLQ 10CES",
+  "idUnite": "PL",
+  "prix_achat": 4600,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b142e"
+  },
+  "idProduit": "36",
+  "produit": "AMOXY SP 125MG 100ML",
+  "idUnite": "FL",
+  "prix_achat": 1250,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1435"
+  },
+  "idProduit": "43",
+  "produit": "ANSET B/1AMP",
+  "idUnite": "AMP",
+  "prix_achat": 2016,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b144d"
+  },
+  "idProduit": "67",
+  "produit": "ARAUFLOX IV 100ML",
+  "idUnite": "FL",
+  "prix_achat": 3456,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1455"
+  },
+  "idProduit": "75",
+  "produit": "ARODERME CREME 250ML",
+  "idUnite": "FL",
+  "prix_achat": 4410,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1456"
+  },
+  "idProduit": "76",
+  "produit": "ARODERME GEL DOUCHE BEBE ROSE 500ML",
+  "idUnite": "FL",
+  "prix_achat": 7875,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b145a"
+  },
+  "idProduit": "80",
+  "produit": "ARODERME PM 100G",
+  "idUnite": "PCE",
+  "prix_achat": 4320,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b145c"
+  },
+  "idProduit": "82",
+  "produit": "ARODERME POUDRE BEBE 500G",
+  "idUnite": "PCE",
+  "prix_achat": 5985,
+  "prix_vente": 10000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b147c"
+  },
+  "idProduit": "114",
+  "produit": "CADISTIN SP EXPECTORANT",
+  "idUnite": "FL",
+  "prix_achat": 2400,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1489"
+  },
+  "idProduit": "127",
+  "produit": "CEFIXIME SP 1OOML",
+  "idUnite": "FL",
+  "prix_achat": 3900,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b148f"
+  },
+  "idProduit": "133",
+  "produit": "CERELAC",
+  "idUnite": "PCE",
+  "prix_achat": 16000,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1496"
+  },
+  "idProduit": "140",
+  "produit": "CEVITE 1000 EFF",
+  "idUnite": "FL",
+  "prix_achat": 5169,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14ab"
+  },
+  "idProduit": "161",
+  "produit": "CLARINEZ NASAL 0.1%",
+  "idUnite": "PCE",
+  "prix_achat": 1380,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b6"
+  },
+  "idProduit": "172",
+  "produit": "COARTEM 24CES",
+  "idUnite": "BTE",
+  "prix_achat": 1500,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14b8"
+  },
+  "idProduit": "174",
+  "produit": "CODE FRE BANDELETTE PCE",
+  "idUnite": "PCE",
+  "prix_achat": 570,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c9"
+  },
+  "idProduit": "191",
+  "produit": "CYPOMEX 4MG",
+  "idUnite": "PL",
+  "prix_achat": 216,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14d2"
+  },
+  "idProduit": "200",
+  "produit": "DESINFECTANT PF",
+  "idUnite": "FL",
+  "prix_achat": 1600,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14d3"
+  },
+  "idProduit": "201",
+  "produit": "DESPAIN-P CES",
+  "idUnite": "BTE",
+  "prix_achat": 7199,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14dd"
+  },
+  "idProduit": "211",
+  "produit": "DICLOFENAC INJ ",
+  "idUnite": "AMP",
+  "prix_achat": 100,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14eb"
+  },
+  "idProduit": "225",
+  "produit": "DR. COMBI CES",
+  "idUnite": "PL",
+  "prix_achat": 403,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f0"
+  },
+  "idProduit": "230",
+  "produit": "EAU MINERAL 600ML",
+  "idUnite": "FL",
+  "prix_achat": 500,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14f3"
+  },
+  "idProduit": "233",
+  "produit": "EFFERALGAN +CODEINE   CES B/8",
+  "idUnite": "BTE",
+  "prix_achat": 3950,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14fe"
+  },
+  "idProduit": "244",
+  "produit": "ERYTHRO CES 500MG",
+  "idUnite": "PL",
+  "prix_achat": 1440,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1503"
+  },
+  "idProduit": "249",
+  "produit": "EUCALYPTOL SP",
+  "idUnite": "FL",
+  "prix_achat": 3743,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1527"
+  },
+  "idProduit": "285",
+  "produit": "GERMOL SAVON 75G",
+  "idUnite": "PCE",
+  "prix_achat": 1600,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b152c"
+  },
+  "idProduit": "290",
+  "produit": "GRIPAL ENFANT 100ML SP",
+  "idUnite": "SP",
+  "prix_achat": 900,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1533"
+  },
+  "idProduit": "297",
+  "produit": "HEMOFORCE SP 200ML",
+  "idUnite": "FL",
+  "prix_achat": 5255,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1536"
+  },
+  "idProduit": "300",
+  "produit": "HIFER SP 100ML",
+  "idUnite": "SP",
+  "prix_achat": 8000,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b155e"
+  },
+  "idProduit": "340",
+  "produit": "M-ARRET 60MG",
+  "idUnite": "FL",
+  "prix_achat": 2565,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b156d"
+  },
+  "idProduit": "355",
+  "produit": "METRO INF",
+  "idUnite": "FL",
+  "prix_achat": 1200,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1579"
+  },
+  "idProduit": "367",
+  "produit": "MUCOFEEX PEDIATRIC SP",
+  "idUnite": "FL",
+  "prix_achat": 1583,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b157b"
+  },
+  "idProduit": "369",
+  "produit": "MUCOPRIN SP PED",
+  "idUnite": "FL",
+  "prix_achat": 2191,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b157c"
+  },
+  "idProduit": "370",
+  "produit": "MUCORIL SP",
+  "idUnite": "FL",
+  "prix_achat": 3167,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a7"
+  },
+  "idProduit": "413",
+  "produit": "PAEX-40 CES",
+  "idUnite": "PL",
+  "prix_achat": 316,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b2"
+  },
+  "idProduit": "424",
+  "produit": "PARACET CES 100MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 123,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b8"
+  },
+  "idProduit": "430",
+  "produit": "PARACETAMOL SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 1151,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15bd"
+  },
+  "idProduit": "435",
+  "produit": "PATOUX HERBAL 1PASTILLE",
+  "idUnite": "PCE",
+  "prix_achat": 50,
+  "prix_vente": 100,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15d3"
+  },
+  "idProduit": "457",
+  "produit": "POLYGEL SUSP 120ML",
+  "idUnite": "FL",
+  "prix_achat": 2566,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f3"
+  },
+  "idProduit": "489",
+  "produit": "RELAX",
+  "idUnite": "SACHET",
+  "prix_achat": 390,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f5"
+  },
+  "idProduit": "491",
+  "produit": "REVOKE-72H",
+  "idUnite": "PL",
+  "prix_achat": 1250,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f8"
+  },
+  "idProduit": "494",
+  "produit": "RUFEDOL PLUS CES",
+  "idUnite": "PL",
+  "prix_achat": 413,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15f9"
+  },
+  "idProduit": "495",
+  "produit": "RUFEDOL SIMPLE",
+  "idUnite": "PL",
+  "prix_achat": 189,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1412"
+  },
+  "idProduit": "8",
+  "produit": "ACTM 80MG/480MG B/6",
+  "idUnite": "BTE",
+  "prix_achat": 1995,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1439"
+  },
+  "idProduit": "47",
+  "produit": "ANT CREME",
+  "idUnite": "PCE",
+  "prix_achat": 13500,
+  "prix_vente": 16000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1450"
+  },
+  "idProduit": "70",
+  "produit": "ARAUMOX 400MG CES",
+  "idUnite": "BTE",
+  "prix_achat": 11520,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b1464"
+  },
+  "idProduit": "90",
+  "produit": "ASPIRINE JUNIOR 100MG CES B/30",
+  "idUnite": "BTE",
+  "prix_achat": 12095,
+  "prix_vente": 16500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4169a0ebdc0c226b146d"
+  },
+  "idProduit": "99",
+  "produit": "BANDE ELASTIQUE 10CM",
+  "idUnite": "PCE",
+  "prix_achat": 1020,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b147b"
+  },
+  "idProduit": "113",
+  "produit": "C-4 SP",
+  "idUnite": "FL",
+  "prix_achat": 2850,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1482"
+  },
+  "idProduit": "120",
+  "produit": "CARNOREX B/10",
+  "idUnite": "BTE",
+  "prix_achat": 8310,
+  "prix_vente": 13500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b1485"
+  },
+  "idProduit": "123",
+  "produit": "CATHETER IV 24G",
+  "idUnite": "PCE",
+  "prix_achat": 348,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14a0"
+  },
+  "idProduit": "150",
+  "produit": "CIPRO INF",
+  "idUnite": "FL",
+  "prix_achat": 900,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac422ba0ebdc0c226b14c3"
+  },
+  "idProduit": "185",
+  "produit": "CONFO LIQ",
+  "idUnite": "FL",
+  "prix_achat": 950,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14d4"
+  },
+  "idProduit": "202",
+  "produit": "DETOL SAVON",
+  "idUnite": "PCE",
+  "prix_achat": 1900,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b14ff"
+  },
+  "idProduit": "245",
+  "produit": "ERYTHRO SP 250MG 60ML",
+  "idUnite": "FL",
+  "prix_achat": 1410,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4258a0ebdc0c226b1529"
+  },
+  "idProduit": "287",
+  "produit": "GLYCERINE PHENIQUE",
+  "idUnite": "FL",
+  "prix_achat": 2500,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1540"
+  },
+  "idProduit": "310",
+  "produit": "KAPTOL COMP BT/16",
+  "idUnite": "PL",
+  "prix_achat": 3100,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1550"
+  },
+  "idProduit": "326",
+  "produit": "LINGETTE LAO 25PCES",
+  "idUnite": "BTE",
+  "prix_achat": 1000,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1554"
+  },
+  "idProduit": "330",
+  "produit": "LOPRADE",
+  "idUnite": "PL",
+  "prix_achat": 132,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1570"
+  },
+  "idProduit": "358",
+  "produit": "MICONAZOLE CREME 30GR",
+  "idUnite": "TUB",
+  "prix_achat": 2100,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b1576"
+  },
+  "idProduit": "364",
+  "produit": "MOTILIUM SUSP BUV FL/200ML",
+  "idUnite": "FL",
+  "prix_achat": 11520,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac4280a0ebdc0c226b158d"
+  },
+  "idProduit": "387",
+  "produit": "NITRATE D'ARGENT",
+  "idUnite": "PCE",
+  "prix_achat": 10640,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15a0"
+  },
+  "idProduit": "406",
+  "produit": "OTRIVINE 0.1%",
+  "idUnite": "FL",
+  "prix_achat": 6900,
+  "prix_vente": 11000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15ac"
+  },
+  "idProduit": "418",
+  "produit": "PAMPERS 8 A 18KG  PCE",
+  "idUnite": "PCE",
+  "prix_achat": 259,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15b5"
+  },
+  "idProduit": "427",
+  "produit": "PARACETAMOL CES PLQ 500MG",
+  "idUnite": "PL",
+  "prix_achat": 168,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15cf"
+  },
+  "idProduit": "453",
+  "produit": "POIRE N°8",
+  "idUnite": "PCE",
+  "prix_achat": 4500,
+  "prix_vente": 8500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac42fda0ebdc0c226b15e7"
+  },
+  "idProduit": "477",
+  "produit": "PROBALEX CAPS BTE 10",
+  "idUnite": "BTE",
+  "prix_achat": 7500,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1600"
+  },
+  "idProduit": "502",
+  "produit": "SAVON CINTOL 125GR",
+  "idUnite": "PCE",
+  "prix_achat": 1700,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1603"
+  },
+  "idProduit": "505",
+  "produit": "SCORVITEX CES 500MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 510,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1634"
+  },
+  "idProduit": "554",
+  "produit": "TASCURE 30MG",
+  "idUnite": "PCE",
+  "prix_achat": 5760,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1646"
+  },
+  "idProduit": "572",
+  "produit": "URICREST 200ML S0LUTION",
+  "idUnite": "FL",
+  "prix_achat": 12960,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1649"
+  },
+  "idProduit": "575",
+  "produit": "UTROGESTAN 200MG CAPS B/15",
+  "idUnite": "BTE",
+  "prix_achat": 25799,
+  "prix_vente": 36000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1650"
+  },
+  "idProduit": "582",
+  "produit": "VIT B6 CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 234,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1658"
+  },
+  "idProduit": "590",
+  "produit": "ZENDEX PLQ 2CES",
+  "idUnite": "PL",
+  "prix_achat": 160,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2c8ab49f3b3f828bc92ff"
+  },
+  "produit": "DOLIPRANE +VIT C BTE 8",
+  "idProduit": "1756547243662",
+  "prix_achat": 3000,
+  "prix_vente": 4500,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1607"
+  },
+  "idProduit": "509",
+  "produit": "SENSODYNE EMAIL 75ML",
+  "idUnite": "PCE",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1608"
+  },
+  "idProduit": "510",
+  "produit": "SENSOTAC 100GM GEL",
+  "idUnite": "PCE",
+  "prix_achat": 7199,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b160a"
+  },
+  "idProduit": "512",
+  "produit": "SERINGUE 10CC",
+  "idUnite": "PCE",
+  "prix_achat": 144,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1614"
+  },
+  "idProduit": "522",
+  "produit": "SHALTOUX RAPID SP",
+  "idUnite": "FL",
+  "prix_achat": 1700,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b161d"
+  },
+  "idProduit": "531",
+  "produit": "SOFT CARE 10PCES",
+  "idUnite": "BTE",
+  "prix_achat": 1800,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b162e"
+  },
+  "idProduit": "548",
+  "produit": "SULFACTRIM FORTE",
+  "idUnite": "BTE",
+  "prix_achat": 960,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1632"
+  },
+  "idProduit": "552",
+  "produit": "TANO-TH CREME",
+  "idUnite": "PCE",
+  "prix_achat": 8489,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b163c"
+  },
+  "idProduit": "562",
+  "produit": "TINIZOL CES BTE 4CES",
+  "idUnite": "PL",
+  "prix_achat": 315,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b163d"
+  },
+  "idProduit": "563",
+  "produit": "TRAMADOL 50MG B/10CAP",
+  "idUnite": "PL",
+  "prix_achat": 1050,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1642"
+  },
+  "idProduit": "568",
+  "produit": "ULTRA LEVURE 250 SACH B/10",
+  "idUnite": "PCE",
+  "prix_achat": 1712,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1652"
+  },
+  "idProduit": "584",
+  "produit": "VITAMINE B COMPLEX PLQ",
+  "idUnite": "PL",
+  "prix_achat": 64,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2a3693353e3bfb48da7e8"
+  },
+  "produit": "SPASTA CES BTE 10",
+  "idProduit": "1756537705671",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2baf13353e3bfb48daad0"
+  },
+  "produit": "SPARADRAP PERF 18CM",
+  "idProduit": "1756543729863",
+  "prix_achat": 12000,
+  "prix_vente": 18000,
+  "idUnite": "PCE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2d48c49f3b3f828bc963c"
+  },
+  "produit": "LEVASOL CES 50MG 2CES",
+  "idProduit": "1756550284512",
+  "prix_achat": 57,
+  "prix_vente": 500,
+  "idUnite": "PL",
+  "idShop": "ivanne",
+  "alerte": 10,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2e01049f3b3f828bc9950"
+  },
+  "produit": "TELSHAL H 40/12,5",
+  "idProduit": "1756553232564",
+  "prix_achat": 9900,
+  "prix_vente": 15000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b15ff"
+  },
+  "idProduit": "501",
+  "produit": "SAVODERME 130G",
+  "idUnite": "PCE",
+  "prix_achat": 2100,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1604"
+  },
+  "idProduit": "506",
+  "produit": "SECOURS B/10",
+  "idUnite": "PL",
+  "prix_achat": 600,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1619"
+  },
+  "idProduit": "527",
+  "produit": "SIMAREST FORTE 4 CES",
+  "idUnite": "PL",
+  "prix_achat": 305,
+  "prix_vente": 750,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b161b"
+  },
+  "idProduit": "529",
+  "produit": "SOCOMOL SPRAY",
+  "idUnite": "FL",
+  "prix_achat": 5400,
+  "prix_vente": 11000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1625"
+  },
+  "idProduit": "539",
+  "produit": "SPASCLAIR 10CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 3000,
+  "prix_vente": 4500,
+  "idShop": "ivanne",
+  "alerte": 2
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1635"
+  },
+  "idProduit": "555",
+  "produit": "TEMPERINE PLUS CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 1440,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1640"
+  },
+  "idProduit": "566",
+  "produit": "TRIOKIT KIT",
+  "idUnite": "BTE",
+  "prix_achat": 8928,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1643"
+  },
+  "idProduit": "569",
+  "produit": "ULTRA-DOZEM EFF B/16 CES",
+  "idUnite": "BTE",
+  "prix_achat": 7025,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b164e"
+  },
+  "idProduit": "580",
+  "produit": "VEROGYL 40GM CREME",
+  "idUnite": "PCE",
+  "prix_achat": 11520,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2d8fe49f3b3f828bc970d"
+  },
+  "produit": "FEMROZ CES BTE 10",
+  "idProduit": "1756551422395",
+  "prix_achat": 12000,
+  "prix_vente": 15000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2da1849f3b3f828bc9773"
+  },
+  "produit": "CAL D CES EFFERV BTE 20",
+  "idProduit": "1756551704632",
+  "prix_achat": 5000,
+  "prix_vente": 9000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2dc8449f3b3f828bc981c"
+  },
+  "produit": "ACTM BTE 24CES",
+  "idProduit": "1756552324687",
+  "prix_achat": 1800,
+  "prix_vente": 5000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2dfae49f3b3f828bc9932"
+  },
+  "produit": "VASPCART T BTE 14",
+  "idProduit": "1756553134399",
+  "prix_achat": 15000,
+  "prix_vente": 18000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b160f"
+  },
+  "idProduit": "517",
+  "produit": "SHAL'ARTEM FORTE CES",
+  "idUnite": "BTE",
+  "prix_achat": 6059,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1620"
+  },
+  "idProduit": "534",
+  "produit": "SONDE NASO GAST N°5",
+  "idUnite": "PCE",
+  "prix_achat": 1500,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b162a"
+  },
+  "idProduit": "544",
+  "produit": "STANOFIX TUBE",
+  "idUnite": "TUB",
+  "prix_achat": 9,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b162c"
+  },
+  "idProduit": "546",
+  "produit": "STEROVIT GOUTTE",
+  "idUnite": "FL",
+  "prix_achat": 12000,
+  "prix_vente": 16500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b163b"
+  },
+  "idProduit": "561",
+  "produit": "THIAMINE CES ",
+  "idUnite": "PL",
+  "prix_achat": 360,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b164a"
+  },
+  "idProduit": "576",
+  "produit": "VASELINE POMMADE BDOM BKV 230G",
+  "idUnite": "PCE",
+  "prix_achat": 7200,
+  "prix_vente": 10000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68b2c67649f3b3f828bc928d"
+  },
+  "produit": "COXIPAIN CES 60MG BTE",
+  "idProduit": "1756546678470",
+  "prix_achat": 6000,
+  "prix_vente": 9000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b160e"
+  },
+  "idProduit": "516",
+  "produit": "SHAL'ARTEM DISPERSIBLE CES",
+  "idUnite": "BTE",
+  "prix_achat": 2763,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1611"
+  },
+  "idProduit": "519",
+  "produit": "SHALDEX EYE/EAR DROPS 10ML",
+  "idUnite": "FL",
+  "prix_achat": 1561,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1612"
+  },
+  "idProduit": "520",
+  "produit": "SHALFLOX COMP BTE 10CES",
+  "idUnite": "BTE",
+  "prix_achat": 1380,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1622"
+  },
+  "idProduit": "536",
+  "produit": "SONDE URINAIRE 3V",
+  "idUnite": "PCE",
+  "prix_achat": 3456,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b162b"
+  },
+  "idProduit": "545",
+  "produit": "STERIMAR BEBE SOL NASAL 50ML",
+  "idUnite": "FL",
+  "prix_achat": 19139,
+  "prix_vente": 27000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1631"
+  },
+  "idProduit": "551",
+  "produit": "TALOHEAL CREME",
+  "idUnite": "FL",
+  "prix_achat": 8000,
+  "prix_vente": 10500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1644"
+  },
+  "idProduit": "570",
+  "produit": "UNIDERM CREM 30MG",
+  "idUnite": "PCE",
+  "prix_achat": 2464,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1654"
+  },
+  "idProduit": "586",
+  "produit": "WORMEX  100MG PL 6CES",
+  "idUnite": "PL",
+  "prix_achat": 388,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2ce4849f3b3f828bc948d"
+  },
+  "produit": "CESADOX  CES BTE 10",
+  "idProduit": "1756548680652",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2e2e149f3b3f828bc99f3"
+  },
+  "produit": "METHYL DOPA CES PLQ",
+  "idProduit": "1756553953241",
+  "prix_achat": 1437,
+  "prix_vente": 3000,
+  "idUnite": "PL",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1606"
+  },
+  "idProduit": "508",
+  "produit": "SEKROL PEDIATRIQUE",
+  "idUnite": "FL",
+  "prix_achat": 8352,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b160d"
+  },
+  "idProduit": "515",
+  "produit": "SERUM RINGER",
+  "idUnite": "FL",
+  "prix_achat": 1924,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1621"
+  },
+  "idProduit": "535",
+  "produit": "SONDE URINAIRE 2V",
+  "idUnite": "PCE",
+  "prix_achat": 1700,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1659"
+  },
+  "idProduit": "591",
+  "produit": "ZINC COMP 20MG PLQ",
+  "idUnite": "PL",
+  "prix_achat": 350,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2d98c49f3b3f828bc9740"
+  },
+  "produit": "CAL D CES PLQ",
+  "idProduit": "1756551564181",
+  "prix_achat": 820,
+  "prix_vente": 1500,
+  "idUnite": "PL",
+  "idShop": "ivanne",
+  "alerte": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2dd6749f3b3f828bc9867"
+  },
+  "produit": "AROLUM CES AD BTE 6",
+  "idProduit": "1756552551718",
+  "prix_achat": 1800,
+  "prix_vente": 4000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2dfd049f3b3f828bc9938"
+  },
+  "produit": "VASOCAR CES 10MG BTE",
+  "idProduit": "1756553168881",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1610"
+  },
+  "idProduit": "518",
+  "produit": "SHALCIP TZ CES",
+  "idUnite": "PL",
+  "prix_achat": 1805,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1617"
+  },
+  "idProduit": "525",
+  "produit": "SILDORIL PLUS BTE 10CES",
+  "idUnite": "BTE",
+  "prix_achat": 9000,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1624"
+  },
+  "idProduit": "538",
+  "produit": "SPARET GOUTTES",
+  "idUnite": "FL",
+  "prix_achat": 7000,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1633"
+  },
+  "idProduit": "553",
+  "produit": "TANZOL 400MG",
+  "idUnite": "PL",
+  "prix_achat": 270,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1641"
+  },
+  "idProduit": "567",
+  "produit": "TUGERME CREME",
+  "idUnite": "PCE",
+  "prix_achat": 4200,
+  "prix_vente": 6500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b164b"
+  },
+  "idProduit": "577",
+  "produit": "VASELINE POMMADE BDOM/BKV 460G",
+  "idUnite": "PCE",
+  "prix_achat": 13500,
+  "prix_vente": 16000,
+  "idShop": "ivanne",
+  "alerte": 1
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b164f"
+  },
+  "idProduit": "581",
+  "produit": "VIGORAL CES",
+  "idUnite": "PL",
+  "prix_achat": 2009,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1655"
+  },
+  "idProduit": "587",
+  "produit": "WORMEX 5OOMG",
+  "idUnite": "PL",
+  "prix_achat": 259,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2ddd849f3b3f828bc989b"
+  },
+  "produit": "CETHER L CES AD EFF BTE 6",
+  "idProduit": "1756552664658",
+  "prix_achat": 9000,
+  "prix_vente": 15000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1601"
+  },
+  "idProduit": "503",
+  "produit": "SAVON MUNGANGA",
+  "idUnite": "PCE",
+  "prix_achat": 2100,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b160c"
+  },
+  "idProduit": "514",
+  "produit": "SERUM PHYSIO 500MG",
+  "idUnite": "FL",
+  "prix_achat": 1740,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1618"
+  },
+  "idProduit": "526",
+  "produit": "SILDORIL 8MG",
+  "idUnite": "BTE",
+  "prix_achat": 2,
+  "prix_vente": 7500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b161f"
+  },
+  "idProduit": "533",
+  "produit": "SOLUTION PHYSIO 0.9% GOUTTE",
+  "idUnite": "FL",
+  "prix_achat": 1050,
+  "prix_vente": 2500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1645"
+  },
+  "idProduit": "571",
+  "produit": "UNIKAL CAPS",
+  "idUnite": "PL",
+  "prix_achat": 1500,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1648"
+  },
+  "idProduit": "574",
+  "produit": "UTROGESTAN 100MG CAPS B/30",
+  "idUnite": "BTE",
+  "prix_achat": 22790,
+  "prix_vente": 30000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1651"
+  },
+  "idProduit": "583",
+  "produit": "VIT C SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 1390,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1653"
+  },
+  "idProduit": "585",
+  "produit": "VIVAGEST B/30 CAPS",
+  "idUnite": "BTE",
+  "prix_achat": 31500,
+  "prix_vente": 42000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2ddfe49f3b3f828bc98a1"
+  },
+  "produit": "CETHER L ENF BTE 6",
+  "idProduit": "1756552702040",
+  "prix_achat": 4500,
+  "prix_vente": 7500,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1616"
+  },
+  "idProduit": "524",
+  "produit": "SHALVIT SP 120ML",
+  "idUnite": "FL",
+  "prix_achat": 2102,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1626"
+  },
+  "idProduit": "540",
+  "produit": "SPASCOL CES B/20",
+  "idUnite": "BTE",
+  "prix_achat": 9216,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b31a4125e9495a0f4d216f"
+  },
+  "produit": "DUPHALAC SP 200ML",
+  "idProduit": "1756568129170",
+  "prix_achat": 7200,
+  "prix_vente": 15000,
+  "idUnite": "SP",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b160b"
+  },
+  "idProduit": "513",
+  "produit": "SERINGUE 5CC",
+  "idUnite": "PCE",
+  "prix_achat": 96,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b162d"
+  },
+  "idProduit": "547",
+  "produit": "STIMULEX CAPS",
+  "idUnite": "BTE",
+  "prix_achat": 4260,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b162f"
+  },
+  "idProduit": "549",
+  "produit": "SUPER APPETIT CES PLQ",
+  "idUnite": "PL",
+  "prix_achat": 149,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b163f"
+  },
+  "idProduit": "565",
+  "produit": "TRIBEX FORT PLQ",
+  "idUnite": "PL",
+  "prix_achat": 2500,
+  "prix_vente": 4000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1647"
+  },
+  "idProduit": "573",
+  "produit": "UTIMIL OX BTE 10",
+  "idUnite": "BTE",
+  "prix_achat": 11200,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2ca1649f3b3f828bc934b"
+  },
+  "produit": "CENEKAL CES PLQ",
+  "idProduit": "1756547606511",
+  "prix_achat": 720,
+  "prix_vente": 1500,
+  "idUnite": "PL",
+  "idShop": "ivanne",
+  "alerte": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1602"
+  },
+  "idProduit": "504",
+  "produit": "SAVON XENTOL",
+  "idUnite": "PCE",
+  "prix_achat": 2200,
+  "prix_vente": 3500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b161e"
+  },
+  "idProduit": "532",
+  "produit": "SOFT CARE 8PCES",
+  "idUnite": "BTE",
+  "prix_achat": 1600,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1629"
+  },
+  "idProduit": "543",
+  "produit": "SRO SACHET",
+  "idUnite": "PCE",
+  "prix_achat": 63,
+  "prix_vente": 500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1637"
+  },
+  "idProduit": "557",
+  "produit": "TEST DE GROSSESSE",
+  "idUnite": "PCE",
+  "prix_achat": 158,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b164d"
+  },
+  "idProduit": "579",
+  "produit": "VASOCAR TH BTE 14",
+  "idUnite": "BTE",
+  "prix_achat": 30000,
+  "prix_vente": 33000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1656"
+  },
+  "idProduit": "588",
+  "produit": "WORMEX SUSP 30ML",
+  "idUnite": "FL",
+  "prix_achat": 840,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2d27a49f3b3f828bc95d7"
+  },
+  "produit": "SINURHON CES BTE 6",
+  "idProduit": "1756549754932",
+  "prix_achat": 340,
+  "prix_vente": 1000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1605"
+  },
+  "idProduit": "507",
+  "produit": "SEKROL AD 30MG 150ML SP",
+  "idUnite": "FL",
+  "prix_achat": 11520,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1609"
+  },
+  "idProduit": "511",
+  "produit": "SENSOTAC DENTAL GEL",
+  "idUnite": "PCE",
+  "prix_achat": 8000,
+  "prix_vente": 12000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1623"
+  },
+  "idProduit": "537",
+  "produit": "SPARADRAP 5CM",
+  "idUnite": "PCE",
+  "prix_achat": 1728,
+  "prix_vente": 4500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1657"
+  },
+  "idProduit": "589",
+  "produit": "XENTOL POUDRE 50GM",
+  "idUnite": "FL",
+  "prix_achat": 4410,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2a4dc3353e3bfb48da83d"
+  },
+  "produit": "CESAFLAM CES PLQ",
+  "idProduit": "1756538076121",
+  "prix_achat": 550,
+  "prix_vente": 1000,
+  "idUnite": "PL",
+  "idShop": "ivanne",
+  "alerte": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1630"
+  },
+  "idProduit": "550",
+  "produit": "SUPER APPETIT SP",
+  "idUnite": "FL",
+  "prix_achat": 4800,
+  "prix_vente": 9000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b163e"
+  },
+  "idProduit": "564",
+  "produit": "TRAMADOL INJ 1AMP",
+  "idUnite": "AMP",
+  "prix_achat": 373,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68b2d87449f3b3f828bc96da"
+  },
+  "produit": "ACIDE FOLIQUE CES PLQ",
+  "idProduit": "1756551284665",
+  "prix_achat": 123,
+  "prix_vente": 500,
+  "idUnite": "PL",
+  "idShop": "ivanne",
+  "alerte": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2deaf49f3b3f828bc98eb"
+  },
+  "produit": "CAPTOPRIL CES PLQ",
+  "idProduit": "1756552879009",
+  "prix_achat": 478,
+  "prix_vente": 1000,
+  "idUnite": "PL",
+  "idShop": "ivanne",
+  "alerte": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2defe49f3b3f828bc98f3"
+  },
+  "produit": "AMLOX COMP 10MG PLQ",
+  "idProduit": "1756552958191",
+  "prix_achat": 1500,
+  "prix_vente": 4000,
+  "idUnite": "PL",
+  "idShop": "ivanne",
+  "alerte": 2,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b31bdf25e9495a0f4d21c9"
+  },
+  "produit": "LUTHER SIROP 60ML",
+  "idProduit": "1756568543143",
+  "prix_achat": 7500,
+  "prix_vente": 12000,
+  "idUnite": "SP",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1613"
+  },
+  "idProduit": "521",
+  "produit": "SHALTOUX DRY COUGH SP 100ML",
+  "idUnite": "FL",
+  "prix_achat": 2334,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b161c"
+  },
+  "idProduit": "530",
+  "produit": "SOCOMOL TUBE",
+  "idUnite": "TUB",
+  "prix_achat": 1575,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b165a"
+  },
+  "idProduit": "592",
+  "produit": "ZINC SP",
+  "idUnite": "FL",
+  "prix_achat": 1900,
+  "prix_vente": 3000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68aca8dfe25de7e3bf70e5d4"
+  },
+  "produit": "ZOPEX 5MG PLQ",
+  "idProduit": "1756145887806",
+  "prix_achat": 3700,
+  "prix_vente": 5000,
+  "idUnite": "PL",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b082b0e99de9e0224f8b9f"
+  },
+  "produit": "PASMEX CES BTE",
+  "idProduit": "1756398256796",
+  "prix_achat": 8500,
+  "prix_vente": 12000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2af0f3353e3bfb48da994"
+  },
+  "produit": "CEMYCINE COMP 250MG BTE 10",
+  "idProduit": "1756540687575",
+  "prix_achat": 9000,
+  "prix_vente": 12000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2ba733353e3bfb48daabc"
+  },
+  "produit": "ESMODOM CES BTE",
+  "idProduit": "1756543603241",
+  "prix_achat": 7500,
+  "prix_vente": 12000,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2daa149f3b3f828bc979a"
+  },
+  "produit": "SCORVITEX Z CES EFF BTE",
+  "idProduit": "1756551841189",
+  "prix_achat": 6000,
+  "prix_vente": 10500,
+  "idUnite": "BTE",
+  "idShop": "ivanne",
+  "alerte": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68b2e39149f3b3f828bc9a3d"
+  },
+  "produit": "FLUCONAZOL CES 1",
+  "idProduit": "1756554129610",
+  "prix_achat": 345,
+  "prix_vente": 1000,
+  "idUnite": "CES",
+  "idShop": "ivanne",
+  "alerte": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1615"
+  },
+  "idProduit": "523",
+  "produit": "SHALTOUX SP EXPECTORANT",
+  "idUnite": "FL",
+  "prix_achat": 2256,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b161a"
+  },
+  "idProduit": "528",
+  "produit": "SOCOMOL CES B/10",
+  "idUnite": "PL",
+  "prix_achat": 922,
+  "prix_vente": 1500,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1627"
+  },
+  "idProduit": "541",
+  "produit": "SPASFON B/30CES",
+  "idUnite": "BTE",
+  "prix_achat": 8640,
+  "prix_vente": 15000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1638"
+  },
+  "idProduit": "558",
+  "produit": "TETRA OPHTA",
+  "idUnite": "PCE",
+  "prix_achat": 544,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b163a"
+  },
+  "idProduit": "560",
+  "produit": "THERMOMETRE DIGITAL",
+  "idUnite": "PCE",
+  "prix_achat": 3049,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b164c"
+  },
+  "idProduit": "578",
+  "produit": "VASOCAR T BTE 14",
+  "idUnite": "BTE",
+  "prix_achat": 15000,
+  "prix_vente": 18000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1628"
+  },
+  "idProduit": "542",
+  "produit": "SPASFON CES PLAQ",
+  "idUnite": "PL",
+  "prix_achat": 3400,
+  "prix_vente": 5000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1636"
+  },
+  "idProduit": "556",
+  "produit": "TERPINE CODEINE PLQ",
+  "idUnite": "PL",
+  "prix_achat": 1007,
+  "prix_vente": 2000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b1639"
+  },
+  "idProduit": "559",
+  "produit": "TETRACYCLINE CAPS 250MG",
+  "idUnite": "PL",
+  "prix_achat": 403,
+  "prix_vente": 1000,
+  "idShop": "ivanne",
+  "alerte": 0
+},
+{
+  "_id": {
+    "$oid": "68ac434aa0ebdc0c226b165b"
+  },
+  "idProduit": "593",
+  "produit": "ZOPEX 10MG BTE 10",
+  "idUnite": "PL",
+  "prix_achat": 4500,
+  "prix_vente": 6000,
+  "idShop": "ivanne",
+  "alerte": 0
+}]

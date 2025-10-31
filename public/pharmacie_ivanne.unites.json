@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b165c"
+  },
+  "idUnite": "AMP",
+  "unite": "AMP",
+  "idShop": "ivanne",
+  "doby": "admin"
+},
+{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b1663"
+  },
+  "idUnite": "SACHET",
+  "unite": "SACHET",
+  "idShop": "ivanne",
+  "doby": "admin"
+},
+{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b1665"
+  },
+  "idUnite": "TUB",
+  "unite": "TUB",
+  "idShop": "ivanne",
+  "doby": "admin"
+},
+{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b165e"
+  },
+  "idUnite": "CES",
+  "unite": "CES",
+  "idShop": "ivanne",
+  "doby": "admin"
+},
+{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b1662"
+  },
+  "idUnite": "PL",
+  "unite": "PL",
+  "idShop": "ivanne",
+  "doby": "admin"
+},
+{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b1660"
+  },
+  "idUnite": "FL",
+  "unite": "FL",
+  "idShop": "ivanne",
+  "doby": "admin"
+},
+{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b165f"
+  },
+  "idUnite": "CREME",
+  "unite": "CREME",
+  "idShop": "ivanne",
+  "doby": "admin"
+},
+{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b165d"
+  },
+  "idUnite": "BTE",
+  "unite": "BTE",
+  "idShop": "ivanne",
+  "doby": "admin"
+},
+{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b1661"
+  },
+  "idUnite": "PCE",
+  "unite": "PCE",
+  "idShop": "ivanne",
+  "doby": "admin"
+},
+{
+  "_id": {
+    "$oid": "68ac4512a0ebdc0c226b1664"
+  },
+  "idUnite": "SP",
+  "unite": "SP",
+  "idShop": "ivanne",
+  "doby": "admin"
+}]

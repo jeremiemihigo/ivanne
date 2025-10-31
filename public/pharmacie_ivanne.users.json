@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "68b2f1de8baae53cbe25f1a6"
+  },
+  "name": "Admin",
+  "username": "admin",
+  "password": "$2b$10$8Alwx9Gv1azHAOpVR4scu.MHd9wpYy9ZL8REC82GMMdFm98L/KC96",
+  "fonction": "admin",
+  "actif": true,
+  "__v": 0,
+  "idShop": "ivanne",
+  "connect": true,
+  "permission": [
+    "#01",
+    "#02",
+    "#03",
+    "#04",
+    "#05",
+    "#06",
+    "#07",
+    "#08",
+    "#10",
+    "#11",
+    "#12",
+    "#13",
+    "#14",
+    "#09",
+    "#15",
+    "#16",
+    "#17",
+    "#18",
+    "#20",
+    "#21",
+    "#19"
+  ]
+}]
