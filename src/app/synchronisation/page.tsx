@@ -14,7 +14,7 @@ function Push() {
   const [loadingMessageIndex, setLoadingMessageIndex] = useState<number>(0);
 
   const loadingMessages = [
-    "Sauvegarde en cours...",
+    "Connexion au serveur...",
     "Préparation des données...",
     "Envoi des fichiers...",
     "Vérification de l'intégrité...",
@@ -128,21 +128,7 @@ function Push() {
                 )}
                 <Backpack />
                 <span>
-                  {sending ? "Sauvegarde en cours..." : "Local vers en ligne"}
-                </span>
-              </Button>
-              <Button
-                onClick={() => PushData("enlignelocal")}
-                disabled={sending || !isOnline}
-                className="flex items-center space-x-3 px-12 py-4 text-xl font-semibold"
-                size="lg"
-              >
-                {sending && (
-                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
-                )}
-                <Backpack />
-                <span>
-                  {sending ? "Sauvegarde en cours..." : "En ligne vers local"}
+                  {sending ? "Sauvegarde en cours..." : "Synchronisation"}
                 </span>
               </Button>
             </div>
