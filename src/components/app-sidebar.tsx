@@ -35,17 +35,21 @@ const data = {
       isActive: true,
       items: [
         {
-          title: "Caisse",
+          title: "Vue d'ensemble",
           url: "/caisse",
         },
 
         {
-          title: "Règlement client",
+          title: "Encaissements (clients)",
           url: "/reglement",
         },
         {
-          title: "Sortie",
+          title: "Décaissements (dépenses)",
           url: "/depense",
+        },
+        {
+          title: "Autres encaissements",
+          url: "/entrer",
         },
       ],
     },

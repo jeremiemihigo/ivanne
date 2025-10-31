@@ -60,9 +60,7 @@ export function NavMain({
                           href={subItem.url}
                           style={{
                             background:
-                              router === `${subItem.url}` ? "green" : "white",
-                            color:
-                              router === `${subItem.url}` ? "white" : "black",
+                              router === `${subItem.url}` ? "green" : "none",
                           }}
                         >
                           <span>{subItem.title}</span>

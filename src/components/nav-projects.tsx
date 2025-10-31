@@ -29,8 +29,7 @@ export function NavProjects({
               <a
                 href={item.url}
                 style={{
-                  background: router === `${item.url}` ? "green" : "white",
-                  color: router === `${item.url}` ? "white" : "black",
+                  background: router === `${item.url}` ? "green" : "none",
                 }}
               >
                 <item.icon />
