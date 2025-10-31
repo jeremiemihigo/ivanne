@@ -1,5 +1,6 @@
 const localhost = "http://localhost:4000";
 //const localhost = "https://iv.bboxxvm.com";
+//const localhost = "https://iv.bboxxvm.com";
 export const lien = `${localhost}/pharmacie`;
 export const permissions = [
   {
