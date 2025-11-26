@@ -1,6 +1,5 @@
-//const localhost = "http://localhost:4000";
-const localhost = "https://iv.bboxxvm.com";
-//const localhost = "https://iv.bboxxvm.com";
+//const localhost = "http://localhost:6002";
+const localhost = "https://safi.bboxxvm.com";
 export const lien = `${localhost}/pharmacie`;
 export const permissions = [
   {
@@ -127,4 +126,34 @@ export const permissions = [
     description:
       "Permet à l'utilisateur de générer des rapports sur les activités et transactions du jour",
   },
+  {
+    value: "#22",
+    label: "Rapport de caisse",
+    description:
+      "Permet à l'utilisateur de générer des rapports de caisse sur les activités et transactions au cours d'une période données",
+  },
 ];
+export function MoneyFrancExist(montant: number) {
+  const franc = [0, 50, 100, 200, 500, 1000, 5000, 10000, 20000];
+  if (franc.includes(montant)) {
+    return true;
+  } else {
+    const resteN = franc
+      .filter((x) => x < montant)
+      .sort(function (x, y) {
+        return y - x;
+      });
+    let somme = montant;
+    for (let i = 0; i < resteN.length; i++) {
+      if (somme >= resteN[i]) {
+        somme = somme - resteN[i];
+        //resteN.splice(resteN.indexOf(resteN[0]), 1);
+      }
+    }
+    if (somme > 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+}

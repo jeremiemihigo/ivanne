@@ -1,16 +1,9 @@
 "use client";
 import { ModeToggle } from "@/components/mode-toogle";
-import ResetPassword from "@/components/ResetPassword";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import React, { ReactNode } from "react";
 import { IUser } from "../Interfaces/IUser";
+import ChangePassword from "./ChangePassword";
 
 type Props = {
   children: ReactNode;
@@ -19,7 +12,6 @@ type Props = {
 
 function Header({ children, title }: Props) {
   const [user, setUser] = React.useState<IUser>();
-  const [dialogOpen, setDialogOpen] = React.useState(false);
 
   React.useEffect(() => {
     const loadingUser = async () => {
@@ -44,12 +36,6 @@ function Header({ children, title }: Props) {
     };
     initialize();
   }, []);
-
-  React.useEffect(() => {
-    if (user && !user?.connect) {
-      setDialogOpen(true);
-    }
-  }, [user]);
   return (
     <>
       <div className="bg-[#00A651] w-full p-4 flex items-center justify-between shadow-md header_">
@@ -60,31 +46,7 @@ function Header({ children, title }: Props) {
         <div className="ml-5 lg:text-2xl">
           <p className="text-white font-bold">{title}</p>
         </div>
-        {user && !user?.connect && (
-          <>
-            <Dialog open={dialogOpen} onOpenChange={() => {}}>
-              <form>
-                <DialogContent className="sm:max-w-[425px]">
-                  <DialogHeader>
-                    <DialogTitle>
-                      Changer votre mot de passe par défaut
-                    </DialogTitle>
-                    <DialogDescription>
-                      Pour des raisons de sécurité, vous devez changer votre mot
-                      de passe par défaut. Un mot de passe personnalisé vous
-                      permettra de protéger votre compte et vos données de
-                      manière plus sécurisée. Veuillez choisir un mot de passe
-                      fort et unique.
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="grid gap-4">
-                    <ResetPassword />
-                  </div>
-                </DialogContent>
-              </form>
-            </Dialog>
-          </>
-        )}
+        {user && !user?.connect && <ChangePassword />}
         <div className="flex-1 text-right">
           <h1 className="hidden md:block text-white font-bold text-sm md:text-2xl lg:text-1xl xl:text-1xl m-0"></h1>
         </div>

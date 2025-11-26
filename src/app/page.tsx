@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import AlertStock from "./AlertStock";
 import Header from "./Header/Header";
 
 interface IData {
@@ -125,10 +126,18 @@ const SalesChart = ({ data }: { data: IDataGraphique[] }) => {
   );
 };
 
+interface IAlerte {
+  produit: string;
+  idUnite: string;
+  quantite: number;
+  alerte: number;
+}
+
 interface IJournalier {
   payer: number;
   creance: number;
   depense: number;
+  alerte: IAlerte[];
 }
 
 export default function Page() {
@@ -163,7 +172,6 @@ export default function Page() {
         },
       });
       const response = await res.json();
-      console.log(response);
       setJournalier(response.data);
     } catch (error) {
       console.log(error);
@@ -429,9 +437,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <p style={{ fontSize: "25px", textAlign: "center" }} className="text-lg">
-        Rapport journalier
-      </p>
+      {journalier && <AlertStock produits={journalier?.alerte} />}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
         {/* Nombre de Produits */}
 

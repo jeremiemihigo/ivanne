@@ -1,11 +1,12 @@
 "use client";
+import ChangePassword from "@/app/Header/ChangePassword";
 import { IUser } from "@/app/Interfaces/IUser";
 import Loading from "@/app/Tools/Loading";
 import Popup from "@/app/Tools/Popup";
 import Tableau_set_Header from "@/app/Tools/Tab_set_Header";
 import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
-import { ArrowUpDown } from "lucide-react";
+import { ArrowUpDown, IndentIcon, KeyIcon, PlusIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React from "react";
 import Formulaire from "./Formulaire";
@@ -22,7 +23,7 @@ function Utilisateurs() {
       },
     });
     const response = await result.json();
-
+    console.log(result);
     if (result.status === 200) {
       setData(response.data);
     }
@@ -74,8 +75,10 @@ function Utilisateurs() {
         );
       },
       cell: ({ row }) => (
-        <Button onClick={() => router.push(`/permissions/${row.original.id}`)}>
-          Permissions
+        <Button
+          onClick={() => router.push(`/permissions/${row.original.username}`)}
+        >
+          <IndentIcon />
         </Button>
       ),
     },
@@ -92,11 +95,18 @@ function Utilisateurs() {
               columns={[...columns1, ...columns2]}
               customer_id="username"
               childrenbtn={
-                <Popup
-                  title="Ajoutez un nouveau utilisateur"
-                  component={<Formulaire data={data} setData={setData} />}
-                  btnname="Ajoutez un nouveau utilisateur"
-                />
+                <>
+                  <Popup
+                    title="Ajoutez un ouveau utilisateur"
+                    component={<Formulaire data={data} setData={setData} />}
+                    btnname={<PlusIcon />}
+                  />
+                  <Popup
+                    btnname={<KeyIcon />}
+                    title="Changer votre mot de passe"
+                    component={<ChangePassword />}
+                  />
+                </>
               }
             />
           </div>

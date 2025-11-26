@@ -69,6 +69,10 @@ const data = {
           url: "/rapport_commercial",
         },
         {
+          title: "Rapport Caisse",
+          url: "/rapport_caisse",
+        },
+        {
           title: "Inventaire actuel",
           url: "/inventaire_actuel",
         },

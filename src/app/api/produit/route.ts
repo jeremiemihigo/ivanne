@@ -37,7 +37,6 @@ export async function PUT(request: NextRequest) {
   try {
     const token = request.cookies.get("access")?.value;
     const data = await request.json();
-
     const res = await fetch(`${lien}/updateProduit`, {
       method: "PUT",
       headers: {

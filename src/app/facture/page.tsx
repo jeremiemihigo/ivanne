@@ -11,6 +11,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 import { useRouter } from "next/navigation";
 import React from "react";
 import Header from "../Header/Header";
@@ -202,6 +204,7 @@ function Factures() {
   const readFacture = (row: IFacture) => {
     router.push(`/onefacture/${row.idFacture}`);
   };
+  const [typeFacture, setTypeFacture] = React.useState<boolean>(true);
 
   return (
     <Header title="Factures">
@@ -209,12 +212,38 @@ function Factures() {
         {load ? (
           <Loading />
         ) : (
-          <Tableau_set_Header
-            data={data}
-            columns={[...columns1, ...columns2]}
-            customer_id="idFacture"
-            datafilter={dataFilter}
-          />
+          <>
+            <Tableau_set_Header
+              data={data.filter((x) => x.status_facture === typeFacture)}
+              columns={[...columns1, ...columns2]}
+              customer_id="idFacture"
+              datafilter={dataFilter}
+              childrenbtn={
+                <section className="flex mb-3 gap-10">
+                  <div className="flex gap-3 items-center">
+                    <Checkbox
+                      id="valide"
+                      onClick={() => {
+                        setTypeFacture(true);
+                      }}
+                      checked={typeFacture}
+                    />
+                    <Label htmlFor="valide">Facture validées</Label>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Checkbox
+                      checked={!typeFacture}
+                      id="supprimer"
+                      onClick={() => {
+                        setTypeFacture(false);
+                      }}
+                    />
+                    <Label htmlFor="supprimer">Facture supprimées</Label>
+                  </div>
+                </section>
+              }
+            />
+          </>
         )}
       </main>
     </Header>

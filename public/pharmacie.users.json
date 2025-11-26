@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "68a8c7ca406c26ac609e65b9"
+  },
+  "name": "Admin",
+  "username": "admin",
+  "password": "$2b$10$Z/mXhVxQ9D02jpqZiyauVuVUO6axcm9Csyv9smcznD9BoIE9FuohK",
+  "fonction": "admin",
+  "actif": true,
+  "__v": 0,
+  "idShop": "safi1",
+  "connect": true,
+  "permission": [
+    "#02",
+    "#03",
+    "#01",
+    "#04",
+    "#05",
+    "#06",
+    "#07",
+    "#08",
+    "#09",
+    "#10",
+    "#13",
+    "#14",
+    "#15",
+    "#16",
+    "#17",
+    "#18",
+    "#19",
+    "#20",
+    "#21",
+    "#11",
+    "#12"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68c2b46617a6f5f92d217250"
+  },
+  "name": "JEREMIE MIHIGO",
+  "username": "administrator",
+  "password": "$2b$10$baFQXwUIJ1J9M6mNvGWtluRVI8NtwL68ImBWYMGlHo6ddpT83uSpe",
+  "fonction": "admin",
+  "actif": true,
+  "idShop": "admin",
+  "connect": false,
+  "permission": []
+}]

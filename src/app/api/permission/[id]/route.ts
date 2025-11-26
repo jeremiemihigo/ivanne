@@ -8,7 +8,6 @@ export async function GET(
   try {
     const { id } = await context.params;
     const token = request.cookies.get("access")?.value;
-
     const res = await fetch(`${lien}/readOneUser/${id}`, {
       method: "GET",
       headers: {

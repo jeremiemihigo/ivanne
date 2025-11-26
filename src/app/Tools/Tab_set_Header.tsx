@@ -84,7 +84,7 @@ export default function Tableau_set_Header<TData extends object>({
   const [colonnefilter, setColonneFilter] = React.useState<string>(customer_id);
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full ">
       <div className="flex items-center py-4 gap-2">
         <div>
           {datafilter && (

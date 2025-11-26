@@ -14,7 +14,7 @@ function Push() {
   const [loadingMessageIndex, setLoadingMessageIndex] = useState<number>(0);
 
   const loadingMessages = [
-    "Connexion au serveur...",
+    "Sauvegarde en cours...",
     "Préparation des données...",
     "Envoi des fichiers...",
     "Vérification de l'intégrité...",
@@ -116,7 +116,7 @@ function Push() {
                 accessible depuis n&apos;importe où.
               </p>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-3">
               <Button
                 onClick={() => PushData("backup")}
                 disabled={sending || !isOnline}
@@ -128,9 +128,10 @@ function Push() {
                 )}
                 <Backpack />
                 <span>
-                  {sending ? "Sauvegarde en cours..." : "Synchronisation"}
+                  {sending ? "Sauvegarde en cours..." : "Local vers en ligne"}
                 </span>
               </Button>
+             
             </div>
           </div>
         </div>

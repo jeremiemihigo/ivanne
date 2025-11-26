@@ -123,8 +123,9 @@ function AddProduit({ setDonner, donner, produit }: Props) {
           prix_vente: initiale.prix_vente,
           idUnite: unite,
           alerte: initiale.alerte,
-          id: produit?._id,
+          id: produit?.idProduit,
         };
+        console.log(donners);
 
         const res = await fetch("/api/produit", {
           method: "PUT",

@@ -1,7 +1,9 @@
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import React from "react";
+import { toast } from "sonner";
+import Alert from "../Tools/Alert";
+import { MoneyFrancExist } from "../Tools/Lien";
 import Loading from "../Tools/Loading";
 
 interface IData {
@@ -19,7 +21,7 @@ type Props = {
   setData: React.Dispatch<React.SetStateAction<IData[]>>;
 };
 type TMessage = {
-  type: "destructive" | "default" | "";
+  type: "success" | "error" | "";
   message: string;
 };
 
@@ -34,38 +36,44 @@ function Factures({ data, client, setData, resetData }: Props) {
     e.preventDefault();
     try {
       setLoad(true);
-      const res = await fetch("/api/vente", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          products: data,
-          payer,
-          client,
-          facture: "",
-          prix_vente: data.reduce(
-            (sum, item) => sum + (item.prix_vente_total || 0),
-            0
-          ),
-        }),
-      });
-      const response = await res.json();
-      if (response.status === 200) {
-        setMessage({
-          type: "default",
-          message: "Opération de vente effectuée",
+      if (MoneyFrancExist(payer)) {
+        const res = await fetch("/api/vente", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            products: data,
+            payer,
+            client,
+            facture: "",
+            prix_vente: data.reduce(
+              (sum, item) => sum + (item.prix_vente_total || 0),
+              0
+            ),
+          }),
         });
-        setLoad(false);
-        setPayer(0);
-        resetData();
+        const response = await res.json();
+        if (response.status === 200) {
+          setMessage({
+            type: "success",
+            message: "Opération de vente effectuée",
+          });
+          setLoad(false);
+          setPayer(0);
+          resetData();
+        } else {
+          setMessage({ type: "error", message: response.data });
+          setLoad(false);
+        }
       } else {
-        setMessage({ type: "destructive", message: response.data });
+        toast(`${payer}f n'existe pas en francs congolais`);
         setLoad(false);
+        return;
       }
     } catch (error) {
       setLoad(false);
-      setMessage({ type: "destructive", message: JSON.stringify(error) });
+      setMessage({ type: "error", message: JSON.stringify(error) });
     }
   };
   const deleteProduct = (produit: string) => {
@@ -78,12 +86,7 @@ function Factures({ data, client, setData, resetData }: Props) {
       ) : (
         <article className="page bg-white rounded-2xl shadow-xl no-print-shadow p-10 sm:p-14 mb-10 print:rounded-none">
           {message.type !== "" && (
-            <Alert variant={message.type}>
-              <AlertTitle>
-                {message.type === "destructive" ? "Error !" : "Success"}
-              </AlertTitle>
-              <AlertDescription>{message.message}</AlertDescription>
-            </Alert>
+            <Alert type={message.type} message={message.message} />
           )}
           <section className="border-b-2 border-gray-200 pb-6 mb-6">
             <div className="flex justify-between items-start">

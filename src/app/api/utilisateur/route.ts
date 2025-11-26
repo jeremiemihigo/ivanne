@@ -36,6 +36,7 @@ export async function GET(request: NextRequest) {
       },
     });
     const response = await result.json();
+    console.log(response);
     if (result.status === 200) {
       const formating = response.map((index: IUser) => {
         return {
