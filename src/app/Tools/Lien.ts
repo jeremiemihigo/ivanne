@@ -1,5 +1,5 @@
-const localhost = "http://localhost:6002";
-//const localhost = "https://safi.bboxxvm.com";
+//const localhost = "http://localhost:6002";
+const localhost = "https://safi.bboxxvm.com";
 export const lien = `${localhost}/pharmacie`;
 export const permissions = [
   {
