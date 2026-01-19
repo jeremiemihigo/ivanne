@@ -84,6 +84,10 @@ const data = {
           title: "Modification stock",
           url: "/ajustage",
         },
+        {
+          title: "Vente à perte",
+          url: "/vente_perte",
+        },
       ],
     },
     {

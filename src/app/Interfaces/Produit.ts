@@ -8,3 +8,13 @@ export interface IProduit {
   reference: string;
   _id: string;
 }
+export interface IventePerte {
+  produit: string;
+  prix_vente: number;
+  perte: number;
+  dateSave: number;
+  montant: number;
+  facture: string;
+  client: string;
+  saveby: string;
+}

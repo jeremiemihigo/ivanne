@@ -1,5 +1,5 @@
+const localhost = "https://www.deuxiemetest.bboxxvm.com";
 //const localhost = "http://localhost:6002";
-const localhost = "https://safi.bboxxvm.com";
 export const lien = `${localhost}/pharmacie`;
 export const permissions = [
   {
@@ -134,26 +134,22 @@ export const permissions = [
   },
 ];
 export function MoneyFrancExist(montant: number) {
-  const franc = [0, 50, 100, 200, 500, 1000, 5000, 10000, 20000];
-  if (franc.includes(montant)) {
-    return true;
-  } else {
-    const resteN = franc
-      .filter((x) => x < montant)
-      .sort(function (x, y) {
-        return y - x;
-      });
-    let somme = montant;
-    for (let i = 0; i < resteN.length; i++) {
-      if (somme >= resteN[i]) {
-        somme = somme - resteN[i];
-        //resteN.splice(resteN.indexOf(resteN[0]), 1);
-      }
+  const franc = [20000, 10000, 5000, 1000, 500, 200, 100, 50, 0];
+
+  // Si le montant correspond directement à une coupure
+  if (franc.includes(montant)) return true;
+  let reste = montant;
+  for (const f of franc) {
+    if (f === 0) continue;
+    while (reste >= f) {
+      reste -= f;
     }
-    if (somme > 0) {
-      return false;
-    } else {
+
+    if (reste === 0) {
       return true;
     }
   }
+
+  // Si on a parcouru toutes les coupures et qu'il reste encore quelque chose
+  return false;
 }

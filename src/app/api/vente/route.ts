@@ -22,3 +22,22 @@ export async function POST(request: NextRequest) {
     console.log(error);
   }
 }
+export async function GET(request: NextRequest) {
+  try {
+    const token = request.cookies.get("access")?.value;
+    const result = await fetch(`${lien}/ventePerte`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
+      },
+    });
+    const response = await result.json();
+    return NextResponse.json({
+      data: response,
+      status: result.status,
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}

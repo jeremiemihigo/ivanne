@@ -8,7 +8,6 @@ export async function GET(
   try {
     const token = request.cookies.get("access")?.value;
     const { id } = await context.params;
-    console.log(id);
     const result = await fetch(`${lien}/${id}`, {
       method: "GET",
       headers: {
@@ -17,7 +16,6 @@ export async function GET(
       },
     });
     const response = await result.json();
-    console.log(response);
     if (result.status === 200) {
       const data = NextResponse.json({
         data: response,

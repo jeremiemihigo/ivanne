@@ -137,6 +137,7 @@ interface IJournalier {
   payer: number;
   creance: number;
   depense: number;
+  perte: number;
   alerte: IAlerte[];
 }
 
@@ -461,8 +462,14 @@ export default function Page() {
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">Vente</p>
-              <p className="text-2xl font-semibold text-gray-900">
+              <p className="text-1xl font-semibold text-gray-900">
                 {formatCurrency(journalier?.payer || 0, "CDF")}
+              </p>
+            </div>
+            <div className="ml-4">
+              <p className="text-sm font-medium text-gray-600">Remise</p>
+              <p className="text-1xl font-semibold text-gray-900">
+                {formatCurrency(journalier?.perte || 0, "CDF")}
               </p>
             </div>
           </div>

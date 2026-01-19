@@ -1,12 +1,14 @@
 "use client";
 
 import Header from "@/app/Header/Header";
-import { IStockIndividuel } from "@/app/Interfaces/Rapport";
+import { IRapportCaisse } from "@/app/Interfaces/Rapport";
 import { IShop } from "@/app/Interfaces/Shop";
 import Loading from "@/app/Tools/Loading";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import _ from "lodash";
+import moment from "moment";
 import React from "react";
 import { toast } from "sonner";
 
@@ -16,9 +18,8 @@ interface Initiale {
 }
 
 function StockGeneral() {
-  const [data, setData] = React.useState<IStockIndividuel[]>([]);
+  const [data, setData] = React.useState<IRapportCaisse | null>(null);
   const [load, setLoad] = React.useState<boolean>(false);
-  const [stock, setSetStock] = React.useState<number>(0);
   const [initiale, setInitiale] = React.useState<Initiale>({
     date1: "",
     date2: "",
@@ -34,10 +35,9 @@ function StockGeneral() {
         body: JSON.stringify(initiale),
       });
       const result = await res.json();
+      console.log(result);
       if (result.status === 200) {
         setData(result.data);
-        setSetStock(result.stock);
-        toast(JSON.stringify(`${result.data.length}  resultats trouvés`));
         setLoad(false);
       } else {
         toast(JSON.stringify(result.data));
@@ -74,6 +74,18 @@ function StockGeneral() {
     };
     initialize();
   }, []);
+  // Ajout du tableau de synthèse dans le contenu imprimé
+  // On suppose que "data" est l'état contenant le rapport chargé
+
+  // Fonction utilitaire pour formatter les montants
+  function formatNumber(num: number) {
+    return (
+      num?.toLocaleString("fr-FR", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      }) ?? "-"
+    );
+  }
 
   const generatePrintContent = () => {
     return `
@@ -103,7 +115,7 @@ function StockGeneral() {
           .header h1 {
             margin: 0;
             color: #333;
-            font-size: 18px;
+            font-size: 14px;
           }
           .date-range {
             margin-bottom: 20px;
@@ -121,7 +133,7 @@ function StockGeneral() {
           }
           th {
             background-color: #f2f2f2;
-            font-weight: bold;
+            font-weight: normal;
           }
           .total-row {
             font-weight: bold;
@@ -164,6 +176,9 @@ function StockGeneral() {
             .text-red{
             color:red;
             }
+            .title{
+            font-weight: bolder;
+            font-size:15px;}
         </style>
       </head>
       <body>
@@ -188,6 +203,7 @@ function StockGeneral() {
         <div class="header">
           <h1>RAPPORT DE CAISSE</h1>
         </div>
+
         
         <div class="date-range">
           <p class="text-center"><strong>Période:</strong> Du ${
@@ -196,53 +212,143 @@ function StockGeneral() {
         </div>
         
         ${
-          data.length > 0
+          data
             ? `
+            <p class="title">Ventes</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Client</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${data.ventes
+                .map(
+                  (item, index) => `
+                  <tr key="${index}">
+                  <td>${item.client}</td>
+                 
+                  <td>${formatNumber(item.total)} CDF</td>
+                 
+                </tr>
+                
+              `,
+                )
+                .join("")}
+              <tr class="total-row">
+                <td ><strong>Total</strong></td>
+                <td><strong>${formatNumber(
+                  _.sumBy(data.ventes, "total"),
+                )}CDF</strong></td>
+              </tr>
+            </tbody>
+          </table>
+           <p class="title">Sorties</p>
           <table>
             <thead>
               <tr>
                 <th>Date</th>
-                <th>Stock Initial</th>
-                <th>Entrées</th>
-                <th>Sorties</th>
-                <th>Solde</th>
+                <th>Motif</th>
+                <th>Montant</th>
+                <th>Enregistrer par</th>
               </tr>
             </thead>
             <tbody>
-              ${data
+              ${data.depenses
                 .map(
                   (item, index) => `
-                  ${
-                    item.type === "situation"
-                      ? `
                   <tr key="${index}">
-                  <td>${item.date}</td>
+                  <td>${moment(item.dateSave).format("DD-MM-YYYY")}</td>
                  
-                  <td>${item.initiale}</td>
-                  <td>${item.entrer}</td>
-                  <td>${item.sortie}</td>
-                  <td>${item.solde}</td>
+                  <td>${item.motif}</td>
+                  <td>${formatNumber(item.montant)} CDF</td>
+                  <td>${item.doby}</td>
+                 
                 </tr>
-                  `
-                      : `
-                  
-                  <tr key="${index}">
-                  <td>${item.date}</td>
-                  <td colSpan="5">${item.message}</td>
-                  
-                </tr>
-                  
-                  `
-                  }
                 
-              `
+              `,
                 )
                 .join("")}
               <tr class="total-row">
-                <td colspan="4"><strong>Stock actuel</strong></td>
-                <td><strong>${stock}</strong></td>
+                <td colspan="2" ><strong>Total</strong></td>
+                <td colspan="2"><strong>${formatNumber(
+                  _.sumBy(data.depenses, "montant"),
+                )} CDF</strong></td>
+                
               </tr>
             </tbody>
+          </table>
+           <p class="title">Autres encaissement</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Motif</th>
+                <th>Provenance</th>
+                <th>Montant USD</th>
+                <th>Montant CDF</th>
+                <th>Enregistrer par</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${data.entrer
+                .map(
+                  (item, index) => `
+                  <tr key="${index}">
+                  <td>${moment(item.dateSave).format("DD-MM-YYYY")}</td>
+                 
+                  <td>${item.motif}</td>
+                  <td>${item.provenance}</td>
+                  <td>${
+                    item.devise === "USD" ? formatNumber(item.montant) : ""
+                  }</td>
+                  <td>${
+                    item.devise === "CDF" ? formatNumber(item.montant) : ""
+                  }</td>
+                  <td>${item.saved_by}</td>
+                 
+                </tr>
+                
+              `,
+                )
+                .join("")}
+              <tr class="total-row">
+                <td colspan="3"><strong>Total</strong></td>
+                <td><strong>${formatNumber(
+                  _.sumBy(_.filter(data.entrer, { devise: "USD" }), "montant"),
+                )}</strong></td>
+                <td><strong>${formatNumber(
+                  _.sumBy(_.filter(data.entrer, { devise: "CDF" }), "montant"),
+                )}</strong></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+           <p className="title">Synthese</p>
+          <table>
+            <thead>
+              <tr>
+                <th>SOLDE CDF</th>
+                <th>${formatNumber(
+                  _.sumBy(data.ventes, "total") +
+                    _.sumBy(
+                      _.filter(data?.entrer, { devise: "CDF" }),
+                      "montant",
+                    ) -
+                    _.sumBy(data.depenses, "montant"),
+                )}</th>
+               
+              </tr>
+              <tr>
+                <th>SOLDE USD</th>
+                <th>${formatNumber(
+                  _.sumBy(_.filter(data?.entrer, { devise: "USD" }), "montant"),
+                )}</th>
+               
+              </tr>
+            </thead>
+            
           </table>
         `
             : '<div class="no-data">Aucune donnée disponible</div>'
@@ -311,7 +417,7 @@ function StockGeneral() {
               >
                 Valider
               </Button>
-              {data.length > 0 && (
+              {data && (
                 <Button
                   onClick={handlePrint}
                   className="flex-1 sm:flex-none px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors"

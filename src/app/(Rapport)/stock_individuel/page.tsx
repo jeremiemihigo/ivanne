@@ -113,10 +113,6 @@ function StockGeneral() {
   const generatePrintContent = () => {
     const selectedProduit =
       produits.filter((x) => x.value === produit)[0]?.label || "";
-    const totalSolde = data.reduce(
-      (sum, item) => sum + (item.solde ? item.solde : 0),
-      0
-    );
 
     return `
       <!DOCTYPE html>

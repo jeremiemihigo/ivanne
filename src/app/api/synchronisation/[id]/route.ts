@@ -1,17 +1,19 @@
 import { lien } from "@/app/Tools/Lien";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(request: NextRequest) {
+export async function GET(
+  request: NextRequest,
+  context: { params: Promise<{ id: string }> }
+) {
   try {
     const token = request.cookies.get("access")?.value;
-    const data = await request.json();
-    const result = await fetch(`${lien}/rapportCaisse`, {
-      method: "POST",
+    const { id } = await context.params;
+    const result = await fetch(`${lien}/${id}`, {
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
       },
-      body: JSON.stringify(data),
     });
     const response = await result.json();
     return NextResponse.json({
@@ -19,6 +21,12 @@ export async function POST(request: NextRequest) {
       status: result.status,
     });
   } catch (error) {
-    console.log(error);
+    return NextResponse.json(
+      {
+        error: "Internal server error",
+        message: error instanceof Error ? error.message : "Unknown error",
+      },
+      { status: 500 }
+    );
   }
 }

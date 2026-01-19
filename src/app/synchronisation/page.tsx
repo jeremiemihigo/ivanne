@@ -1,11 +1,9 @@
 "use client";
 import Header from "@/app/Header/Header";
 import { Button } from "@/components/ui/button";
-import axios from "axios";
 import { Backpack } from "lucide-react";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { lien } from "../Tools/Lien";
 
 function Push() {
   const [isOnline, setIsOnline] = useState<boolean>(false);
@@ -65,13 +63,19 @@ function Push() {
       setSending(true);
       setShowLoader(true);
       setLoadingMessageIndex(0);
-      const response = await axios.get(`${lien}/${id}`);
+      const result = await fetch(`/api/synchronisation/${id}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const response = await result.json();
       if (response.status === 200) {
         setTimeout(() => {
           setSending(false);
           setShowLoader(false);
           setLoadingMessageIndex(0);
-        }, 3000);
+        }, 1000);
         toast("Synchronisation effectuée avec succès");
       } else {
         toast(JSON.stringify(response.data));
@@ -131,7 +135,20 @@ function Push() {
                   {sending ? "Sauvegarde en cours..." : "Local vers en ligne"}
                 </span>
               </Button>
-             
+              <Button
+                onClick={() => PushData("ligne_local")}
+                disabled={sending || !isOnline}
+                className="flex items-center space-x-3 px-12 py-4 text-xl font-semibold"
+                size="lg"
+              >
+                {sending && (
+                  <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
+                )}
+                <Backpack />
+                <span>
+                  {sending ? "Sauvegarde en cours..." : "En ligne vers local"}
+                </span>
+              </Button>
             </div>
           </div>
         </div>

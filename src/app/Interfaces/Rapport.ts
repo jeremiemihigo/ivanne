@@ -44,3 +44,26 @@ export interface IProduitRupture {
   quantite: number;
   mininum: number;
 }
+type TVente = {
+  client: string;
+  total: number;
+};
+type TEntrer = {
+  montant: number;
+  motif: string;
+  devise: "USD" | "CDF";
+  provenance: string;
+  saved_by: string;
+  dateSave: number;
+};
+type TDepense = {
+  motif: string;
+  montant: number;
+  dateSave: number;
+  doby: string;
+};
+export interface IRapportCaisse {
+  ventes: TVente[];
+  entrer: TEntrer[];
+  depenses: TDepense[];
+}
